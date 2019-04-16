@@ -1,3 +1,5 @@
-# how-to-publish-websites-on-github-pages
+# GitHub Page と MDWiki でホームページを作る
 このリポジトリは、GitHubの使い方について私の学んだ事をアウトプットするために作成されました。
 このリポジトリの内容は、GitHub Pagesのウェブサイトとして公開されます。
+
+目次(作成中)
