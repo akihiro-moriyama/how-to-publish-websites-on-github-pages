@@ -1,4 +1,4 @@
-# GitHub Pages と MDWiki でウェブサイトをつくる
+# GitHub PagesとMDWikiでウェブサイトをつくる
 
 ## イントロダクション
 このコンテンツは、GitHub PagesとMDWikiでウェブサイトをつくる作業を通して、GitおよびGitHubの使い方を学ぶものです。
