@@ -1,12 +1,5 @@
 # 序章
 
-> **目次**
->
-> * 序章 ←このページです
-> * [GitHub編](github.md)
-> * [MDWiki編](mdwiki.md)
-> * [Typora編](typora.md)
-
 ## コンテンツの概要
 
 GitHub PagesとMDWikiでウェブサイトをつくる
@@ -30,6 +23,14 @@ GitHub PagesとMDWikiでウェブサイトをつくる
 1. Typoraでウェブサイトのコンテンツを作成する
 1. GitHub Desktopでサーバーにアップロードする
 
+----
 
+> **目次**
+>
+> * <i class="far fa-hand-point-right"></i>序章
+> * [GitHub編](github.md)
+> * [MDWiki編](mdwiki.md)
+> * [Typora編](typora.md)
+>
 
->  ←前｜次→[GitHub編](github.md)
+----
