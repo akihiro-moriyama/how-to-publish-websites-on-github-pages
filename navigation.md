@@ -1,13 +1,25 @@
 # GitHub PagesとMDwikiでウェブサイトをつくる
 
 [序章](index.md)
-[GitHub編](github.md)
 
-* [Git](github.md#Git)
-* [GitHub](github.md#GitHub)
-* [GitHub Pages](github.md#GitHub_Pages)
-* [Git用語の解説](github.md#Git%E7%94%A8%E8%AA%9E)
+[解説編]()
 
-[MDWiki編](mdwiki.md)
-[Typora編](typora.md)
+* [Git バージョン管理システム](github.md#Git)
+* [GitHub オンラインバージョン管理システム](github.md#GitHub)
+* [GitHub Desktop Gitクライアント](github.md#Git)
+* [Git用語集](github.md)
+----
+* [GitHub Pages レンタルウェブサーバー](githubpages.md)
+* [MDWiki コンテンツマネジメントシステム](mdwiki.md)
+* [Typora マークダウンエディタ](typora.md)
+
+[作成編]()
+
+* [GitHub に会員登録する](practice.md)
+* [GitHub Desktop を入手する](practice.md)
+* [Typora を入手する](practice.md)
+* [MDwiki を入手する](practice.md)
+* [Typoraでウェブサイトのコンテンツを作成する](practice.md)
+* [GitHub Desktopでサーバーにアップロードする](practice.md)
+
 [gimmick:theme](cosmo)
