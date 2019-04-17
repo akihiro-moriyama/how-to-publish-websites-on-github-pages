@@ -4,22 +4,22 @@
 
 [解説編]()
 
-* [Git バージョン管理システム](github.md#Git)
-* [GitHub オンラインバージョン管理システム](github.md#GitHub)
-* [GitHub Desktop Gitクライアント](github.md#Git)
+* [Git (バージョン管理システム)](github.md#Git)
+* [GitHub (オンラインバージョン管理システム)](github.md#GitHub)
+* [GitHub Desktop (GitHubクライアント)](github.md#Git)
 * [Git用語集](github.md)
 ----
-* [GitHub Pages レンタルウェブサーバー](githubpages.md)
-* [MDWiki コンテンツマネジメントシステム](mdwiki.md)
-* [Typora マークダウンエディタ](typora.md)
+* [GitHub Pages (GitHub会員用ウェブサーバー)](githubpages.md)
+* [MDWiki (軽量CMS)](mdwiki.md)
+* [Typora (マークダウンエディタ)](typora.md)
 
 [作成編]()
 
-* [GitHub に会員登録する](practice.md)
-* [GitHub Desktop を入手する](practice.md)
-* [Typora を入手する](practice.md)
-* [MDwiki を入手する](practice.md)
-* [Typoraでウェブサイトのコンテンツを作成する](practice.md)
-* [GitHub Desktopでサーバーにアップロードする](practice.md)
+* [01. GitHubに会員登録する](practice.md)
+* [02. GitHub Desktopを入手する](practice.md)
+* [03. Typoraを入手する](practice.md)
+* [04. MDwikiを入手する](practice.md)
+* [05. Typoraでコンテンツを作成する](practice.md)
+* [06.GitHub Desktopでアップロードする](practice.md)
 
 [gimmick:theme](cosmo)
