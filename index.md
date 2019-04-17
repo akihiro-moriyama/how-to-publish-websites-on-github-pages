@@ -1,8 +1,8 @@
-# 序章
+# GitHub PagesとMDwikiでウェブサイトをつくる
 
 ## コンテンツの概要
 
-このウェブコンテンツは、GitHub PagesとMDWikiでウェブサイトをつくる作業を通してGitおよびGitHubの使い方を学ぶ、初心者向けの学習コンテンツです。なおこのウェブサイト自体もGitHub PagesとMDWikiで構築されています。
+このウェブコンテンツは、GitHub PagesとMDwikiでウェブサイトをつくる作業を通してGitおよびGitHubの使い方を学ぶ、初心者向けの学習コンテンツです。なおこのウェブサイト自体もGitHub PagesとMDwikiで構築されています。
 
 ## 想定する読者ニーズ
 
@@ -17,13 +17,6 @@
 1. Webサービス **GitHub** に会員登録する
 1. アプリケーション **GitHub Desktop** を入手する
 1. アプリケーション **Typora** を入手する
-1. サーバーアプリケーション **[MDWiki](http://dynalon.github.io/mdwiki/)** を入手する
+1. サーバーアプリケーション **[MDwiki](http://dynalon.github.io/MDwiki/)** を入手する
 1. Typoraでウェブサイトのコンテンツを作成する
 1. GitHub Desktopでサーバーにアップロードする
-
-> **navigation menu**
->
-> * <i class="far fa-hand-point-right"></i>序章
-> * [GitHub編](github.md)
-> * [MDWiki編](mdwiki.md)
-> * [Typora編](typora.md)
