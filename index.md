@@ -2,8 +2,6 @@
 
 ## コンテンツの概要
 
-GitHub PagesとMDWikiでウェブサイトをつくる
-
 このウェブコンテンツは、GitHub PagesとMDWikiでウェブサイトをつくる作業を通してGitおよびGitHubの使い方を学ぶ、初心者向けの学習コンテンツです。なおこのウェブサイト自体もGitHub PagesとMDWikiで構築されています。
 
 ## 想定する読者ニーズ
@@ -23,14 +21,9 @@ GitHub PagesとMDWikiでウェブサイトをつくる
 1. Typoraでウェブサイトのコンテンツを作成する
 1. GitHub Desktopでサーバーにアップロードする
 
-----
-
-> **目次**
+> **navigation menu**
 >
 > * <i class="far fa-hand-point-right"></i>序章
 > * [GitHub編](github.md)
 > * [MDWiki編](mdwiki.md)
 > * [Typora編](typora.md)
->
-
-----
