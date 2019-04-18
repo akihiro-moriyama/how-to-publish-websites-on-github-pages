@@ -1,6 +1,6 @@
 # GitHub PagesとMDwikiでウェブサイトをつくる
 
-[ホーム](index.md)
+[<i class="fas fa-home"></i>ホーム](index.md)
 
 [解説編]()
 
