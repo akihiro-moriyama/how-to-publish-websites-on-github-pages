@@ -24,7 +24,7 @@ body,
 #md-all tr,
 #md-all td,
 #md-all blockquote{
-	font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro',verdana,'ＭＳ Ｐゴシック', sans-serif;
+	font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro',verdana,'ＭＳ Ｐゴシック', sans-serif;
 	font-size:16px;
 	line-height:1.8;
 	}
@@ -49,11 +49,11 @@ body,
 #md-all h5,#md-all .h5{font-size:20px;}
 #md-all h6,#md-all .h6{font-size:20px;}
 
-#md-all h2,#md-all .h2{border-left:20px solid  #ddd; border-bottom:1px solid  #ddd; padding-left: 10px;}
-#md-all h3::before,#md-all .h3::before{font-family: "Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#444; padding-right: 5px;}
-#md-all h4::before,#md-all .h4::before{font-family: "Font Awesome 5 Free"; font-weight:900; content:"\f04c"; color:#777; padding-right: 5px;}
-#md-all h5::before,#md-all .h5::before{font-family: "Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#aaa; padding-right: 5px;}
-#md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right: 5px;}
+#md-all h2,#md-all .h2{border-left:20px solid #f2f2f2; border-bottom:1px solid  #ddd; padding-left:10px;}
+#md-all h3::before,#md-all .h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#444; padding-right:5px;}
+#md-all h4::before,#md-all .h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04c"; color:#777; padding-right:5px;}
+#md-all h5::before,#md-all .h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#aaa; padding-right:5px;}
+#md-all h6::before,#md-all .h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
 
 #md-all h1,
 #md-all h2,
@@ -79,27 +79,29 @@ body,
 	margin-bottom:12px;
 	}
 
-#md-all .page-header{border-bottom: 0px solid #ddd;}
+#md-all .page-header{border-bottom:0px solid #ddd;}
 
-#md-all .table-bordered {border: 0px solid #ddd;border-bottom: 1px solid #ddd;}
+#md-all .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
 #md-all .table-bordered>thead>tr>th{background-color:#f2f2f2;}
 #md-all .table-bordered>thead>tr>th,
 #md-all .table-bordered>tbody>tr>th,
 #md-all .table-bordered>tfoot>tr>th,
 #md-all .table-bordered>thead>tr>td,
 #md-all .table-bordered>tbody>tr>td,
-#md-all .table-bordered>tfoot>tr>td{border: 0px solid #ddd; border-top: 1px solid #ddd;}
-#md-all .table thead>tr>th{border-bottom: 0px solid #ddd; background-color:#f2f2f2;}
+#md-all .table-bordered>tfoot>tr>td{border:0px solid #ddd; border-top:1px solid #ddd;}
+#md-all .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#f2f2f2;}
 
 
-#md-all div#md-page-menu::before{content:"目次"; color:#777;}
+#md-all div#md-page-menu::before{content:"目次"; color:#777; font-weight:bold;}
 
 #md-all .panel {
-    border: 0px solid transparent;
-    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0);
-    box-shadow: 0 0px 0px rgba(0,0,0,0);
+    border:0px solid transparent;
+    -webkit-box-shadow:0 0px 0px rgba(0,0,0,0);
+    box-shadow:0 0px 0px rgba(0,0,0,0);
 }
 #md-all .panel li,
 #md-all .panel li a{font-size:14px;	line-height:1.2;}
 
-#md-all .panel li:last-child{border-bottom: 1px solid #ddd;}
+#md-all .panel li:last-child{border-bottom:1px solid #ddd;}
+
+#md-all .panel .list-group-item{padding-right:0px;}
