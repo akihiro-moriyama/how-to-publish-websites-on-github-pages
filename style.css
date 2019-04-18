@@ -1,4 +1,5 @@
 html,
+body,
 #md-all h1,
 #md-all h2,
 #md-all h3,
@@ -12,6 +13,7 @@ html,
 #md-all .h5,
 #md-all .h6,
 #md-all p,
+#md-all a,
 #md-all ol,
 #md-all ul,
 #md-all li,
@@ -25,6 +27,7 @@ html,
 	font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro',verdana,'ＭＳ Ｐゴシック', sans-serif;
 	font-size:16px;
 	line-height:1.8;
+	color:#000;
 	}
 
 #md-all h1,
@@ -40,27 +43,20 @@ html,
 #md-all .h5,
 #md-all .h6{font-weight:bold;}
 
+#md-all p{font-size:1rem;}
 
-#md-all h1,#md-all .h1{font-size:32px;}
+#md-all h1,#md-all .h1{font-size:1rem;}
+#md-all h2,#md-all .h2{font-size:1rem;}
+#md-all h3,#md-all .h3{font-size:1rem;}
+#md-all h4,#md-all .h4{font-size:1rem;}
+#md-all h5,#md-all .h5{font-size:1rem;}
+#md-all h6,#md-all .h6{font-size:1rem;}
 
-#md-all h2,#md-all .h2{font-size:24px;}
-#md-all h2,#md-all .h2{border-left:32px solid  #ddd; border-bottom:1px solid  #ddd; padding-left: 4px;}
-
-#md-all h3,#md-all .h3{font-size:22px;}
+#md-all h2,#md-all .h2{border-left:1rem solid  #ddd; border-bottom:1px solid  #ddd; padding-left: 3px;}
 #md-all h3::before,#md-all .h3::before{font-family: "Font Awesome 5 Free"; content:"■"; color:#ddd; padding-right: 3px;}
-
-#md-all h4,#md-all .h4{font-size:20px;}
 #md-all h4::before,#md-all .h4::before{font-family: "Font Awesome 5 Free"; content:"〓"; color:#ddd; padding-right: 3px;}
-
-#md-all h5,#md-all .h5{font-size:18px;}
-#md-all h5::before,#md-all .h5::before{font-family: "Font Awesome 5 Free"; content:"\f0c9"; color:#ddd; padding-right: 2px;}
-
-#md-all h6,#md-all .h6{font-size:16px;}
-#md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; content:"\f009"; color:#ddd; padding-right: 2px;}
-
-
-f45c
-
+#md-all h5::before,#md-all .h5::before{font-family: "Font Awesome 5 Free"; content:"\f0c9"; color:#ddd; padding-right: 3px;}
+#md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; content:"\f009"; color:#ddd; padding-right: 3px;}
 
 #md-all h1,
 #md-all h2,
@@ -68,9 +64,7 @@ f45c
 #md-all .h1,
 #md-all .h2,
 #md-all .h3{
-	margin-top:4em;
-	margin-top:4rem;
-	margin-bottom:0.5em;
+	margin-top:2rem;
 	margin-bottom:0.5rem;
 	}
 
@@ -80,14 +74,11 @@ f45c
 #md-all .h4,
 #md-all .h5,
 #md-all .h6{
-	margin-top:2em;
-	margin-top:2rem;
-	margin-bottom:0.5em;
+	margin-top:1rem;
 	margin-bottom:0.5rem;
 	}
 
 #md-all div#md-content+h2,
 #md-all h2:nth-child(1){
-	margin-top:0.5em;
 	margin-top:0.5rem;
 	}
