@@ -1,6 +1,6 @@
 # GitHub PagesとMDwikiでウェブサイトをつくる
 
-[序章](index.md)
+[ホーム](index.md)
 
 [解説編]()
 
