@@ -41,16 +41,25 @@ html,
 #md-all .h6{font-weight:bold;}
 
 
-#md-all h1,#md-all .h1{font-size:32px;}
-#md-all h2,#md-all .h2{font-size:24px; border-bottom:1px solid  #ddd;}
-#md-all h3,#md-all .h3{font-size:24px; border-left:24px solid  #ddd;}
-#md-all h4,#md-all .h4{font-size:20px; border-left:24px double #ddd;}
-#md-all h5,#md-all .h5{font-size:20px;}
-#md-all h5::before,#md-all .h5::before{font-family: "Font Awesome 5 Free"; content:"\f0c9"; color:#ddd; padding-right: 5px;}
-#md-all h6,#md-all .h6{font-size:16px; font-size:1rem;  }
-#md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; content:"\f009"; color:#ddd; padding-right: 5px;}
+#md-all h1,#md-all .h1{font-size:40px;}
+
+#md-all h2,#md-all .h2{font-size:32px;}
+#md-all h2,#md-all .h2{border-left:56px solid  #ddd; border-bottom:1px solid  #ddd; padding-right: 4px;}
+
+#md-all h3,#md-all .h3{font-size:32px;}
+#md-all h3::before,#md-all .h3::before{font-family: "Font Awesome 5 Free"; content:"■"; color:#ddd; padding-right: 4px;}
+
+#md-all h4,#md-all .h4{font-size:24px;}
+#md-all h4::before,#md-all .h4::before{font-family: "Font Awesome 5 Free"; content:"〓"; color:#ddd; padding-right: 3px;}
+
+#md-all h5,#md-all .h5{font-size:24px;}
+#md-all h5::before,#md-all .h5::before{font-family: "Font Awesome 5 Free"; content:"\f0c9"; color:#ddd; padding-right: 3px;}
+
+#md-all h6,#md-all .h6{font-size:16px;}
+#md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; content:"\f009"; color:#ddd; padding-right: 2px;}
 
 
+f45c
 
 
 #md-all h1,
