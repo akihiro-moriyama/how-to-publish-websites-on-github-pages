@@ -50,10 +50,10 @@ body,
 #md-all h6,#md-all .h6{font-size:16px;}
 
 #md-all h2,#md-all .h2{border-left:32px solid  #ddd; border-bottom:1px solid  #ddd; padding-left: 10px;}
-#md-all h3::before,#md-all .h3::before{font-family: "Font Awesome 5 Free"; content:"■"; color:#ddd; padding-right: 3px;}
-#md-all h4::before,#md-all .h4::before{font-family: "Font Awesome 5 Free"; content:"〓"; color:#ddd; padding-right: 3px;}
-#md-all h5::before,#md-all .h5::before{font-family: "Font Awesome 5 Free"; content:"\f0c9"; color:#ddd; padding-right: 3px;}
-#md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; content:"\f009"; color:#ddd; padding-right: 3px;}
+#md-all h3::before,#md-all .h3::before{font-family: "Font Awesome 5 Free"; font-size:1.2em; content:"■"; color:#ddd; padding-right: 3px;}
+#md-all h4::before,#md-all .h4::before{font-family: "Font Awesome 5 Free"; font-size:1.2em; content:"〓"; color:#ddd; padding-right: 3px;}
+#md-all h5::before,#md-all .h5::before{font-family: "Font Awesome 5 Free"; font-size:1.2em; content:"\f0c9"; color:#ddd; padding-right: 3px;}
+#md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; font-size:1.2em; content:"\f009"; color:#ddd; padding-right: 3px;}
 
 #md-all h1,
 #md-all h2,
