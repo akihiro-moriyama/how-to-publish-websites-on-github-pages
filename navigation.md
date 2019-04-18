@@ -4,14 +4,15 @@
 
 [解説編]()
 
-* [Git (バージョン管理システム)](github.md#Git)
-* [GitHub (オンラインバージョン管理システム)](github.md#GitHub)
-* [GitHub Desktop (GitHubクライアント)](github.md#Git)
-* [Git用語集](github.md)
+* [Git (バージョン管理システム)](git.md)
+* [GitHub (オンラインバージョン管理システム)](github.md)
+* [GitHub Desktop (GitHubクライアント)](githubdesktop.md)
+* [Git用語一覧表](gitglossary.md)
 ----
 * [GitHub Pages (GitHub会員用ウェブサーバー)](githubpages.md)
-* [MDWiki (軽量CMS)](mdwiki.md)
+* [MDwiki (軽量CMS)](mdwiki.md)
 * [Typora (マークダウンエディタ)](typora.md)
+* [マークダウン記法一覧表](markdownglossary.md)
 
 [作成編]()
 

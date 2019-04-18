@@ -1,7 +1,5 @@
-# MDwiki編
+# MDwiki 解説
 
-## MDwiki
-### MDwikiとは
-
+## MDwikiとは
 * JavaScriptで開発されたシンプルで軽量なCMS(コンテンツ・マネジメント・システム)
 * .mdファイルをJavaScriptによってHTMLに変換し、ウェブブラウザに表示する
