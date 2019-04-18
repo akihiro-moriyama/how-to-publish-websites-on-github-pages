@@ -3,5 +3,5 @@
     "additionalFooterText": " &copy;2019 Akihiro MORIYAMA / ",
     "useSideMenu": true,
     "lineBreaks": "gfm",
-    "anchorCharacter": "<i class="fas fa-link"></i>"
+    "anchorCharacter": "&#x1f517"
 }
