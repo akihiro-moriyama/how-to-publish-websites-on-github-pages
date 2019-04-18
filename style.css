@@ -1,19 +1,52 @@
-h1,h2,h3,h4,h5,h6,
-.h1,.h2,.h3,.h4,.h5,.h6,
-p,ol,ul,li,dl,dt,dd,th,tr,td,blockquote{
+#md-all,
+#md-all h1,
+#md-all h2,
+#md-all h3,
+#md-all h4,
+#md-all h5,
+#md-all h6,
+#md-all .h1,
+#md-all .h2,
+#md-all .h3,
+#md-all .h4,
+#md-all .h5,
+#md-all .h6,
+#md-all p,
+#md-all ol,
+#md-all ul,
+#md-all li,
+#md-all dl,
+#md-all dt,
+#md-all dd,
+#md-all th,
+#md-all tr,
+#md-all td,
+#md-all blockquote{
 	font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro',verdana,'ＭＳ Ｐゴシック', sans-serif;
+	font-size:16px;
+	line-height:1.5;
 	}
 
-h1,h2,h3{margin-top:3rem;margin-top:3em;margin-bottom:10px}
-h1:nth-child(1),h2:nth-child(1),h3:nth-child(1){margin-top:10px;margin-top:10px}
-h4,h5,h6{margin-top:2rem;margin-top:2em;margin-bottom:10px}
-h4:nth-child(1),h5:nth-child(1),h6:nth-child(1){margin-top:10px;margin-top:10px}
-h1,.h1{font-size:36px}
-h2,.h2{font-size:24px}
-h3,.h3{font-size:24px}
-h4,.h4{font-size:18px}
-h5,.h5{font-size:18px}
-h6,.h6{font-size:18px}
-h1 small,.h1 small{font-size:24px}
-h2 small,.h2 small{font-size:16px}
-h3 small,.h3 small,h4 small,.h4 small{font-size:12px}
+#md-all h1,#md-all .h1{font-size:36px}
+#md-all h2,#md-all .h2{font-size:24px}
+#md-all h3,#md-all .h3{font-size:24px}
+#md-all h4,#md-all .h4{font-size:18px}
+#md-all h5,#md-all .h5{font-size:18px}
+#md-all h6,#md-all .h6{font-size:18px}
+
+#md-all h1,
+#md-all h2,
+#md-all h3,
+#md-all h4,
+#md-all h5,
+#md-all h6{
+	margin-top:2em;
+	margin-top:2rem;
+	margin-top:0.5em;
+	margin-top:0.5rem;
+	}
+
+#md-content+h2{
+	margin-top:0.5em;
+	margin-top:0.5rem;
+	}
