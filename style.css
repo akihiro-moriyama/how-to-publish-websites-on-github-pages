@@ -56,17 +56,13 @@ body,
 #md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right: 5px;}
 
 #md-all h1,
-#md-all .h1{
-	margin-top:12px;
-	margin-bottom:12px;
-	}
-
 #md-all h2,
+#md-all .h1,
 #md-all .h2{
 	margin-top:100px;
 	margin-bottom:12px;
 	}
-#md-all div#md-content+h2,
+#md-all h1:nth-child(1),
 #md-all h2:nth-child(1){
 	margin-top:0px;
 	}
@@ -106,5 +102,4 @@ body,
 #md-all .panel li,
 #md-all .panel li a{font-size:14px;	line-height:1.2;}
 
-#md-all .panel li:last-child,
-#md-all .panel li:last-child a{border-bottom: 1px solid #ddd;}
+#md-all .panel li:last-child{border-bottom: 1px solid #ddd;}
