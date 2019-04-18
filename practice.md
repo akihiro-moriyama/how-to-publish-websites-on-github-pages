@@ -2,9 +2,24 @@
 
 ## ロードマップ
 
-1. Webサービス **[GitHub](https://github.com/)** に会員登録する
-1. アプリケーション **[GitHub Desktop](https://desktop.github.com/)** を入手する
-1. アプリケーション **[Typora](https://typora.io/)** を入手する
-1. サーバーアプリケーション **[MDwiki](http://dynalon.github.io/MDwiki/)** を入手する
-1. Typoraでウェブサイトのコンテンツを作成する
-1. GitHub Desktopでサーバーにアップロードする
+1. GitHubに会員登録する
+1. GitHub Desktopを入手する
+1. Typoraを入手する
+1. MDwikiを入手する
+1. Typoraでコンテンツを作成する
+1. GitHub Desktopでアップロードする
+1. MDwikiの外観をカスタマイズする
+
+## GitHubに会員登録する
+
+## GitHub Desktopを入手する
+
+## Typoraを入手する
+
+## MDwikiを入手する
+
+## Typoraでコンテンツを作成する
+
+## GitHub Desktopでアップロードする
+
+## MDwikiの外観をカスタマイズする
