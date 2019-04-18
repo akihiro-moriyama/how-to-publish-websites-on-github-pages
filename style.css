@@ -57,7 +57,8 @@
 	margin-bottom:0.5rem;
 	}
 
-#md-content+h2{
+#md-all div#md-content+h2,
+#md-all h2:nth-child(1){
 	margin-top:0.5em;
 	margin-top:0.5rem;
 	}
