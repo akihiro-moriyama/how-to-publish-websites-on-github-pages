@@ -104,4 +104,4 @@ body,
 
 #md-all .panel li:last-child{border-bottom:1px solid #ddd;}
 
-#md-all .panel .list-group-item{padding-right:0px;}
+#md-all .panel .list-group-item{padding-left:0px; padding-right:0px;}
