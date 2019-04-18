@@ -1,3 +1,4 @@
+html,
 #md-all h1,
 #md-all h2,
 #md-all h3,
@@ -26,12 +27,31 @@
 	line-height:1.8;
 	}
 
-#md-all h1,#md-all .h1{font-size:36px; font-weight:bold;}
-#md-all h2,#md-all .h2{font-size:24px; font-weight:bold; border-left 24px solid #666666;}
-#md-all h3,#md-all .h3{font-size:24px; font-weight:bold; border-left 24px double #666666;}
-#md-all h4,#md-all .h4{font-size:18px; font-weight:bold; border-left 18px solid #666666;  color:#666666;}
-#md-all h5,#md-all .h5{font-size:18px; font-weight:bold; border-left 18px double #666666;  color:#666666;}
-#md-all h6,#md-all .h6{font-size:16px; font-weight:normal; color:#666666;}
+#md-all h1,
+#md-all h2,
+#md-all h3,
+#md-all h4,
+#md-all h5,
+#md-all h6,
+#md-all .h1,
+#md-all .h2,
+#md-all .h3,
+#md-all .h4,
+#md-all .h5,
+#md-all .h6{font-weight:bold;}
+
+
+#md-all h1,#md-all .h1{font-size:32px; font-size:2rem;}
+#md-all h2,#md-all .h2{font-size:24px; font-size:1.5rem; border-bottom 1px solid  #ddd;}
+#md-all h3,#md-all .h3{font-size:24px; font-size:1.5rem; border-left 24px solid  #ddd;}
+#md-all h4,#md-all .h4{font-size:20px; font-size:1.2rem; border-left 24px double #ddd;}
+#md-all h5,#md-all .h5{font-size:20px; font-size:1.2rem;}
+#md-all h5::before,#md-all .h5::before{font-family: "Font Awesome 5 Free"; content:"\f0c9"; color:#ddd; padding-right: 5px;}
+#md-all h6,#md-all .h6{font-size:16px; font-size:1rem;  }
+#md-all h6::before,#md-all .h6::before{font-family: "Font Awesome 5 Free"; content:"\f009"; color:#ddd; padding-right: 5px;}
+
+
+
 
 #md-all h1,
 #md-all h2,
