@@ -1,3 +1,4 @@
+/* 0px-400px ---------------------------------------------- */
 html,
 body,
 #md-all h1,
@@ -6,12 +7,6 @@ body,
 #md-all h4,
 #md-all h5,
 #md-all h6,
-#md-all .h1,
-#md-all .h2,
-#md-all .h3,
-#md-all .h4,
-#md-all .h5,
-#md-all .h6,
 #md-all p,
 #md-all a,
 #md-all ol,
@@ -25,60 +20,65 @@ body,
 #md-all td,
 #md-all blockquote{
 	font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro',verdana,'ＭＳ Ｐゴシック', sans-serif;
+	}
+
+#md-all p,
+#md-all a,
+#md-all ol,
+#md-all ul,
+#md-all li,
+#md-all dl,
+#md-all dt,
+#md-all dd,
+#md-all th,
+#md-all tr,
+#md-all td,
+#md-all pre,
+#md-all code,
+#md-all blockquote{
 	font-size:16px;
 	line-height:1.8;
 	}
 
 #md-all h1,
-#md-all h2,
+#md-all h2{
+	font-size:18px;
+	font-weight:bold;
+	line-height:1.2;
+	margin-top:72px;
+	margin-bottom:6px;
+	}
 #md-all h3,
-#md-all h4,
+#md-all h4{
+	font-size:18px;
+	font-weight:bold;
+	line-height:1.2;
+	margin-top:36px;
+	margin-bottom:6px;
+	}
 #md-all h5,
-#md-all h6,
-#md-all .h1,
-#md-all .h2,
-#md-all .h3,
-#md-all .h4,
-#md-all .h5,
-#md-all .h6{font-weight:bold; line-height:1.4;}
-
-#md-all h1,#md-all .h1{font-size:28px;}
-#md-all h2,#md-all .h2{font-size:24px;}
-#md-all h3,#md-all .h3{font-size:20px;}
-#md-all h4,#md-all .h4{font-size:20px;}
-#md-all h5,#md-all .h5{font-size:20px;}
-#md-all h6,#md-all .h6{font-size:20px;}
-
-#md-all h2,#md-all .h2{border-left:20px solid #f2f2f2; border-bottom:1px solid  #ddd; padding-left:10px;}
-#md-all h3::before,#md-all .h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
-/** #md-all h4::before,#md-all .h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04c"; color:#bbb; padding-right:5px;} **/
-#md-all h4::before,#md-all .h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
-#md-all h5::before,#md-all .h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
-#md-all h6::before,#md-all .h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
-
-#md-all h1,
-#md-all h2,
-#md-all .h1,
-#md-all .h2{
-	margin-top:100px;
-	margin-bottom:12px;
+#md-all h6{
+	font-size:18px;
+	font-weight:bold;
+	line-height:1.2;
+	margin-top:36px;
+	margin-bottom:6px;
 	}
-#md-all h1:nth-child(1),
-#md-all h2:nth-child(1){
-	margin-top:0px;
+#md-all a.navbar-brand{
+	max-width:80%;
+	font-size:14px;
+	line-height:1.2;
+	}
+#md-all h1:nth-child(1){
+	margin-top:6px;
 	}
 
-#md-all h3,
-#md-all h4,
-#md-all h5,
-#md-all h6,
-#md-all .h3,
-#md-all .h4,
-#md-all .h5,
-#md-all .h6{
-	margin-top:32px;
-	margin-bottom:12px;
-	}
+#md-all h2{border-left:18px solid #f2f2f2; border-bottom:1px solid  #ddd; padding-left:10px;}
+#md-all h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
+/** #md-all h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04c"; color:#bbb; padding-right:5px;} **/
+#md-all h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
+#md-all h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
+#md-all h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
 
 #md-all .page-header{border-bottom:0px solid #ddd;}
 
@@ -92,7 +92,6 @@ body,
 #md-all .table-bordered>tfoot>tr>td{border:0px solid #ddd; border-top:1px solid #ddd;}
 #md-all .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#f2f2f2;}
 
-
 #md-all div#md-page-menu::before{content:"目次"; color:#aaa; font-weight:bold;}
 
 #md-all .panel {
@@ -102,34 +101,60 @@ body,
 }
 #md-all .panel li,
 #md-all .panel li a{font-size:14px;	line-height:1.2;}
-
 #md-all .panel li:last-child{border-bottom:1px solid #ddd;}
-
 #md-all .panel .list-group-item{padding-left:0px; padding-right:0px;}
 
-@media only screen and (max-width: 767px)
+/* 401px--767px ---------------------------------------------- */
+
+@media only screen and (min-width: 401px)
 {
-	#md-all h1,#md-all .h1{font-size:20px;}
-	#md-all h2,#md-all .h2{font-size:20px;}
-	#md-all h2,#md-all .h2{border-left:15px solid #f2f2f2; border-bottom:1px solid  #ddd; padding-left:5px;}
-	#md-all h3,#md-all .h3{font-size:20px;}
-	#md-all h4,#md-all .h4{font-size:20px;}
-	#md-all h5,#md-all .h5{font-size:20px;}
-	#md-all h6,#md-all .h6{font-size:20px;}
 	#md-all h1,
-	#md-all h2,
-	#md-all .h1,
-	#md-all .h2{
-	margin-top:60px;
-	margin-bottom:6px;
-	}
-	#md-all a.navbar-brand{font-size:14px;}
-	#md-all h2:nth-child(1){
-	margin-top:60px;
+	#md-all h2{
+		font-size:22px;
+		margin-top:88px;
+		}
+	#md-all h3,
+	#md-all h4{
+		font-size:20px;
+		margin-top:40px;
+		}
+	#md-all h5,
+	#md-all h6{
+		}
+	#md-all h2{
+		border-left:22px solid #f2f2f2;
+		}
+	#md-all a.navbar-brand{
+		max-width:100%;
 	}
 }
 
-@media only screen and (max-width: 400px)
+/* 768px--max ---------------------------------------------- */
+
+@media only screen and (min-width: 768px)
 {
-	#md-all a.navbar-brand {max-width:80%;}
+	#md-all h1{
+		font-size:28px;
+		margin-top:112px;
+		}
+	#md-all h2{
+		font-size:24px;
+		margin-top:96px;
+		}
+		}
+	#md-all h3,
+	#md-all h4{
+		}
+	#md-all h5,
+	#md-all h6{
+		}
+	#md-all h2{
+		border-left:24px solid #f2f2f2;
+		}
+	#md-all a.navbar-brand{
+		font-size:16px;
+		}
+	#md-all h2:nth-child(1){
+		margin-top:0px;
+		}
 }
