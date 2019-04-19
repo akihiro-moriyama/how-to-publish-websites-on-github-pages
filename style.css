@@ -131,7 +131,7 @@ body,
 
 /* 768px--max ---------------------------------------------- */
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px;)
 {
 	#md-all h1{
 		font-size:28px;
@@ -140,7 +140,6 @@ body,
 	#md-all h2{
 		font-size:24px;
 		margin-top:96px;
-		}
 		}
 	#md-all h3,
 	#md-all h4{
