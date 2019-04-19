@@ -123,12 +123,13 @@ body,
 	margin-top:60px;
 	margin-bottom:6px;
 	}
-#md-all h2:nth-child(1){
-	margin-top:30px;
+	#md-all a.navbar-brand{font-size:14px;}
+	#md-all h2:nth-child(1){
+	margin-top:60px;
 	}
 }
 
-@media only screen and (max-width: 450px)
+@media only screen and (max-width: 400px)
 {
-	#md-all .navbar-brand {float:none; padding: 0px;margin-top: 14.5px;}
+	#md-all a.navbar-brand {max-width:80%;}
 }
