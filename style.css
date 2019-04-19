@@ -50,9 +50,10 @@ body,
 #md-all h6,#md-all .h6{font-size:20px;}
 
 #md-all h2,#md-all .h2{border-left:20px solid #f2f2f2; border-bottom:1px solid  #ddd; padding-left:10px;}
-#md-all h3::before,#md-all .h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#444; padding-right:5px;}
-#md-all h4::before,#md-all .h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04c"; color:#777; padding-right:5px;}
-#md-all h5::before,#md-all .h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#aaa; padding-right:5px;}
+#md-all h3::before,#md-all .h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
+/** #md-all h4::before,#md-all .h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04c"; color:#bbb; padding-right:5px;} **/
+#md-all h4::before,#md-all .h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
+#md-all h5::before,#md-all .h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
 #md-all h6::before,#md-all .h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
 
 #md-all h1,
@@ -92,7 +93,7 @@ body,
 #md-all .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#f2f2f2;}
 
 
-#md-all div#md-page-menu::before{content:"目次"; color:#777; font-weight:bold;}
+#md-all div#md-page-menu::before{content:"目次"; color:#aaa; font-weight:bold;}
 
 #md-all .panel {
     border:0px solid transparent;
