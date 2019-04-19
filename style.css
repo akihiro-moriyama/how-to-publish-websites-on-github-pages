@@ -124,6 +124,9 @@ body,
 	#md-all h2{
 		border-left:22px solid #f2f2f2;
 		}
+	#md-all a.navbar-brand{
+		max-width:100%;
+		}
 }
 
 /* 768px--max ---------------------------------------------- */
