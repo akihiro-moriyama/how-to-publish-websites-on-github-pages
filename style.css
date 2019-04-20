@@ -118,7 +118,7 @@ body,
 	background-color:#f8f8f8;
 }
 
-#md-all span.anchor-highlight{font-size:12px;}
+#md-all span.anchor-highlight{font-size:12px;line-height:1.0;}
 
 #md-all .page-header{border-bottom:0px solid #ddd;}
 
