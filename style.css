@@ -97,9 +97,9 @@ body,
 
 #md-content li,
 #md-content dd{line-height:1.4;padding-top:4px;padding-bottom:4px;}
-#md-content p>ul,
-#md-content p>ol,
-#md-content p>dl{margin-top:-4px;}
+#md-content p+ul,
+#md-content p+ol,
+#md-content p+dl{margin-top:-4px;}
 
 
 #md-content h1,
