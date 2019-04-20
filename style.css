@@ -147,13 +147,12 @@ body,
 
 #md-title-container .page-header{border-bottom:0px solid #ddd;}
 
-
-#md-menu-container div#md-page-menu::before{content:"目次"; color:#aaa; font-weight:bold;}
-#md-menu-container .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
-#md-menu-container .panel li,
-#md-menu-container .panel li a{font-size:14px;	line-height:1.2;}
-#md-menu-container .panel li:last-child{border-bottom:1px solid #ddd;}
-#md-menu-container .panel .list-group-item{padding-left:0px; padding-right:0px;}
+#md-page-menu div#md-page-menu::before{content:"目次"; color:#aaa; font-weight:bold;}
+#md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
+#md-page-menu .panel li,
+#md-page-menu .panel li a{font-size:14px;	line-height:1.2;}
+#md-page-menu .panel li:last-child{border-bottom:1px solid #ddd;}
+#md-page-menu .panel .list-group-item{padding-left:0px; padding-right:0px;}
 
 /* 401px--767px ---------------------------------------------- */
 
