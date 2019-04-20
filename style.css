@@ -65,15 +65,12 @@ body,
 #md-content blockquote{margin-top:24px;margin-bottom:24px;}
 
 
-#md-content ol>ol,
-#md-content ol>ul,
-#md-content ol>dl,
-#md-content ul>ol,
-#md-content ul>ul,
-#md-content ul>dl,
-#md-content dl>ol,
-#md-content dl>ul,
-#md-content dl>dl{margin-top:0px;}
+#md-content li>ol,
+#md-content li>ul,
+#md-content li>dl,
+#md-content dt>ol,
+#md-content dt>ul,
+#md-content dt>dl{margin-top:0px;}
 
 
 #md-content h1>h2,
