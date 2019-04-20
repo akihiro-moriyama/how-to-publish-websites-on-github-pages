@@ -64,6 +64,8 @@ body,
 #md-all dd{
 	font-size:16px;
 	line-height:1.4;
+	margin-top:3px;
+	margin-bottom:3px;
 	}
 #md-all h1,
 #md-all h2{
