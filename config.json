@@ -1,6 +1,7 @@
 {
     "title": "GitHub PagesとMDwikiでウェブサイトをつくる",
-    "additionalFooterText": " All content and images &copy; Akihiro MORIYAMA / ",
     "useSideMenu": true,
     "lineBreaks": "gfm",
+    "additionalFooterText": "All content and images &copy; Akihiro MORIYAMA / ",
+    "anchorCharacter": "#"
 }

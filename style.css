@@ -141,7 +141,7 @@ body,
 #md-all .panel li:last-child{border-bottom:1px solid #ddd;}
 #md-all .panel .list-group-item{padding-left:0px; padding-right:0px;}
 
-#md-all a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd;}
+#md-all a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:2em; padding-left:1em;}
 #md-all a.visible-xs.visible-sm.jumplink{color:#fff;font-size:1px;}
 
 /* 401px--767px ---------------------------------------------- */
@@ -170,7 +170,7 @@ body,
 		}
 }
 
-/* 768px--max ---------------------------------------------- */
+/* 768px--991px ---------------------------------------------- */
 
 @media only screen and (min-width: 768px)
 {
@@ -195,6 +195,12 @@ body,
 		font-size:16px;
 		padding:20px 15px;
 		}
+}
+
+/* 992px--max ---------------------------------------------- */
+
+@media only screen and (min-width: 992px)
+{
 	#md-all h2:nth-child(1){
 		margin-top:0px;
 		}
