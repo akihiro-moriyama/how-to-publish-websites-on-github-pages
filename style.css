@@ -139,7 +139,7 @@ body,
 #md-content .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#f8f8f8;}
 
 #md-content a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:32px; padding-left:16px;}
-#md-content a.visible-xs.visible-sm.jumplink{display:none!important; color:#fff;}
+#md-content a.visible-xs.visible-sm.jumplink{color:#fff;}
 
 
 #md-all a.navbar-brand{max-width:80%;font-size:14px;line-height:1.2;}
