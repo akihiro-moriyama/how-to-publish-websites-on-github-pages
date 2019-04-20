@@ -70,7 +70,7 @@ body,
 #md-content li>dl,
 #md-content dt>ol,
 #md-content dt>ul,
-#md-content dt>dl{margin-top:0px;}
+#md-content dt>dl{margin-top:0px;margin-bottom:0px;}
 
 
 #md-content h1>h2,
