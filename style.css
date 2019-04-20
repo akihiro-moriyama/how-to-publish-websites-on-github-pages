@@ -29,7 +29,9 @@ body,
 
 
 html,
-body,
+body{font-size:16px;}
+
+
 #md-content p,
 #md-content a,
 #md-content ol,
@@ -48,7 +50,7 @@ body,
 #md-content code,
 #md-content var,
 #md-content samp,
-#md-content kbd{font-size:16px;}
+#md-content kbd{font-size:16px; line-height:1.8;}
 
 
 #md-title h1,
@@ -101,7 +103,7 @@ body,
 #md-content h5+h6,
 #md-content h6+h6{margin-top:24px;}
 
-#md-content p+p{margin-top:12px;margin-bottom:12px;}
+#md-content p+p{margin-top:-12px;}
 
 #md-content li,
 #md-content dd{line-height:1.4;padding-top:4px;padding-bottom:4px;}
