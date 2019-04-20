@@ -103,7 +103,7 @@ body,
 	margin-top:6px;	margin-bottom:6px;
 	}
 
-#md-all h2{border-left:18px solid #aaa; border-bottom:1px solid  #ddd; padding:5px 0 5px 10px;}
+#md-all h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding:5px 0 5px 10px;}
 #md-all h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
 #md-all h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
 #md-all h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
