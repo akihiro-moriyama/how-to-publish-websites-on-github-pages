@@ -104,10 +104,7 @@ body,
 #md-content dd{line-height:1.4;padding-top:4px;padding-bottom:4px;}
 #md-content p+ul,
 #md-content p+ol,
-#md-content p+dl,
-#md-content a+ul,
-#md-content a+ol,
-#md-content a+dl{margin-top:-4px;}
+#md-content p+dl{margin-top:-4px;}
 
 
 #md-content h1,
@@ -159,7 +156,7 @@ body,
 
 #md-title-container .page-header{border-bottom:0px solid #ddd;}
 
-#md-page-menu div#md-page-menu::before{content:"目次"; color:#aaa; font-weight:bold;}
+div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
 #md-page-menu .panel li,
 #md-page-menu .panel li a{font-size:14px;	line-height:1.2;}
