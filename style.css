@@ -118,6 +118,8 @@ body,
 	background-color:#f8f8f8;
 }
 
+#md-all span.anchor-highlight{font-size:12px;}
+
 #md-all .page-header{border-bottom:0px solid #ddd;}
 
 #md-all .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
