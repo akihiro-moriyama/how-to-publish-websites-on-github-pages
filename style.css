@@ -1,88 +1,88 @@
 /* 0px-400px ---------------------------------------------- */
 html,
 body,
-#md-all h1,
-#md-all h2,
-#md-all h3,
-#md-all h4,
-#md-all h5,
-#md-all h6,
-#md-all p,
-#md-all a,
-#md-all ol,
-#md-all ul,
-#md-all li,
-#md-all dl,
-#md-all dt,
-#md-all dd,
-#md-all table,
-#md-all th,
-#md-all tr,
-#md-all td,
-#md-all blockquote{
+#md-all container h1,
+#md-all container h2,
+#md-all container h3,
+#md-all container h4,
+#md-all container h5,
+#md-all container h6,
+#md-all container p,
+#md-all container a,
+#md-all container ol,
+#md-all container ul,
+#md-all container li,
+#md-all container dl,
+#md-all container dt,
+#md-all container dd,
+#md-all container table,
+#md-all container th,
+#md-all container tr,
+#md-all container td,
+#md-all container blockquote{
 	font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro',verdana,'ＭＳ Ｐゴシック', sans-serif;
 	}
-#md-all pre,
-#md-all code,
-#md-all pre code,
-#md-all var,
-#md-all samp,
-#md-all kbd{
+#md-all container pre,
+#md-all container code,
+#md-all container pre code,
+#md-all container var,
+#md-all container samp,
+#md-all container kbd{
 	font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;
 	}
-#md-all h1,
-#md-all h2,
-#md-all h3,
-#md-all h4,
-#md-all h5,
-#md-all h6,
-#md-all p,
-#md-all ol,
-#md-all ul,
-#md-all dl,
-#md-all table,
-#md-all pre,
-#md-all code,
-#md-all pre code,
-#md-all var,
-#md-all samp,
-#md-all kbd,
-#md-all blockquote{
+#md-all container h1,
+#md-all container h2,
+#md-all container h3,
+#md-all container h4,
+#md-all container h5,
+#md-all container h6,
+#md-all container p,
+#md-all container ol,
+#md-all container ul,
+#md-all container dl,
+#md-all container table,
+#md-all container pre,
+#md-all container code,
+#md-all container pre code,
+#md-all container var,
+#md-all container samp,
+#md-all container kbd,
+#md-all container blockquote{
 	margin-bottom;16px;
 	}
 
-#md-all ol,
-#md-all ul,
-#md-all dl,
-#md-all table,
-#md-all pre,
-#md-all blockquote{
+#md-all container ol,
+#md-all container ul,
+#md-all container dl,
+#md-all container table,
+#md-all container pre,
+#md-all container blockquote{
 	margin-top:24px;
 	margin-bottom:24px;
 	}
-#md-all li,
-#md-all dd{
+#md-all container li,
+#md-all container dd{
 	font-size:16px;
 	line-height:1.4;
 	margin-top:3px;
 	margin-bottom:3px;
 	}
-#md-all h1,
-#md-all h2{
+#md-all container h1,
+#md-all container h2{
 	font-size:18px;
 	font-weight:bold;
 	line-height:1.2;
 	margin-top:72px;
 	}
-#md-all h3,
-#md-all h4{
+#md-all container h3,
+#md-all container h4{
 	font-size:18px;
 	font-weight:bold;
 	line-height:1.2;
 	margin-top:36px;
 	}
-#md-all h5,
-#md-all h6{
+#md-all container h5,
+#md-all container h6{
 	font-size:18px;
 	font-weight:bold;
 	line-height:1.2;
@@ -93,72 +93,72 @@ body,
 	font-size:14px;
 	line-height:1.2;
 	}
-#md-all h1:nth-child(1){
+#md-all container h1:nth-child(1){
 	margin-top:6px;	margin-bottom:6px;
 	}
 
-#md-all h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding:5px 0 5px 10px;}
-#md-all h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
-#md-all h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
-#md-all h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
-#md-all h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
+#md-all container h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding:5px 0 5px 10px;}
+#md-all container h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
+#md-all container h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
+#md-all container h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
+#md-all container h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
 
-#md-all pre{
+#md-all container pre{
 	background-color:#f8f8f8;
 	color :#c7254e;
 }
-#md-all code,
-#md-all pre code{
+#md-all container code,
+#md-all container pre code{
 	background-color:#f8f8f8;
 	color :#000;
 }
 
-#md-all span.anchor-highlight{font-size:12px;line-height:1.0;}
+#md-all container span.anchor-highlight{font-size:12px;line-height:1.0;}
 
-#md-all .page-header{border-bottom:0px solid #ddd;}
+#md-all container .page-header{border-bottom:0px solid #ddd;}
 
-#md-all .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
-#md-all .table-bordered>thead>tr>th{background-color:#f8f8f8;}
-#md-all .table-bordered>thead>tr>th,
-#md-all .table-bordered>tbody>tr>th,
-#md-all .table-bordered>tfoot>tr>th,
-#md-all .table-bordered>thead>tr>td,
-#md-all .table-bordered>tbody>tr>td,
-#md-all .table-bordered>tfoot>tr>td{border:0px solid #ddd; border-top:1px solid #ddd;}
-#md-all .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#f8f8f8;}
+#md-all container .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
+#md-all container .table-bordered>thead>tr>th{background-color:#f8f8f8;}
+#md-all container .table-bordered>thead>tr>th,
+#md-all container .table-bordered>tbody>tr>th,
+#md-all container .table-bordered>tfoot>tr>th,
+#md-all container .table-bordered>thead>tr>td,
+#md-all container .table-bordered>tbody>tr>td,
+#md-all container .table-bordered>tfoot>tr>td{border:0px solid #ddd; border-top:1px solid #ddd;}
+#md-all container .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#f8f8f8;}
 
-#md-all div#md-page-menu::before{content:"目次"; color:#aaa; font-weight:bold;}
-#md-all .panel {
+#md-all container div#md-page-menu::before{content:"目次"; color:#aaa; font-weight:bold;}
+#md-all container .panel {
     border:0px solid transparent;
     -webkit-box-shadow:0 0px 0px rgba(0,0,0,0);
     box-shadow:0 0px 0px rgba(0,0,0,0);
 }
-#md-all .panel li,
-#md-all .panel li a{font-size:14px;	line-height:1.2;}
-#md-all .panel li:last-child{border-bottom:1px solid #ddd;}
-#md-all .panel .list-group-item{padding-left:0px; padding-right:0px;}
+#md-all container .panel li,
+#md-all container .panel li a{font-size:14px;	line-height:1.2;}
+#md-all container .panel li:last-child{border-bottom:1px solid #ddd;}
+#md-all container .panel .list-group-item{padding-left:0px; padding-right:0px;}
 
-#md-all a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:32px; padding-left:16px;}
-#md-all a.visible-xs.visible-sm.jumplink{display:none!important; color:#fff;}
+#md-all container a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:32px; padding-left:16px;}
+#md-all container a.visible-xs.visible-sm.jumplink{display:none!important; color:#fff;}
 
 /* 401px--767px ---------------------------------------------- */
 
 @media only screen and (min-width: 401px)
 {
-	#md-all h1,
-	#md-all h2{
+	#md-all container h1,
+	#md-all container h2{
 		font-size:22px;
 		margin-top:88px;
 		}
-	#md-all h3,
-	#md-all h4{
+	#md-all container h3,
+	#md-all container h4{
 		font-size:20px;
 		margin-top:40px;
 		}
-	#md-all h5,
-	#md-all h6{
+	#md-all container h5,
+	#md-all container h6{
 		}
-	#md-all h2{
+	#md-all container h2{
 		border-left:22px solid #aaa;
 		}
 	#md-all a.navbar-brand{
@@ -171,21 +171,21 @@ body,
 
 @media only screen and (min-width: 768px)
 {
-	#md-all h1{
+	#md-all container h1{
 		font-size:28px;
 		margin-top:112px;
 		}
-	#md-all h2{
+	#md-all container h2{
 		font-size:24px;
 		margin-top:96px;
 		}
-	#md-all h3,
-	#md-all h4{
+	#md-all container h3,
+	#md-all container h4{
 		}
-	#md-all h5,
-	#md-all h6{
+	#md-all container h5,
+	#md-all container h6{
 		}
-	#md-all h2{
+	#md-all container h2{
 		border-left:24px solid #aaa;
 		}
 	#md-all a.navbar-brand{
@@ -198,8 +198,8 @@ body,
 
 @media only screen and (min-width: 992px)
 {
-	#md-all h2:nth-child(1){
+	#md-all container h2:nth-child(1){
 		margin-top:0px;
 		}
-	#md-all a.visible-xs.visible-sm.jumplink::before{content:none;}
+	#md-all container a.visible-xs.visible-sm.jumplink::before{content:none;}
 }
