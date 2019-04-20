@@ -141,6 +141,9 @@ body,
 #md-all .panel li:last-child{border-bottom:1px solid #ddd;}
 #md-all .panel .list-group-item{padding-left:0px; padding-right:0px;}
 
+#md-all a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd;}
+#md-all a.visible-xs.visible-sm.jumplink{display:none;}
+
 /* 401px--767px ---------------------------------------------- */
 
 @media only screen and (min-width: 401px)
@@ -193,4 +196,5 @@ body,
 	#md-all h2:nth-child(1){
 		margin-top:0px;
 		}
+	#md-all a.visible-xs.visible-sm.jumplink::before{content:none;}
 }
