@@ -166,6 +166,7 @@ body,
 		}
 	#md-all a.navbar-brand{
 		max-width:100%;
+		padding:17px 15px;
 		}
 }
 
@@ -192,6 +193,7 @@ body,
 		}
 	#md-all a.navbar-brand{
 		font-size:16px;
+		padding:20px 15px;
 		}
 	#md-all h2:nth-child(1){
 		margin-top:0px;
