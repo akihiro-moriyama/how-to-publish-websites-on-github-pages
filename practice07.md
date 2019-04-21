@@ -12,9 +12,7 @@ MDwikiにナビゲーションメニューを表示させるには、「navigati
 (作業ディレクトリ)
 　├ index.html
 　├ navigation.md
-　├ index.md
-　├ example01.md
-　├ example02.md
+　：
 　：
 　└ example99.md
 ```
@@ -26,12 +24,8 @@ navigation.mdもマークダウン記法で記述しますが、記述には決�
 #### A.シンプルなナビゲーションメニューの場合
 
 * 1行目は見出しh1としてサイトタイトルを記述
-
 * 2行目は空白 (md記法のマナー)
-
 * 3行目以降の1行ごとに1メニュー項目をリンク付き文字列として記述
-
-* 例
 
   ```
   # サイトタイトル
@@ -44,12 +38,8 @@ navigation.mdもマークダウン記法で記述しますが、記述には決�
 #### B.ドロップダウン式のナビゲーションメニューの場合
 
 * ドロップダウンの親項目はURLリンクを空欄にする
-
 * 親項目に続けて順序無リスト形式でサブメニュー項目を記述する
-
 * 区切り線を入れたい時は半角ハイフン記号3つ(`<hr>`を意味する)を記述する
-
-* 例
 
   ```
   # サイトタイトル
@@ -173,10 +163,9 @@ MDwikiでは.ico形式ではなく.png形式のファビコンファイルを使
 
 特にこだわりがない場合は、フリー画像素材を配布しているサイトからダウンロードすればいいでしょう。
 
->    * icooon-mono http://icooon-mono.com/
->    * icons8.jp https://icons8.jp/
->    * iconfinder.com https://www.iconfinder.com/search/?q=favicon
->
+> * icooon-mono http://icooon-mono.com/
+> * icons8.jp https://icons8.jp/
+> * iconfinder.com https://www.iconfinder.com/search/?q=favicon
 
 favicon.pngファイルをindex.html(mdwiki.htmlをリネームしたもの)と同じフォルダに配置してください。
 
@@ -245,6 +234,7 @@ FontAwesomeの記号はWindowsやMacのかな漢字変換では変換できま�
 1. 記号詳細ページ上方の`<i class="** fa-**"></i>`と書かれた箇所をクリックし、クリップボードに文字列をコピーする
 1. マークダウン記法で書かれているコンテンツに上記のHTMLコードを貼り付ける
 1. 完了
+
 #### 備考
 
 * 例えばネコの記号を使いたい場合は`<i class="fas fa-cat"></i>`というHTMLコードを使う
