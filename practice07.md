@@ -14,6 +14,7 @@ MDwikiにナビゲーションメニューを表示させるには、「navigati
 　├ navigation.md
 　：
 　：
+　├ example98.md
 　└ example99.md
 ```
 
@@ -27,13 +28,13 @@ navigation.mdもマークダウン記法で記述しますが、記述には決�
 * 2行目は空白 (md記法のマナー)
 * 3行目以降の1行ごとに1メニュー項目をリンク付き文字列として記述
 
-  ```
-  # サイトタイトル
-  
-  [ホーム](index.md)
-  [記事](example01.md)
-  [このサイトについて](example99.md)
-  ```
+```
+# サイトタイトル
+
+[ホーム](index.md)
+[記事](example01.md)
+[このサイトについて](example99.md)
+```
 
 #### B.ドロップダウン式のナビゲーションメニューの場合
 
@@ -41,22 +42,22 @@ navigation.mdもマークダウン記法で記述しますが、記述には決�
 * 親項目に続けて順序無リスト形式でサブメニュー項目を記述する
 * 区切り線を入れたい時は半角ハイフン記号3つ(`<hr>`を意味する)を記述する
 
-  ```
-  # サイトタイトル
-  
-  [ホーム](index.md)
-  [記事]()
-  
-  * [記事1](example01.md)
-  * [記事2](example02.md)
-  * [記事3](example03.md)
-  ---
-  * [記事4](example04.md)
-  * [記事5](example05.md)
-  * [記事6](example05.md)
-  
-  [このサイトについて](example99.md)
-  ```
+```
+# サイトタイトル
+
+[ホーム](index.md)
+[記事]()
+
+* [記事1](example01.md)
+* [記事2](example02.md)
+* [記事3](example03.md)
+---
+* [記事4](example04.md)
+* [記事5](example05.md)
+* [記事6](example05.md)
+
+[このサイトについて](example99.md)
+```
 
 ### 2. GitHub Pagesに変更内容をアップロードする
 
@@ -129,7 +130,6 @@ GitHub Pagesにウェブコンテンツをアップロードするには、FTP�
 1. 反映させたいリモートリポジトリおよびブランチを指定
 1. [Commit to master]ボタンをクリック
 1. [Push origin]ボタンをクリック
-1. 完了
 
 #### 備考
 
@@ -167,7 +167,11 @@ MDwikiでは.ico形式ではなく.png形式のファビコンファイルを使
 > * icons8.jp https://icons8.jp/
 > * iconfinder.com https://www.iconfinder.com/search/?q=favicon
 
+
+
 favicon.pngファイルをindex.html(mdwiki.htmlをリネームしたもの)と同じフォルダに配置してください。
+
+#### 例
 
 ```
 (作業ディレクトリ)
@@ -188,7 +192,6 @@ GitHub Pagesにウェブコンテンツをアップロードするには、FTP�
 1. 反映させたいリモートリポジトリおよびブランチを指定
 1. [Commit to master]ボタンをクリック
 1. [Push origin]ボタンをクリック
-1. 完了
 
 #### 備考
 
@@ -217,9 +220,9 @@ MDwikiは、初期状態ではFontAwesomeに対応していませんが、index.
 1. テキストエディタの文字列検索機能で`</head>`と書かれた箇所を探す
 1. `</head>`と書かれた箇所のすぐ上に１行追加し、以下のように記述する
 
-   ```
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-   ```
+```
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+```
 
 ### FontAwesomeの使い方(本文中で使う場合)
 
@@ -233,7 +236,6 @@ FontAwesomeの記号はWindowsやMacのかな漢字変換では変換できま�
 1. 一覧表の中から使いたい記号を探し、クリックして記号詳細ページを開く
 1. 記号詳細ページ上方の`<i class="** fa-**"></i>`と書かれた箇所をクリックし、クリップボードに文字列をコピーする
 1. マークダウン記法で書かれているコンテンツに上記のHTMLコードを貼り付ける
-1. 完了
 
 #### 備考
 
@@ -242,14 +244,14 @@ FontAwesomeの記号はWindowsやMacのかな漢字変換では変換できま�
 * 使いたい記号を探す際は、FontAwesome公式サイトの画面上方にあるキーワード検索、または画面左の絞込検索を使うと探しやすい
 * フォントサイズは変更できる。例えば5倍サイズで表示したい場合は`fa-5x`という文字列を追記する
 
-   ```
+```
 <i class="fas fa-cat fa-5x"></i>
 <i class="fas fa-cat fa-4x"></i>
 <i class="fas fa-cat fa-3x"></i>
 <i class="fas fa-cat fa-2x"></i>
 <i class="fas fa-cat"></i>
-   ```
-   
-   <i class="fas fa-cat fa-5x"></i><i class="fas fa-cat fa-4x"></i><i class="fas fa-cat fa-3x"></i><i class="fas fa-cat fa-2x"></i><i class="fas fa-cat fa-1x"></i>
+```
+
+<i class="fas fa-cat fa-5x"></i><i class="fas fa-cat fa-4x"></i><i class="fas fa-cat fa-3x"></i><i class="fas fa-cat fa-2x"></i><i class="fas fa-cat fa-1x"></i>
 
 ## CSSを書き換える
