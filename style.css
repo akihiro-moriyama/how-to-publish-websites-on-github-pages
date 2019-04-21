@@ -130,7 +130,13 @@ body{font-size:16px;}
 #md-content h4+h5,
 #md-content h5+h5,
 #md-content h5+h6,
-#md-content h6+h6{margin-top:24px;}
+#md-content h6+h6,
+#md-content a.visible-xs.visible-sm.jumplink+h1,
+#md-content a.visible-xs.visible-sm.jumplink+h2,
+#md-content a.visible-xs.visible-sm.jumplink+h3,
+#md-content a.visible-xs.visible-sm.jumplink+h4,
+#md-content a.visible-xs.visible-sm.jumplink+h5,
+#md-content a.visible-xs.visible-sm.jumplink+h6{margin-top:24px;}
 
 #md-content p+p{margin-top:-12px;}
 
