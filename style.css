@@ -81,6 +81,31 @@ body{font-size:16px;}
 #md-content dt+ul,
 #md-content dt+dl{margin-top:0px;margin-bottom:0px;}
 
+#md-content blockquote>h1:first-child,
+#md-content blockquote>h2:first-child,
+#md-content blockquote>h3:first-child,
+#md-content blockquote>h4:first-child,
+#md-content blockquote>h5:first-child,
+#md-content blockquote>h6:first-child,
+#md-content blockquote>p:first-child,
+#md-content blockquote>ol:first-child,
+#md-content blockquote>ul:first-child,
+#md-content blockquote>dl:first-child,
+#md-content blockquote>blockquote{margin-top:5px;}
+
+#md-content blockquote>h1:last-child,
+#md-content blockquote>h2:last-child,
+#md-content blockquote>h3:last-child,
+#md-content blockquote>h4:last-child,
+#md-content blockquote>h5:last-child,
+#md-content blockquote>h6:last-child,
+#md-content blockquote>p:last-child,
+#md-content blockquote>ol:last-child,
+#md-content blockquote>ul:last-child,
+#md-content blockquote>dl:last-child,
+#md-content blockquote>blockquote{margin-bottom:5px;}
+
+
 
 #md-content h1+h2,
 #md-content h1+h3,
