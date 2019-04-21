@@ -81,6 +81,10 @@ body{font-size:16px;}
 #md-content dt+ul,
 #md-content dt+dl{margin-top:0px;margin-bottom:0px;}
 
+
+#md-content blockquote{padding-top:0px;padding-bottom:0px;}
+
+
 #md-content blockquote>h1:first-child,
 #md-content blockquote>h2:first-child,
 #md-content blockquote>h3:first-child,
@@ -153,14 +157,7 @@ body{font-size:16px;}
 #md-title h1{margin-top:6px; margin-bottom:6px;}
 
 
-#md-content h1,
-#md-content h2,
-#md-content h3,
-#md-content h4,
-#md-content h5,
-#md-content h6{padding:5px 0px 5px 0px;}
-
-#md-content h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding:5px 0 5px 10px;}
+#md-content h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding-left:10px;}
 #md-content h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
 #md-content h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
 #md-content h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
@@ -172,7 +169,7 @@ body{font-size:16px;}
 #md-content pre code{background-color:#f8f8f8;color :#000;}
 
 
-#md-content span.anchor-highlight{font-size:12px;line-height:1.0;}
+#md-content span.anchor-highlight a{font-size:12px;line-height:1.0;}
 
 
 #md-content .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
