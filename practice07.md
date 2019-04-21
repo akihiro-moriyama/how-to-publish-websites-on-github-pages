@@ -163,64 +163,33 @@ GitHub Pagesにウェブコンテンツをアップロードするには、FTP�
 
 MDwikiは、初期状態ではファビコンを表示させることができませんが、index.html (mdwiki.htmlをリネームしたもの)の一部を書き換えることでファビコンを表示させることができるようになります。
 
-### 1. favicon.icoを作成する
+### 1. favicon.pngを用意する
 
-Web上でfavicon.icoを作成してくれる「favicon generator」というウェブサイトがあります。このサイトでは、favicon.icoの他、iOSおよびAndroidでファビコンの代わりに用いるPNGファイルも同時に作成してくれます。
+MDwikiでは.ico形式ではなく.png形式のファビコンファイルを使用します。
 
-#### 手順
+本来は、１つのファイルの中に複数サイズの画像を格納した.ico形式のファビコンファイルが良いとされていますが、作るのが面倒なので、ここでは.png形式のファビコンを使用します。
 
-1. 元になる画像を用意する(500x500pixel前後の大きめのもの)
-   
-1. favicon generatorを開く (URL：https://ao-system.net/favicongenerator/ )
-   
-1. [画像ファイルを選択]ボタンをクリックし、ファイル選択ダイアログより元になる画像を指定する
+ファビコンに使う.pngファイルのサイズは32×32pixelです。
 
-1. [ファビコン一括生成]ボタンをクリック
+特にこだわりがない場合は、フリー画像素材を配布しているサイトからダウンロードすればいいでしょう。
 
-1. [ファビコンダウンロード]ボタンをクリックし、ZIP形式圧縮されたファビコン画像をダウンロードする
+>    * icooon-mono http://icooon-mono.com/
+>    * icons8.jp https://icons8.jp/
+>    * iconfinder.com https://www.iconfinder.com/search/?q=favicon
+>
 
-1. ZIP形式ファイルを解凍する。たくさんのファイルが含まれているが、今回は以下の３つのみ使用する
-   
-   ```
-   favicon.ico
-   apple-touch-icon-180x180.png
-   android-chrome-192x192.png
-   ```
-   
-1. 上記３つのファイルをindex.html(mdwiki.htmlをリネームしたもの)と同じフォルダに配置する
+favicon.pngファイルをindex.html(mdwiki.htmlをリネームしたもの)と同じフォルダに配置してください。
 
-   ```
+```
 (作業ディレクトリ)
 　├ index.html
 　├ favicon.ico
-　├ apple-touch-icon-180x180.png
-　├ android-chrome-192x192.png
-　├ navigation.md
-　├ index.md
-　├ example01.md
-　├ example02.md
+　：
 　：
 　└ example99.md
-   ```
+```
 
-### 2. index.htmlを書き換える
-
-MDwikiは、初期状態ではファビコンを表示させることができませんが、index.html (mdwiki.htmlをリネームしたもの)の一部を書き換えることでファビコンを表示させることができるようになります。
-
-#### 手順
-
-1. プログラム開発用のunicode対応テキストエディタを用意する。Windows付属の「メモ帳」アプリはunicode非対応(2018年秋のアップグレードで対応の予定)
-1. index.htmlをテキストエディタで開く
-1. テキストエディタの文字列検索機能で`</head>`と書かれた箇所を探す
-1. `</head>`と書かれた箇所のすぐ上に３行追加し、以下のように記述する
-
-   ```
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-   ```
-
-### 3. GitHub Pagesに変更内容をアップロードする
+### 2. GitHub Pagesに変更内容をアップロードする
 
 GitHub Pagesにウェブコンテンツをアップロードするには、FTPアプリではなくGitまたはGit互換アプリを使います。ここでは「GitHub Desktop」を使用します。
 
