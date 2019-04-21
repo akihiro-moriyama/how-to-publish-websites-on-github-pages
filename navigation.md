@@ -22,6 +22,6 @@
 * [04. MDwikiを入手する](practice.md)
 * [05. Typoraでコンテンツを作成する](practice.md)
 * [06. GitHub Desktopでアップロードする](practice.md)
-* [07. MDwikiの外観をカスタマイズする](practice.md)
+* [07. MDwikiの外観をカスタマイズする](practice07.md)
 
 [gimmick:theme](cosmo)
