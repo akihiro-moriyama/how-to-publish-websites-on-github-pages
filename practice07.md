@@ -196,6 +196,15 @@ GitHub Pagesにウェブコンテンツをアップロードするには、FTP�
 
 FontAwesomeとは、様々な記号を文字として表現するための、無料のウェブフォントです。
 
+| 記号の例 | | |
+| ------------ | ---------------------------------- | ------------ |
+| ファイル | <i class="far fa-file"></i> | `<i class="far fa-file"></i>` |
+| フォルダ | <i class="far fa-folder-open"></i> | `<i class="far fa-folder-open"></i>` |
+| 設定 | <i class="fas fa-cog"></i>         | `<i class="fas fa-cog"></i>`       |
+| 送信 | <i class="fas fa-paper-plane"></i> | `<i class="fas fa-paper-plane"></i>` |
+
+
+
 通常のフォントは、ウェブサイトの側でフォントを指定していたとしても閲覧者側のPCにフォントがインストールされていなければ文字化けを起こします。ウェブフォントであれば、ウェブサイト側でフォントを指定するだけで、文字化けすることなく誰でもウェブサイトを閲覧できます。
 
 なお、FontAwesomeには無料版とPro版(有料版)の２つがありますが、ここでは無料版を使うものとします。
