@@ -8,7 +8,7 @@
 * [GitHub (オンラインバージョン管理システム)](github.md)
 * [GitHub Desktop (GitHubクライアント)](githubdesktop.md)
 * [Git用語一覧表](gitglossary.md)
-----
+---
 * [GitHub Pages (GitHub会員用ウェブサーバー)](githubpages.md)
 * [MDwiki (軽量CMS)](mdwiki.md)
 * [Typora (マークダウンエディタ)](typora.md)
