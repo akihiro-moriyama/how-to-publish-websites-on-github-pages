@@ -202,6 +202,8 @@ FontAwesomeとは、様々な記号を文字として表現するための、無
 | フォルダ | <i class="far fa-folder-open"></i> | `<i class="far fa-folder-open"></i>` |
 | 設定 | <i class="fas fa-cog"></i>         | `<i class="fas fa-cog"></i>`       |
 | 送信 | <i class="fas fa-paper-plane"></i> | `<i class="fas fa-paper-plane"></i>` |
+| イヌ | <i class="fas fa-dog"></i> | `<i class="fas fa-dog"></i>` |
+| ネコ | <i class="fas fa-cat"></i> | `<i class="fas fa-cat"></i>` |
 
 
 
