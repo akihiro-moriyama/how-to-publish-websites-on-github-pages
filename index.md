@@ -2,17 +2,23 @@
 
 ## このコンテンツについて
 
-このウェブコンテンツは、[GitHub Pages](githubpages.md)と[MDwiki](mdwiki.md)でウェブサイトをつくる作業を通して[Git](git.md)および[GitHub](github.md)の使い方を学ぶ初心者向け学習コンテンツです。なお[このウェブサイト自体もGitHub PagesとMDwikiで構築されています](https://github.com/akihiro-moriyama/how-to-publish-websites-on-github-pages)。
-
-## 想定する読者ニーズ
-
-* 無料でホームページを運営したい。
-* 多人数でウェブコンテンツを共同編集したい。
-* マークダウン記法を使ってコンテンツを執筆したい。
-* WordPressのような多機能なCMSは管理が面倒なので避けたい。
-* ブログサービスは突然サービス終了する恐れがあるので避けたい。
+本記事は、[GitHub Pages](githubpages.md)と[MDwiki](mdwiki.md)でウェブサイトをつくる作業を通して、[GitHub](github.md)の使い方およびマークダウン記法を学ぶ初心者向け学習コンテンツです。[このウェブサイト自体もGitHub PagesとMDwikiで構築されています](https://github.com/akihiro-moriyama/how-to-publish-websites-on-github-pages)。
 
 ## なぜGitHub PagesとMDwikiなのか
+
+### 理由1. GitHubの使い方を学ぶため
+
+「GitHub」は、バージョン管理システム「Git」の機能をオンラインで提供するWebサービスです。ソフトウェア開発プロジェクトのような、大量のファイルで構成される資料を多人数で編集する状況において、GitおよびGitHubは非常に便利なシステムです。
+
+しかしながら、GitおよびGitHubには独特の概念や用語が多く、初心者には手を出しづらい印象があります。
+
+「GitHub Pages」はGitHub社の運営するレンタルウェブサーバーですが、ウェブコンテンツのアップロードにはFTPクライアントではなくGitクライアントを使います。初心者がGitHubの使い方に慣れるための題材としてGitHub Pagesは適していると考え、題材として取り上げました。
+
+### 理由2. マークダウン記法を学ぶため
+
+「マークダウン記法」は、HTMLタグのうち頻繁に使われるタグを簡略化された符丁で表現することで、素早くHTMLを書くための記述法です。マークダウン記法で書かれたウェブコンテンツはプログラムによってHTMLに変換されたのち、ウェブに掲載されます。
+
+
 
 [GitHub Pages](githubpages.md)は無料レンタルサーバー、[MDwiki](mdwiki.md)は無料のCMS(コンテンツ・マネジメント・システム)です。
 
