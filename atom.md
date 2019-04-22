@@ -5,11 +5,12 @@
 * Gitクライアントを兼ねている。すなわちATOMがあればGitHub Desktopは不要である
 * マークダウン記法プレビュー機能があり、本記事の主旨である「MDwikiによるウェブサイト構築」にも適している
 
-Alart: Mac版ATOMは動作不安定という印象です。筆者はWindowsPCを所有していないのでWindows版ATOMを確認できていません。よって本記事ではGitHub Desktopとお好きなテキストエディタを組み合わせた運用を勧めていますが、Windows版ATOMの動作が良好なら、ATOMを使うのも良いかもしれません。
+Attention: 筆者の印象ではMac版ATOMは動作が不安定です。また筆者はWindowsPCを所有していないのでWindows版ATOMを確認できていません。よって本記事ではGitHub Desktopとお好きなテキストエディタを組み合わせての運用をお勧めしています。Windows版ATOMの動作が良好ならATOMを使うのも良いかもしれません。
 
 ## 入手方法
 
-* 公式ウェブサイト(https://atom.io/)からダウンロード
+* 公式ウェブサイトからダウンロード
+  * URL https://atom.io/
 
 ## インストール方法
 
@@ -42,7 +43,7 @@ ATOMからGitHubにログインする際、すでにリモートリポジトリ�
 
 1. メニューより[表示>コマンドパレット]を選択
 1. 検索文字列欄に`clone`と入力
-1. 選択肢より「GitHub:clone」を選択
+1. 検索結果一覧より「GitHub:clone」を選択
 1. [Clone From]欄にGitHub上のリモートリポジトリのURLを指定
 1. [To Directory]欄は変更しない
 1. [Clone]ボタンをクリック
