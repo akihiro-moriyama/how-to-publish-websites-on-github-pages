@@ -5,8 +5,9 @@
 [解説編]()
 
 * [Git (バージョン管理システム)](git.md)
-* [GitHub (オンラインバージョン管理システム)](github.md)
-* [GitHub Desktop (GitHubクライアント)](githubdesktop.md)
+* [GitHub (オンラインバージョン管理サービス)](github.md)
+* [GitHub Desktop (Gitクライアント)](githubdesktop.md)
+* [ATOM (テキストエディタ兼Gitクライアント)](atom.md)
 * [Git用語一覧表](gitglossary.md)
 ---
 * [GitHub Pages (GitHub会員用ウェブサーバー)](githubpages.md)
