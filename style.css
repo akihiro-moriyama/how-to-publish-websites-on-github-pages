@@ -157,8 +157,8 @@ body{font-size:16px;}
 #md-content h5,
 #md-content h6{font-size:18px;font-weight:bold;line-height:1.2;}
 #md-content h1,
-#md-content h2{margin-top:72px;}
-#md-content h3{margin-top:54px;}
+#md-content h2{margin-top:90px;}
+#md-content h3{margin-top:72px;}
 #md-content h4,
 #md-content h5,
 #md-content h6{margin-top:24px;}
@@ -225,8 +225,8 @@ div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 	#md-content h5,
 	#md-content h6{font-size:18px;}
 	#md-content h1,
-	#md-content h2{margin-top:88px;}
-	#md-content h3{margin-top:64px;}
+	#md-content h2{margin-top:110px;}
+	#md-content h3{margin-top:88px;}
 	#md-content h4,
 	#md-content h5,
 	#md-content h6{}
@@ -248,8 +248,8 @@ div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 	#md-content h5,
 	#md-content h6{}
 	#md-content h1{}
-	#md-content h2{margin-top:96px;}
-	#md-content h3{margin-top:68px;}
+	#md-content h2{margin-top:120px;}
+	#md-content h3{margin-top:96px;}
 	#md-content h4,
 	#md-content h5,
 	#md-content h6{}
