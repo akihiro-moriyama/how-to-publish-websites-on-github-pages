@@ -201,9 +201,33 @@ GitHub Pagesでは、ウェブコンテンツのアップロードにFTPクラ�
 
 
 
-### 2. index.htmlを書き換える
+### 2. CSSファイルを用意する
 
-MDwikiにはCSSをする記述するファイル「style.css」がありませんが、index.html (mdwiki.htmlをリネームしたもの)の一部を書き換えることでstyle.cssを使用できるようになります。
+本記事では、すでに存在するMDwikiのCSS設定をCSSファイルで上書きしていく前提で話を進めていきます。そのため、まず空のCSSファイルを作成してGitHubにアップロードした上で、後からCSSファイルの追記や修正を行うものとします。
+
+#### 手順
+
+1. プログラム開発用のunicode対応テキストエディタを用意する。Windows付属の「メモ帳」アプリはunicode非対応なので使えない(2018年秋のアップグレードで対応の予定)
+1. テキストファイルを新規作成する
+1. 文字コードの設定を＜UTF-8＞とする
+1. 何も書かないまま[名前をつけて保存]を実行し、ファイル名を『style.css』とする
+1. style.cssファイルをindex.html(mdwiki.htmlをリネームしたもの)と同じフォルダに配置してください。
+
+#### 例
+
+```
+(作業ディレクトリ)
+　├ index.html
+　├ style.css
+　：
+　：
+　├ example98.md
+　└ example99.md
+```
+
+### 3. index.htmlを書き換える
+
+先ほど作ったstyle.cssは、初期状態ではMDwikiに認識されませんが、index.html (mdwiki.htmlをリネームしたもの)の一部を書き換えることで認識されるようになります。
 
 #### 手順
 
@@ -215,10 +239,6 @@ MDwikiにはCSSをする記述するファイル「style.css」がありませ�
 ```
 <link rel="stylesheet" href="style.css">
 ```
-
-### 3. style.cssを作成する
-
-
 
 ### 4. GitHub Pagesに変更内容をアップロードする
 
@@ -298,3 +318,20 @@ FontAwesomeのアイコンはWindowsやMacのかな漢字変換では変換で�
 ```
 
 <i class="fas fa-cat fa-5x"></i><i class="fas fa-cat fa-4x"></i><i class="fas fa-cat fa-3x"></i><i class="fas fa-cat fa-2x"></i><i class="fas fa-cat fa-1x"></i>
+
+### 3. GitHub Pagesに変更内容をアップロードする
+
+GitHub Pagesでは、ウェブコンテンツのアップロードにFTPクライアントではなくGitクライアントを使います。ここではGitクライアントとして「GitHub Desktop」を使用するものとします。
+
+#### 手順
+
+1. GitHub Desktopを起動
+1. 変更内容を反映させたいリモートリポジトリおよびブランチを指定
+1. [Commit to master]ボタンをクリック
+1. [Push origin]ボタンをクリック
+
+#### 備考
+
+* リモートリポジトリおよびブランチを選択すると、それと対応付けされた作業ディレクトリも自動的に選択されます。
+* コミットCommitにより、PC上にあるローカルリポジトリ内にファイルのバックアップが保存され、且つ、変更履歴が記録されます。
+* プッシュPushにより、インターネット上にあるリモートリポジトリ内にファイルのバックアップが保存され、且つ、変更履歴が記録されます。

@@ -2,7 +2,7 @@
 
 ## ロードマップ
 
-1. [GitHub](github.md)** に会員登録する
+1. [GitHub](github.md) に会員登録する
 1. **[GitHub Desktop](githubdesktop.md)** を入手する
 1. **[Typora](typora.md)** を入手する
 1. **[MDwiki](mdwiki.md)** を入手する
