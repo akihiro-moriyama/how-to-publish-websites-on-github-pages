@@ -7,8 +7,8 @@ ATOMは、GitHub社の提供するソフトウェア開発用テキストエデ�
 
 さらにATOMにはマークダウンプレビュー機能があり、当サイトの主旨である「GitHub PagesとMDwikiでウェブサイトを構築する」にも適しています。
 
-Attention! <i class="fas fa-exclamation-triangle"></i>  
-筆者の確認した限りではMac版ATOMは動作不安定という印象です。また、筆者はWindowsPCを所有していないのでWindows版ATOMの動作を確認できていません。よって**当サイトではGitHub Desktopとお好きなテキストエディタを組み合わせての運用をお勧めしています**。Windowsユーザーの方は念の為Windows版ATOMの動作を確認していただければ幸いです。
+<i class="fas fa-exclamation-triangle"></i>Attention!  
+筆者の確認した限りではMac版ATOMは動作不安定という印象です。また、筆者はWindowsPCを所有していないのでWindows版ATOMの動作を確認できていません。よって当サイトではGitHub Desktopとお好きなテキストエディタを組み合わせての運用をお勧めしています。Windowsユーザーの方は念の為Windows版ATOMの動作を確認していただければ幸いです。
 
 ## 入手方法
 
