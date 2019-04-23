@@ -1,4 +1,4 @@
-# GitHub PagesとMDwikiでウェブサイトをつくる
+# GitHub PagesとMDwikiでウェブサイトを構築する
 
 ## はじめに
 

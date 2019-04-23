@@ -1,4 +1,4 @@
-# GitHub PagesとMDwikiでウェブサイトをつくる
+# GitHub PagesとMDwikiでウェブサイトを構築する
 
 [<i class="fas fa-home"></i> ホーム](index.md)
 
