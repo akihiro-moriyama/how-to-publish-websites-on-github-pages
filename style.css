@@ -203,7 +203,7 @@ body{font-size:16px;}
 #md-all a.navbar-brand{max-width:80%;font-size:14px;line-height:1.2;}
 
 
-#md-title-container .page-header{margin-bottom:32px;}
+#md-title-container .page-header{margin-bottom:32px; border-bottom:0px solid #ddd;}
 
 
 div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
