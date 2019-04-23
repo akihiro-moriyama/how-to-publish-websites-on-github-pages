@@ -24,5 +24,6 @@
 * [05. Typoraでコンテンツを作成する](practice.md)
 * [06. GitHub Desktopでアップロードする](practice.md)
 * [07. MDwikiの外観をカスタマイズする](practice07.md)
+* [08. ウェブサイトをGoogle検索の対象にする](practice.md)
 
 [gimmick:theme](cosmo)
