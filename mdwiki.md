@@ -35,4 +35,4 @@ http://www.example.com/#!index.md
 
 ## MDwikiの使い方
 
-使い方の詳細は、当サイトの「[作成編04 MDwikiを入手する](practice04.md)」およびそれ以降の章をご覧ください。
+使い方の詳細は、当サイトの「[実践編04 MDwikiを入手する](practice04.md)」およびそれ以降の章をご覧ください。

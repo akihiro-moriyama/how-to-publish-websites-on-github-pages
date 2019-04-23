@@ -15,7 +15,7 @@
 * [Typora (マークダウンエディタ)](typora.md)
 * [マークダウン記法一覧表](markdownglossary.md)
 
-[作成編]()
+[実践編]()
 
 * [01. GitHubに会員登録する](practice01.md)
 * [02. GitHub Desktopを入手する](practice02.md)
