@@ -35,3 +35,7 @@ GitHub Pagesでは、ウェブコンテンツのアップロードにFTPクラ�
 
 
 hint: MDwikiはJavaScript言語で開発されたCMSであるため、GitHub Pages上で動作します。より厳密にいうと、MDwikiはサイト閲覧者のウェブブラウザ上で動作するスクリプトです。
+
+## GitHub Pagesの使い方
+
+使い方の詳細は、当サイトの「[実践編01 GitHubに会員登録する](practice01.md)」およびそれ以降の章をご覧ください。
