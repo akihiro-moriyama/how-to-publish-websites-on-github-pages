@@ -194,9 +194,9 @@ body{font-size:16px;}
 #md-content a.visible-xs.visible-sm.jumplink{color:#fff;margin-top:-20px;margin-bottom:-20px;}
 
 
-#md-content p.alert.alert-warning div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; font-size:24px;padding-right:16px; float:left;}
-#md-content p.alert.alert-info div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f05a"; font-size:24px;padding-right:16px; float:left;}
-#md-content p.alert.alert-success div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f164"; font-size:24px;padding-right:16px; float:left;}
+#md-content p.alert.alert-warning div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; font-size:22px;padding-right:16px; float:left;}
+#md-content p.alert.alert-info div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f15c"; font-size:22px;padding-right:16px; float:left;}
+#md-content p.alert.alert-success div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f05a"; font-size:22px;padding-right:16px; float:left;}
 #md-content p.alert div.md-text{clear:both;}
 
 
