@@ -2,7 +2,7 @@
 
 ## イメージ図
 
-![Git/GitHub利用イメージ図](fig-git-using-flow.png)
+![Git/GitHub利用イメージ図](img/fig-git-using-flow.png)
 
 ## 用語集
 
