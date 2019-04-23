@@ -194,7 +194,9 @@ body{font-size:16px;}
 #md-content a.visible-xs.visible-sm.jumplink{color:#fff;margin-top:-20px;margin-bottom:-20px;}
 
 
-#md-content p.alert.alert-warning:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; padding-right:5px;}
+#md-content p.alert.alert-warning div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; padding-right:5px;display:inline-block;}
+#md-content p.alert.alert-warning div.md-text{display:inline-block;}
+
 
 #md-all a.navbar-brand{max-width:80%;font-size:14px;line-height:1.2;}
 
