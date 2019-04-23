@@ -203,7 +203,8 @@ body{font-size:16px;}
 #md-all a.navbar-brand{max-width:80%;font-size:14px;line-height:1.2;}
 
 
-#md-title-container .page-header{margin-left:-1000px:margin-right:-1000px:padding-left:1000px:padding-right:-1000px:border-bottom:1px solid #ddd;}
+div#md-title-container{border-bottom:1px solid #ddd; margin-bottom:50px; margin-left:-1000px; margin-right:-1000px; padding-left:1015px; padding-right:1015px;}
+#md-title-container .page-header{border-bottom:0px solid #ddd;}
 
 div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
