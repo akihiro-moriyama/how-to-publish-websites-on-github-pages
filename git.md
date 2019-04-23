@@ -60,3 +60,14 @@ Gitは、「分散型バージョン管理システム」と呼ばれる
 * 個人のプログラム開発者が、自作プログラムを紹介するためのウェブサイトを簡単に作成できるよう配慮されている
 * ウェブコンテンツのアップロードにはFTPを使わずGitを使う
 * URL：https://pages.github.com/
+
+
+
+## 関連ページ
+
+[GitHub 解説](github.md)
+
+[GitHub Desktop 解説](githubdesktop.md)
+
+[GitHub Pages 解説](githubpages.md)
+
