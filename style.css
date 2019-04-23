@@ -203,7 +203,8 @@ body{font-size:16px;}
 #md-all a.navbar-brand{max-width:80%;font-size:14px;line-height:1.2;}
 
 
-#md-title-container .page-header{margin-bottom:42px; border-bottom:1px solid #ddd;}
+#md-title-container .page-header{margin-bottom:32px;}
+
 
 div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
@@ -262,6 +263,7 @@ div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 
 @media only screen and (min-width: 992px)
 {
+	#md-title-container .page-header{border-bottom:1px solid #ddd;}
 	#md-content h2:nth-child(1){margin-top:0px;}
 	#md-content a.visible-xs.visible-sm.jumplink::before{content:none;}
 }
