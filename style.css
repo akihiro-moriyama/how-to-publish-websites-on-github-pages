@@ -263,7 +263,9 @@ body{font-size:16px;}
 #md-all a.navbar-brand{max-width:80%;font-size:14px;line-height:1.2;}
 
 /* ----ページタイトル表示の修飾---- */
+div#md-all{overflow:hidden;}
 #md-title-container .page-header{margin-left:-1000px;margin-right:-1000px;padding-left:1000px;padding-right:1000px;margin-bottom:32px; padding-bottom:38px; border-bottom:1px solid #ddd;}
+
 
 /* ----ページ内目次の修飾---- */
 div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
