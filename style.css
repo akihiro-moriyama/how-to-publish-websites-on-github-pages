@@ -200,6 +200,10 @@ body{font-size:16px;}
 #md-content ul+blockquote,
 #md-content ul+pre{margin-top:-12px;}
 
+/* ----リスト直後のコードブロックは左マージンを付ける---- */
+#md-content ol+pre,
+#md-content ul+pre{margin-left:40px;}
+
 /* ----brockquoteの大きすぎるパディングを削る---- */
 #md-content blockquote{padding-top:0px;padding-bottom:0px;}
 
