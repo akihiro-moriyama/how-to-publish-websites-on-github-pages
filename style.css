@@ -202,7 +202,9 @@ body{font-size:16px;}
 
 /* ----リスト直後のコードブロックは左マージンを付ける---- */
 #md-content ol+pre,
-#md-content ul+pre{margin-left:40px;}
+#md-content ul+pre,
+#md-content ol+p.alert.alert-warning,
+#md-content ul+p.alert.alert-warning{margin-left:40px;}
 
 /* ----brockquoteの大きすぎるパディングを削る---- */
 #md-content blockquote{padding-top:0px;padding-bottom:0px;}
