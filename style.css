@@ -1,5 +1,6 @@
 @charset “UTF-8”;
-
+/* ----400px以下 ---------------------------------------------- */
+/* ----フォント---- */
 html,
 body,
 #md-title h1,
@@ -29,11 +30,9 @@ body,
 #md-content samp,
 #md-content kbd{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
 
-
+/* ----フォントサイズ---- */
 html,
 body{font-size:16px;}
-
-
 #md-content p,
 #md-content a,
 #md-content ol,
@@ -54,38 +53,28 @@ body{font-size:16px;}
 #md-content samp,
 #md-content kbd{font-size:16px; line-height:1.8;}
 
-
-#md-title h1,
-#md-content h1,
-#md-content h2,
-#md-content h3,
-#md-content h4,
-#md-content h5,
-#md-content h6,
+/* ----上下マージン---- */
 #md-content p,
 #md-content ol,
 #md-content ul,
 #md-content dl,
 #md-content table,
 #md-content pre,
-#md-content blockquote{margin-top:24px;margin-bottom:24px;}
+#md-content blockquote{margin-top:32px;margin-bottom:24px;}
 
+#md-title h1{margin-top:0px;margin-bottom:0px;}
+#md-content h1,
+#md-content h2{margin-top:88px;margin-bottom:24px;}
+#md-content h3{margin-top:64px;margin-bottom:24px;}
+#md-content h4,
+#md-content h5,
+#md-content h6{margin-top:32px;margin-bottom:24px;}
 
-#md-content li>ol,
-#md-content li>ul,
-#md-content li>dl,
-#md-content dt>ol,
-#md-content dt>ul,
-#md-content dt>dl,
 #md-content li+ul,
 #md-content li+dl,
 #md-content dt+ol,
 #md-content dt+ul,
 #md-content dt+dl{margin-top:0px;margin-bottom:0px;}
-
-
-#md-content blockquote{padding-top:0px;padding-bottom:0px;}
-
 
 #md-content blockquote>h1:first-child,
 #md-content blockquote>h2:first-child,
@@ -97,8 +86,7 @@ body{font-size:16px;}
 #md-content blockquote>ol:first-child,
 #md-content blockquote>ul:first-child,
 #md-content blockquote>dl:first-child,
-#md-content blockquote>blockquote{margin-top:5px;}
-
+#md-content blockquote>blockquote{margin-top:0px;}
 #md-content blockquote>h1:last-child,
 #md-content blockquote>h2:last-child,
 #md-content blockquote>h3:last-child,
@@ -109,9 +97,7 @@ body{font-size:16px;}
 #md-content blockquote>ol:last-child,
 #md-content blockquote>ul:last-child,
 #md-content blockquote>dl:last-child,
-#md-content blockquote>blockquote{margin-bottom:5px;}
-
-
+#md-content blockquote>blockquote{margin-bottom:0px;}
 
 #md-content h1+h2,
 #md-content h1+h3,
@@ -138,17 +124,23 @@ body{font-size:16px;}
 #md-content a.visible-xs.visible-sm.jumplink+h3,
 #md-content a.visible-xs.visible-sm.jumplink+h4,
 #md-content a.visible-xs.visible-sm.jumplink+h5,
-#md-content a.visible-xs.visible-sm.jumplink+h6{margin-top:24px;}
+#md-content a.visible-xs.visible-sm.jumplink+h6{margin-top:32px;}
 
-#md-content p+p{margin-top:-12px;}
+#md-content p+p{margin-top:-16px;}
 
-#md-content li,
-#md-content dd{line-height:1.4;padding-top:4px;padding-bottom:4px;}
 #md-content p+ul,
 #md-content p+ol,
-#md-content p+dl{margin-top:-4px;}
+#md-content p+dl{margin-top:-16px;}
+
+/* ----brockquoteの大きすぎるパディングを削る---- */
+#md-content blockquote{padding-top:0px;padding-bottom:0px;}
 
 
+/* ----リスト内の行間を詰め、リスト同士の間隔を広げる---- */
+#md-content li,
+#md-content dd{line-height:1.4;padding-top:4px;padding-bottom:4px;}
+
+/* ----見出しを太字に---- */
 #md-title h1,
 #md-content h1,
 #md-content h2{font-size:18px;font-weight:bold;line-height:1.2;}
@@ -156,30 +148,23 @@ body{font-size:16px;}
 #md-content h4{font-size:18px;font-weight:bold;line-height:1.2;}
 #md-content h5,
 #md-content h6{font-size:18px;font-weight:bold;line-height:1.2;}
-#md-content h1,
-#md-content h2{margin-top:90px;}
-#md-content h3{margin-top:72px;}
-#md-content h4,
-#md-content h5,
-#md-content h6{margin-top:24px;}
-#md-title h1{margin-top:6px; margin-bottom:6px;}
 
-
+/* ----見出し修飾---- */
 #md-content h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding-left:10px;}
 #md-content h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
 #md-content h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
 #md-content h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
 #md-content h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
 
-
+/* ----コードブロックの修飾---- */
 #md-content pre{background-color:#f8f8f8;color :#c7254e;}
 #md-content code,
 #md-content pre code{background-color:#f8f8f8;color :#000;}
 
-
+/* ----見出しアンカーの修飾---- */
 #md-content span.anchor-highlight a{font-size:12px;line-height:1.0;}
 
-
+/* ----表組みの修飾---- */
 #md-content .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
 #md-content .table-bordered>thead>tr>th{background-color:#f8f8f8;}
 #md-content .table-bordered>thead>tr>th,
@@ -190,22 +175,23 @@ body{font-size:16px;}
 #md-content .table-bordered>tfoot>tr>td{border:0px solid #ddd; border-top:1px solid #ddd;}
 #md-content .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#f8f8f8;}
 
+/* ----ページトップに戻るボタンの修飾---- */
 #md-content a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:24px; padding-left:16px;}
 #md-content a.visible-xs.visible-sm.jumplink{color:#fff;margin-top:-20px;margin-bottom:-20px;}
 
-
+/* ----アラートブロックの修飾---- */
 #md-content p.alert.alert-warning div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; font-size:22px;padding-right:16px; margin-top:-4px; float:left;}
 #md-content p.alert.alert-info div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f15c"; font-size:22px;padding-right:21px; margin-top:-4px; float:left;}
 #md-content p.alert.alert-success div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f05a"; font-size:22px;padding-right:18px; margin-top:-4px; float:left;}
 #md-content p.alert div.md-text{clear:both;}
 
-
+/* ----ナビゲーションバーのサイトタイトル表示の文字サイズを小さくする---- */
 #md-all a.navbar-brand{max-width:80%;font-size:14px;line-height:1.2;}
 
-
+/* ----ページタイトル表示の修飾---- */
 #md-title-container .page-header{margin-left:-1000px;margin-right:-1000px;padding-left:1000px;padding-right:1000px;margin-bottom:32px; padding-bottom:38px; border-bottom:1px solid #ddd;}
 
-
+/* ----ページ内目次の修飾---- */
 div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
 #md-page-menu .panel li,
@@ -213,10 +199,11 @@ div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel li:last-child{border-bottom:1px solid #ddd;}
 #md-page-menu .panel .list-group-item{padding-left:0px; padding-right:0px;}
 
-/* 401px--767px ---------------------------------------------- */
 
+/* 401px--767px ---------------------------------------------- */
 @media only screen and (min-width: 401px)
 {
+/* ----フォントサイズ---- */
 	#md-title h1,
 	#md-content h1,
 	#md-content h2{font-size:22px;}
@@ -224,48 +211,28 @@ div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 	#md-content h4{font-size:20px;}
 	#md-content h5,
 	#md-content h6{font-size:18px;}
-	#md-content h1,
-	#md-content h2{margin-top:110px;}
-	#md-content h3{margin-top:88px;}
-	#md-content h4,
-	#md-content h5,
-	#md-content h6{}
-
-	#md-content h2{border-left:20px solid #aaa;}
-
 	#md-all a.navbar-brand{max-width:100%;}
 }
 
 /* 768px--991px ---------------------------------------------- */
-
 @media only screen and (min-width: 768px)
 {
+/* ----フォントサイズ---- */
 	#md-title h1,
 	#md-content h1,
 	#md-content h2{font-size:24px;}
-	#md-content h3,
-	#md-content h4{}
-	#md-content h5,
-	#md-content h6{}
-	#md-content h1{}
-	#md-content h2{margin-top:120px;}
-	#md-content h3{margin-top:96px;}
-	#md-content h4,
-	#md-content h5,
-	#md-content h6{}
-
-	#md-content h2{border-left:20px solid #aaa;}
-
 	#md-all a.navbar-brand{font-size:16px;}
 
+/* ----ページタイトル表示の修飾---- */
 	#md-title-container .page-header{padding-bottom:32px;}
-
 }
 
 /* 992px--max ---------------------------------------------- */
-
 @media only screen and (min-width: 992px)
 {
+/* ----目次がサイドバーに移動することへの対応---- */
 	#md-content h2:nth-child(1){margin-top:0px;}
+
+/* ----ページトップに戻るボタンの修飾---- */
 	#md-content a.visible-xs.visible-sm.jumplink::before{content:none;}
 }
