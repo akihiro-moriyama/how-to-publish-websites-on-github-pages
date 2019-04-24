@@ -261,11 +261,9 @@ body{font-size:16px;}
 #md-content h6+ol li,
 #md-content h6+ol li a{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
 #md-content h6+ol{background-color:#ddd;}
-#md-content h6+ol li{border-left:1px solid:#ddd;}
 #md-content h6+ol li:nth-child(2n){background-color:#fff;}
 #md-content h6+ol li:nth-child(2n+1){background-color:#f8f8f8;}
-#md-content h6+ol li:first-child{border-top:1px solid:#ddd;}
-#md-content h6+ol li:last-child{border-bottom:1px solid:#ddd;}
+#md-content h6+ol{border:1px solid #ddd;}
 
 /* ----ページトップに戻るボタンの修飾---- */
 #md-content a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:24px; padding-left:16px;}
