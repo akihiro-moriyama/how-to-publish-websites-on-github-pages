@@ -260,8 +260,8 @@ body{font-size:16px;}
 /* ----h6直後の順序有リストをソースコード表示風にする---- */
 #md-content h6+ol li,
 #md-content h6+ol li a{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
-#md-content h6+ol{background-color:#ddd; border-right:1px solid:#ddd;}
-#md-content h6+ol li:nth-child(2n){background-color:#fcfcfc;}
+#md-content h6+ol{background-color:#ddd; border:1px solid:#ddd;}
+#md-content h6+ol li:nth-child(2n){background-color:#fff;}
 #md-content h6+ol li:nth-child(2n+1){background-color:#f8f8f8;}
 
 /* ----ページトップに戻るボタンの修飾---- */
