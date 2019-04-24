@@ -169,12 +169,12 @@ body{font-size:16px;}
 #md-content h5+blockquote,
 #md-content h6+blockquote,
 
-#md-content h1+pre code,
-#md-content h2+pre code,
-#md-content h3+pre code,
-#md-content h4+pre code,
-#md-content h5+pre code,
-#md-content h6+pre code,
+#md-content h1+pre,
+#md-content h2+pre,
+#md-content h3+pre,
+#md-content h4+pre,
+#md-content h5+pre,
+#md-content h6+pre,
 
 #md-content p+p,
 #md-content p+ul,
@@ -182,7 +182,23 @@ body{font-size:16px;}
 #md-content p+dl,
 #md-content p+table,
 #md-content p+blockquote,
-#md-content p+pre code{margin-top:-16px;}
+#md-content p+pre,
+
+#md-content ol+p,
+#md-content ol+ul,
+#md-content ol+ol,
+#md-content ol+dl,
+#md-content ol+table,
+#md-content ol+blockquote,
+#md-content ol+pre,
+
+#md-content ul+p,
+#md-content ul+ul,
+#md-content ul+ol,
+#md-content ul+dl,
+#md-content ul+table,
+#md-content ul+blockquote,
+#md-content ul+pre,
 
 /* ----brockquoteの大きすぎるパディングを削る---- */
 #md-content blockquote{padding-top:0px;padding-bottom:0px;}
