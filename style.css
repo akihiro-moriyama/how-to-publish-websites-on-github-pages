@@ -258,7 +258,7 @@ div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 
 	#md-all a.navbar-brand{font-size:16px;}
 
-	#md-title-container .page-header{padding-bottom:28px;}
+	#md-title-container .page-header{padding-bottom:32px;}
 
 }
 
