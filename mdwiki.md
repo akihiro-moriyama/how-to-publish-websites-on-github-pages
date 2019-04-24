@@ -5,7 +5,7 @@ MDwikiは、JavaScriptで開発されたシンプルで軽量なCMS(コンテン
 
 MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイルひとつしかないということです。非常にシンプルでコンパクトなCMSではありますが、その代わり多機能ではありません。マークダウン記法で書かれたウェブコンテンツをHTMLに変換する以外は他に目立った機能がほとんどないという変わり種のCMSです。
 
-hint: MDwikiはJavaScript言語で開発されたCMSであるため、GitHub Pages上で動作します。より厳密にいうと、MDwikiはサイト閲覧者のウェブブラウザ上で動作するスクリプトです。
+hint: MDwikiはJavaScriptで開発されたCMSであるためGitHub Pages上で運用可能です。
 
 ## MDwikiの最小構成
 

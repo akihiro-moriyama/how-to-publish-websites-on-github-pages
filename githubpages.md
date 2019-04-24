@@ -10,7 +10,7 @@ GitHub Pagesでは、ウェブコンテンツのアップロードにFTPクラ�
 
 ## GitHub Pagesの長所と短所
 
-### GitHub Pagesの長所
+#### GitHub Pagesの長所
 
 1. 無料で使える
 1. ウェブコンテンツのバージョン管理ができる
@@ -22,7 +22,7 @@ GitHub Pagesでは、ウェブコンテンツのアップロードにFTPクラ�
 | ウェブコンテンツのバージョン管理ができる | GitHub Pages上のウェブサイトは、GitHubによるバージョン管理の対象になります。ファイルの変更履歴とファイルのバックアップがGitHubに保存され、必要に応じて以前の状態に戻すことができます。 |
 | ウェブコンテンツを多人数で編集できる     | GitHub Pages上のウェブサイトは、GitHubによるバージョン管理の対象になります。GitHubはサーバー上に置かれたファイルを多人数で編集することを前提としているため、レビュー機能やプルリクエスト機能などの多人数作業の際に便利な機能があります。 |
 
-### GitHub Pagesの短所
+#### GitHub Pagesの短所
 
 1. サーバーアプリケーションが動かない
 1. 限定公開ができない
@@ -34,7 +34,7 @@ GitHub Pagesでは、ウェブコンテンツのアップロードにFTPクラ�
 
 
 
-hint: MDwikiはJavaScript言語で開発されたCMSであるため、GitHub Pages上で動作します。より厳密にいうと、MDwikiはサイト閲覧者のウェブブラウザ上で動作するスクリプトです。
+hint: MDwikiはJavaScriptで開発されたCMSであるためGitHub Pages上で運用可能です。
 
 ## GitHub Pagesの使い方
 
