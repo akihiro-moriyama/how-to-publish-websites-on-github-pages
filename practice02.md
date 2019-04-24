@@ -1,4 +1,4 @@
-# 02. GitHub Desktopを入手する
+# 実践02. コマンドラインはもう不要！GitHub Desktop
 
 ## ロードマップ
 
