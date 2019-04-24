@@ -33,6 +33,12 @@ body,
 /* ----フォントサイズ---- */
 html,
 body{font-size:16px;}
+#md-content h1,
+#md-content h2,
+#md-content h3,
+#md-content h4,
+#md-content h5,
+#md-content h6{font-size:18px; line-height:1.2;}
 #md-content p,
 #md-content a,
 #md-content ol,
@@ -220,11 +226,11 @@ body{font-size:16px;}
 /* ----見出しを太字に---- */
 #md-title h1,
 #md-content h1,
-#md-content h2{font-size:18px;font-weight:bold;line-height:1.2;}
+#md-content h2,
 #md-content h3,
-#md-content h4{font-size:18px;font-weight:bold;line-height:1.2;}
+#md-content h4,
 #md-content h5,
-#md-content h6{font-size:18px;font-weight:bold;line-height:1.2;}
+#md-content h6{font-weight:bold;}
 
 /* ----見出し修飾---- */
 #md-content h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding-left:10px;}
@@ -301,8 +307,8 @@ hr{border-top: 1px solid #ddd;}
 	#md-title h1,
 	#md-content h1,
 	#md-content h2{font-size:22px;}
-	#md-content h3,
-	#md-content h4{font-size:20px;}
+	#md-content h3{font-size:20px;}
+	#md-content h4,
 	#md-content h5,
 	#md-content h6{font-size:18px;}
 	#md-all a.navbar-brand{max-width:100%;}
