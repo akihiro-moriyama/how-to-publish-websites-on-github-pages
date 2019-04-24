@@ -17,6 +17,7 @@
 
 [実践編]()
 
+* [00. 最短10分でウェブサイトを構築する](quickstart.md)
 * [01. GitHubに会員登録する](practice01.md)
 * [02. GitHub Desktopを入手する](practice02.md)
 * [03. Typoraを入手する](practice03.md)
