@@ -79,6 +79,7 @@ body{font-size:16px;}
 #md-content li>ol,
 #md-content li>ul,
 #md-content li>dl,
+#md-content li>p,
 #md-content li+ol,
 #md-content li+ul,
 #md-content li+dl,
