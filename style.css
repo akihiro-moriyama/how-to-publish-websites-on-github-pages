@@ -70,6 +70,7 @@ body{font-size:16px;}
 #md-content h5,
 #md-content h6{margin-top:32px;margin-bottom:24px;}
 
+#md-content li+ol,
 #md-content li+ul,
 #md-content li+dl,
 #md-content dt+ol,
