@@ -6,5 +6,7 @@
 
 ## Google Search Consoleにウェブサイトを登録する
 
+## OGPを設定する
+
 ## （以後作成中）
 
