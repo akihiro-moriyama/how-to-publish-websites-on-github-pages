@@ -22,16 +22,6 @@
 
 *もしもGitHubの使い方に慣れた人であれば*、GitHub PagesとMDwikiを使って10分程度でウェブサイトが完成します。「サーバーアプリケーションにありがちなコマンドラインを使ったインストール作業がない」「HTML言語を使わずマークダウン記法だけでウェブコンテンツを作成できる」ことが速さのポイントです。カスタマイズも可能で、自分のウェブサイトにオリジナリティを演出することも可能です。そしてなにより、GitHub Pagesは無料です。
 
-##### ウェブサイト構築の最短手順
-
-1. MDwiki（mdwiki.html）と最初の原稿(index.md)を用意する
-1. mdwiki.htmlはindex.htmlにファイル名変更する
-1. GitHubで、リモートリポジトリを新規作成する
-1. GitHub Desktopで、リモートリポジトリを自分のPCに[Clone]する
-1. GitHub Desktopで、index.htmlとindex.mdをリモートリポジトリに[Push]する
-1. GitHubで、リモートリポジトリの設定[Setting>GitHub Pages>Sourse]を＜none＞から＜master branch＞に変更する
-1. 数分待つとウェブサイトが公開される
-
 ## 総目次
 
 #### 実践編
