@@ -36,9 +36,9 @@ body{font-size:16px;}
 #md-content h1,
 #md-content h2,
 #md-content h3,
-#md-content h4,
+#md-content h4{font-size:18px; line-height:1.2;}
 #md-content h5,
-#md-content h6{font-size:18px; line-height:1.2;}
+#md-content h6,
 #md-content p,
 #md-content a,
 #md-content ol,
@@ -278,6 +278,11 @@ body{font-size:16px;}
 #md-content h6+ol li:nth-child(2n){background-color:#fff;}
 #md-content h6+ol li:nth-child(2n+1){background-color:#f8f8f8;}
 #md-content h6+ol{border:1px solid #ddd;}
+#md-content h6+ol code{background-color:transparent;line-height:1.0;}
+
+/* ----h6直後の順序なしリストをalear-info風にする---- */
+#md-content h6+ul{color:#000;background-color: #fff;border:1px solid #ddd;padding-top:10px;padding-bottom:10px; list-style-type:circle;}
+
 
 /* ----ページトップに戻るボタンの修飾---- */
 #md-content a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:24px; padding-left:16px;}
@@ -285,7 +290,7 @@ body{font-size:16px;}
 
 /* ----アラートブロックの修飾---- */
 #md-content p.alert.alert-warning div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; font-size:22px;padding-right:16px; margin-top:-4px; float:left;}
-#md-content p.alert.alert-info{color:#000;background-color: #f8f8f8;border:1px solid #ddd;}
+#md-content p.alert.alert-info{color:#000;background-color: #fff;border:1px solid #ddd; border-left:18px solid #ddd;}
 #md-content p.alert.alert-success div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f05a"; font-size:22px;padding-right:18px; margin-top:-4px; float:left;}
 #md-content p.alert div.md-text{clear:both;}
 
@@ -308,6 +313,13 @@ div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
 /* ----HR線の修飾---- */
 hr{border-top: 1px solid #ddd;}
 
+/* ----コードブロックpreの修飾---- */
+#md-content pre{border: 1px solid #ddd;}
+
+/* ----外部リンクアイコンの修飾---- */
+#md-content p i.fas.fa-external-link-alt{font-size:0.5em;padding-left:0.1em;}
+
+
 /* 401px--767px ---------------------------------------------- */
 @media only screen and (min-width: 401px)
 {
@@ -316,9 +328,9 @@ hr{border-top: 1px solid #ddd;}
 	#md-content h1,
 	#md-content h2{font-size:22px;}
 	#md-content h3{font-size:20px;}
-	#md-content h4,
-	#md-content h5,
-	#md-content h6{font-size:18px;}
+	#md-content h4{font-size:18px;}
+
+/* ----ナビゲーションバーのサイトタイトル表示の表示枠の幅を広げる---- */
 	#md-all a.navbar-brand{max-width:100%;}
 }
 

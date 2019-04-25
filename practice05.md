@@ -4,7 +4,9 @@
 
 ![MDwiki公式サイト](img/mdwiki-website-1440x480.png)
 
-MDwikiは、JavaScriptで開発されたシンプルで軽量なCMS(コンテンツ・マネジメント・システム)です。
+note: URL http://dynalon.github.io/MDwiki/
+
+[MDwiki<i class="fas fa-external-link-alt"></i>](http://dynalon.github.io/MDwiki/)は、JavaScriptで開発されたシンプルで軽量なCMS(コンテンツ・マネジメント・システム)です。
 
 MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイルひとつしかないということです。非常にシンプルでコンパクトなCMSではありますが、その代わり多機能ではありません。マークダウン記法で書かれたウェブコンテンツをHTMLに変換する以外は他に目立った機能がほとんどないという変わり種のCMSです。
 
@@ -16,7 +18,7 @@ MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイル�
 
 ### 例
 
-#### 1. ウェブサーバー内のファイルの配置
+##### 1. ウェブサーバー内のファイルの配置
 
 ```
 (http://www.example.com/)
@@ -24,13 +26,13 @@ MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイル�
 └ index.md　　　←ウェブコンテンツ
 ```
 
-#### 2. ウェブブラウザのURL欄への入力
+##### 2. ウェブブラウザのURL欄への入力
 
 ```
 http://www.example.com/
 ```
 
-#### 3. MDwikiによって転送される先のURL
+##### 3. MDwikiによって転送される先のURL
 
 ```
 http://www.example.com/#!index.md
@@ -38,7 +40,9 @@ http://www.example.com/#!index.md
 
 ## ウェブサイト構築の最短手順
 
-以下にGitHub PagesとMDwikiを用いてのウェブサイト構築の最短手順を示します。この作業の前提として**GitおよびGitHubの使い方を既に理解している**必要があります。
+以下に[GitHub Pages<i class="fas fa-external-link-alt"></i>](https://pages.github.com/)と[MDwiki<i class="fas fa-external-link-alt"></i>](http://dynalon.github.io/MDwiki/)を用いてのウェブサイト構築の最短手順を示します。この作業の前提として**GitおよびGitHubの使い方を既に理解している**必要があります。
+
+##### 手順
 
 1. MDwiki（mdwiki.html）と最初の原稿(index.md)を用意する
 1. mdwiki.htmlをindex.htmlにファイル名変更する
@@ -54,7 +58,7 @@ http://www.example.com/#!index.md
 
 ### WordPressと比較
 
-WordPressは、「CMS(コンテンツマネジメントシステム)」と呼ばれるウェブアプリケーションです。ユーザーが編集者アカウントでWordPressにログインしてコンテンツを投稿すると、WordPressがそれをHTMLに変換してウェブサイトとして公開する仕組みです。
+[WordPress<i class="fas fa-external-link-alt"></i>](https://wordpress.org/)は、「CMS(コンテンツマネジメントシステム)」と呼ばれるウェブアプリケーションです。ユーザーが編集者アカウントでWordPressにログインしてコンテンツを投稿すると、WordPressがそれをHTMLに変換してウェブサイトとして公開する仕組みです。
 
 ##### この方法の難点
 
@@ -70,7 +74,7 @@ WordPressは、「CMS(コンテンツマネジメントシステム)」と呼ば
 
 #### GitHub Pagesのマークダウン対応とは
 
-GitHub Pages自体にもマークダウン記法で書かれたウェブコンテンツをHTMLに変換して表示する機能があります。つまり「index.md」だけがあればウェブサイトとして成立します。
+[GitHub Pages<i class="fas fa-external-link-alt"></i>](https://pages.github.com/)自体にもマークダウン記法で書かれたウェブコンテンツをHTMLに変換して表示する機能があります。つまり「index.md」だけがあればウェブサイトとして成立します。
 
 ##### この方法の難点
 
@@ -85,7 +89,7 @@ GitHub Pages自体にもマークダウン記法で書かれたウェブコン�
 ### GitHub社の推奨するJekyllと比較
 
 #### Jekyllとは
-Jekyllは、「静的サイトジェネレーター」と呼ばれるアプリケーションです。マークダウン記法でウェブコンテンツを作成すると、ウェブコンテンツをHTML化し、目次やナビゲーションメニューバーやその他のパーツを自動的に生成・更新してくれます。[GitHub社ではGitHub Pages上でブログを運営するためのツールとして「Jekyll」を推奨しています](https://help.github.com/en/articles/using-jekyll-as-a-static-site-generator-with-github-pages)。
+[Jekyll<i class="fas fa-external-link-alt"></i>](http://jekyllrb-ja.github.io/)は、「静的サイトジェネレーター」と呼ばれるアプリケーションです。マークダウン記法でウェブコンテンツを作成すると、ウェブコンテンツをHTML化し、目次やナビゲーションメニューバーやその他のパーツを自動的に生成・更新してくれます。[GitHub社ではGitHub Pages上でブログを運営するためのツールとして「Jekyll」を推奨しています](https://help.github.com/en/articles/using-jekyll-as-a-static-site-generator-with-github-pages)。
 
 ##### この方法の難点
 * Jekyllはコマンドライン式アプリケーションであり素人には扱えない
@@ -94,5 +98,3 @@ Jekyllは、「静的サイトジェネレーター」と呼ばれるアプリ�
 ##### MDwikiとの比較
 * MDwikiは、本体である「mdwiki.html」ファイルをウェブサーバー上に置くだけでインストールが完了する
 * MDwikiは、マークダウン記法で書かれたナビゲーションメニューバーをHTML化する機能がある(自動生成はしない)
-
-## (以後作成中)

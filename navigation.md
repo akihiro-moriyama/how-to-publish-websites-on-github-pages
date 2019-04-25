@@ -13,8 +13,8 @@
 * [07. 真にミニマルなマークダウンエディタ・Typora](practice07.md)
 * [08. Git対応高機能テキストエディタ・ATOM](practice08.md)
 * [09. MDwikiをカスタマイズする・基本編](practice09.md)
-* [10. MDwikiをカスタマイズする・HTMLハック編](practice10.md)
-* [11. MDwikiをカスタマイズする・CSSハック編](practice11.md)
+* [10. MDwikiをカスタマイズする・HTML編](practice10.md)
+* [11. MDwikiをカスタマイズする・CSS編](practice11.md)
 * [12. 弱点克服！MDwikiをGoogle検索の対象にする](practice12.md)
 
 [解説編]()
