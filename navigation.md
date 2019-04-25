@@ -17,17 +17,8 @@
 * [11. MDwikiをカスタマイズする・CSS編](practice11.md)
 * [12. 弱点克服！MDwikiをGoogle検索の対象にする](practice12.md)
 
-[解説編]()
 
-* [Git (バージョン管理システム)](git.md)
-* [GitHub (オンラインバージョン管理サービス)](github.md)
-* [GitHub Desktop (Gitクライアント)](githubdesktop.md)
-* [GitHub Pages (GitHub会員用ウェブサーバー)](githubpages.md)
-* [MDwiki (軽量CMS)](mdwiki.md)
-* [Typora (マークダウンエディタ)](typora.md)
-* [ATOM (テキストエディタ兼Gitクライアント)](atom.md)
----
-* [Git用語一覧表](gitglossary.md)
-* [マークダウン記法一覧表](markdownglossary.md)
+
+[Git用語集](gitglossary.md)
 
 [gimmick:theme](cosmo)

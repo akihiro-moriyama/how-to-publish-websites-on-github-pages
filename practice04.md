@@ -74,4 +74,4 @@ GitHub PagesとMDwikiでウェブサイトを構築する上で、最低限知�
 
 その他のGit用語については以下のページを参照してください。
 
-note: URL [Git用語一覧表](gitglossary.md)
+note: URL [Git用語集](gitglossary.md)
