@@ -18,41 +18,46 @@
 
 「マークダウン記法」は、HTMLタグのうち頻繁に使われるタグを簡略化された符丁で表現することで素早くHTMLを書く記述法です。マークダウン記法で書かれたウェブコンテンツはプログラムによってHTMLに変換されたのち、ウェブに掲載されます。
 
-#### 最短10分でウェブサイトを構築できる
+#### 超速でウェブサイトを構築する
 
-GitHub PageとMDwikiがあれば最短10分でウェブサイトが完成します。見栄えは地味でも良いから今すぐ無料でウェブサイトを作りたい人に適しています。
+*もしもGitHubの使い方に慣れた人であれば*、GitHub PagesとMDwikiを使って10分程度でウェブサイトが完成します。「サーバーアプリケーションにありがちなコマンドラインを使ったインストール作業がない」「HTML言語を使わずマークダウン記法だけでウェブコンテンツを作成できる」ことが速さのポイントです。カスタマイズも可能で、自分のウェブサイトにオリジナリティを演出することも可能です。そしてなにより、GitHub Pagesは無料です。
 
-##### 手順
+##### ウェブサイト構築の最短手順
 
-1. GitHub[^1]でリモートリポジトリ[^2]を新規作成する
-1. GitHub Desktop[^3]でリモートリポジトリをClone[^4]し、PC上のローカルリポジトリ[^5]とする
-1. MDwiki[^6]公式サイトからMDwikiの本体「mdwiki.html」を入手する
-1. mdwiki.htmlのファイル名を「index.html」に変更する
-1. マークダウン記法[^7]で文章を書き、ファイル名を「index.md」として保存する
-1. index.htmlとindex.mdを作業ディレクトリ[^8]内に置く
-1. GitHub Desktop[^3]で作業ディレクトリ[^8]の内容をローカルリポジトリ[^5]にCommit[^9]する
-1. GitHub Desktop[^3]でローカルリポジトリ[^5]の内容をリモートリポジトリ[^2]にPush[^10]する
-1. GitHub[^1]でリモートリポジトリ[^2]の設定[Setting>GitHub Pages>Sourse]を＜none＞から＜master branch＞に変更する
-1. 数分待つとウェブサイトが公開される。URLはGitHub[^1]のリモートリポジトリ[^2]の設定[Setting>GitHub Pages]に書いてある
+1. MDwiki（mdwiki.html）と最初の原稿(index.md)を用意する
+1. mdwiki.htmlはindex.htmlにファイル名変更する
+1. GitHubで、リモートリポジトリを新規作成する
+1. GitHub Desktopで、リモートリポジトリを自分のPCに[Clone]する
+1. GitHub Desktopで、index.htmlとindex.mdをリモートリポジトリに[Push]する
+1. GitHubで、リモートリポジトリの設定[Setting>GitHub Pages>Sourse]を＜none＞から＜master branch＞に変更する
+1. 数分待つとウェブサイトが公開される
 
-[^1]: GitHub:バージョン管理サービス「Git」の機能をオンライン上で提供するWebサービス
-[^2]: リモートリポジトリ:リポジトリはファイルの変更履歴とファイルのバックアップを保管するデータベース。リモートリポジトリは原本保管場所に相当
-[^3]: GitHub_Desktop:バージョン管理サービス「Git」および「GitHub」を利用するためのアプリケーション
-[^4]: Clone:リモートリポジトリの内容をすべてPC上に複製しローカルリポジトリとすること
-[^5]: ローカルリポジトリ:リポジトリはファイルの変更履歴とファイルのバックアップを保管するデータベース。ローカルリポジトリはリモートリポジトリの複製であり、両者は定期的にデータを同期して内容の一致を保つ。
-[^6]: MDwiki:軽量CMS。マークダウン記法で書かれたウェブコンテンツをHTMLに変換してウェブサイトとして表示する機能を持つ
-[^7]: マークダウン記法:HTMLタグのうち頻繁に使われるタグを簡略化された符丁で表現することで素早くHTMLを書く記述法
-[^8]: 作業ディレクトリ:ローカルリポジトリから取り出したファイル一式を保管しておくフォルダ。作業ディレクトリはローカルリポジトリの複製であり、両者は定期的にデータを同期して内容の一致を保つ。
-[^9]: Commit:作業ディレクトリの内容をローカルリポジトリに反映させること。
-[^10]: Push:ローカルリポジトリの内容をリモートリポジトリに反映させること。
+## 総目次
 
-## ロードマップ
+#### 実践編
 
-1. **[GitHub](github.md)** に会員登録する
-1. **[GitHub Desktop](githubdesktop.md)** を入手する
-1. **[Typora](typora.md)** を入手する
-1. **[MDwiki](mdwiki.md)** を入手する
-1. Typoraでコンテンツを作成する
-1. GitHub Desktopでアップロードする
-1. MDwikiの外観をカスタマイズする
-1. ウェブサイトをGoogle検索の対象にする
+1. [なにが違うの？GitとGitHub](practice01.md)
+1. [コマンドラインはもう不要・GitHub Desktop](practice02.md)
+1. [完全無料のウェブサーバー・GitHub Pages](practice03.md)
+1. [これだけ知ればGitHub Pageを使える！Git用語](practice04.md)
+1. [たった2つのファイルでサイト構築・MDwiki](practice05.md)
+1. [圧倒的な作業の効率化！マークダウン記法](practice06.md)
+1. [真にミニマルなマークダウンエディタ・Typora](practice07.md)
+1. [Git対応高機能テキストエディタ・ATOM](practice08.md)
+1. [MDwikiをカスタマイズする・基本編](practice09.md)
+1. [MDwikiをカスタマイズする・HTMLハック編](practice10.md)
+1. [MDwikiをカスタマイズする・CSSハック編](practice11.md)
+1. [弱点克服！MDwikiをGoogle検索の対象にする](practice12.md)
+
+#### 解説編
+
+* [Git (バージョン管理システム)](git.md)
+* [GitHub (オンラインバージョン管理サービス)](github.md)
+* [GitHub Desktop (Gitクライアント)](githubdesktop.md)
+* [GitHub Pages (GitHub会員用ウェブサーバー)](githubpages.md)
+* [MDwiki (軽量CMS)](mdwiki.md)
+* [Typora (マークダウンエディタ)](typora.md)
+* [ATOM (テキストエディタ兼Gitクライアント)](atom.md)
+
+* [Git用語一覧表](gitglossary.md)
+* [マークダウン記法一覧表](markdownglossary.md)
