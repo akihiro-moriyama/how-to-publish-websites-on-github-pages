@@ -1,14 +1,11 @@
 # 実践02. コマンドラインはもう不要！GitHub Desktop
 
-## ロードマップ
+## GitHub Desktopとは
 
-1. [GitHub](github.md) に会員登録する
-1. **[GitHub Desktop](githubdesktop.md)** を入手する
-1. **[Typora](typora.md)** を入手する
-1. **[MDwiki](mdwiki.md)** を入手する
-1. Typoraでコンテンツを作成する
-1. GitHub Desktopでアップロードする
-1. MDwikiの外観をカスタマイズする
-1. ウェブサイトをGoogle検索の対象にする
+GitHub Desktopは、GitHub社の提供するGitクライアントです。
+
+Gitは元々GUIを持たないコマンドライン式のアプリケーションでしたが、コマンドラインに不慣れなユーザーに不評であったため、GitをコントロールするためのGUIアプリケーション、またはGit互換のGUIアプリケーションが多数登場しました。これらを総称して「Gitクライアント」と呼びます。
+
+Gitクライアントと呼ばれるアプリケーションは多数ありますが、GitHub DesktopはGitHub社の公式ということで人気があります。
 
 ## (以後作成中)
