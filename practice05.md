@@ -6,7 +6,7 @@
 
 note: URL http://dynalon.github.io/MDwiki/
 
-[MDwiki<i class="fas fa-external-link-alt"></i>](http://dynalon.github.io/MDwiki/)は、JavaScriptで開発されたシンプルで軽量なCMS(コンテンツ・マネジメント・システム)です。
+[MDwiki<i class="fas fa-external-link-alt"></i>](http://dynalon.github.io/MDwiki/)は、「CMS(コンテンツ・マネジメント・システム)」と呼ばれるウェブアプリケーションです。
 
 MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイルひとつしかないということです。非常にシンプルでコンパクトなCMSではありますが、その代わり多機能ではありません。マークダウン記法で書かれたウェブコンテンツをHTMLに変換する以外は他に目立った機能がほとんどないという変わり種のCMSです。
 
@@ -16,9 +16,9 @@ MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイル�
 
 最低限2つのファイルをウェブサーバー上に置けばMDwikiは動作します。サーバーアプリケーションにありがちなコマンドラインを用いたインストールは必要ありません。
 
-### 例
+##### 例
 
-##### 1. ウェブサーバー内のファイルの配置
+###### 1. ウェブサーバー内のファイルの配置
 
 ```
 (http://www.example.com/)
@@ -26,13 +26,13 @@ MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイル�
 └ index.md　　　←ウェブコンテンツ
 ```
 
-##### 2. ウェブブラウザのURL欄への入力
+###### 2. ウェブブラウザのURL欄への入力
 
 ```
 http://www.example.com/
 ```
 
-##### 3. MDwikiによって転送される先のURL
+###### 3. MDwikiによって転送される先のURL
 
 ```
 http://www.example.com/#!index.md
@@ -56,9 +56,11 @@ http://www.example.com/#!index.md
 
 ウェブサイトを構築するには複数の方法があり、それぞれ長所と短所があります。
 
-### WordPressと比較
+### WordPressとの比較
 
-[WordPress<i class="fas fa-external-link-alt"></i>](https://wordpress.org/)は、「CMS(コンテンツマネジメントシステム)」と呼ばれるウェブアプリケーションです。ユーザーが編集者アカウントでWordPressにログインしてコンテンツを投稿すると、WordPressがそれをHTMLに変換してウェブサイトとして公開する仕組みです。
+#### WordPressとは
+
+[WordPress<i class="fas fa-external-link-alt"></i>](https://wordpress.org/)は、「CMS(コンテンツ・マネジメント・システム)」と呼ばれるウェブアプリケーションです。ユーザーが編集者アカウントでWordPressにログインしてコンテンツを投稿すると、WordPressがそれをHTMLに変換してウェブサイトとして公開する仕組みです。
 
 ##### この方法の難点
 
@@ -70,7 +72,7 @@ http://www.example.com/#!index.md
 * MDwikiはGitHub Pages上で動作する
 * MDwikiはシンプル単機能であるため少数の約束事だけ覚えれば良い
 
-### GitHub Pagesのマークダウン対応と比較
+### GitHub Pagesのマークダウン対応との比較
 
 #### GitHub Pagesのマークダウン対応とは
 
@@ -86,7 +88,7 @@ http://www.example.com/#!index.md
 
 * MDwikiは、マークダウン記法で書かれたナビゲーションメニューバーをHTML化する機能がある(自動生成はしない)
 
-### GitHub社の推奨するJekyllと比較
+### GitHub社の推奨するJekyllとの比較
 
 #### Jekyllとは
 [Jekyll<i class="fas fa-external-link-alt"></i>](http://jekyllrb-ja.github.io/)は、「静的サイトジェネレーター」と呼ばれるアプリケーションです。マークダウン記法でウェブコンテンツを作成すると、ウェブコンテンツをHTML化し、目次やナビゲーションメニューバーやその他のパーツを自動的に生成・更新してくれます。[GitHub社ではGitHub Pages上でブログを運営するためのツールとして「Jekyll」を推奨しています](https://help.github.com/en/articles/using-jekyll-as-a-static-site-generator-with-github-pages)。
@@ -99,4 +101,30 @@ http://www.example.com/#!index.md
 * MDwikiは、本体である「mdwiki.html」ファイルをウェブサーバー上に置くだけでインストールが完了する
 * MDwikiは、マークダウン記法で書かれたナビゲーションメニューバーをHTML化する機能がある(自動生成はしない)
 
-## （以後作成中）
+## MDwikiの短所
+
+### GUIがない
+
+WordPressのようなメジャーなCMSの大多数は、ユーザーが編集者アカウントでWordPressにログインしてコンテンツを投稿すると、CMSがそれをHTMLに変換してウェブサイトとして公開する仕組みです。
+
+他方、MDwikiはGUIが一切ありません。マークダウン記法で書かれたウェブコンテンツをウェブサーバー上のMDwiki(mdwiki.html)と同じフォルダに置くことで、投稿と見なされます。
+
+### 目次や最新投稿一覧を自動生成しない
+
+WordPressのようなメジャーなCMSの大多数は、ユーザーがコンテンツを投稿すると、CMSがそれに応じて目次や最新投稿一覧を自動生成または自動更新してくれます。
+
+他方、MDwikiはそのような便利な機能は一切ありません。ナビゲーションメニューをマークダウン記法で書くとHTMLに変換してくれる機能があるだけです。ブログのような毎日投稿を行う運用では苦痛を感じることでしょう。
+
+### ページ読込時に一瞬レイアウトが崩れる
+
+MDwikiのウェブコンテンツは、ウェブブラウザから読み込まれる毎に都度HTMLに変換されます。PCの性能によってはこの変換処理に時間がかかり、ページ読込時に一瞬レイアウトが崩れて見えます。一瞬のこととはいえ、他のCMSでは発生しないことなので気になります。
+
+### サイト内検索ができない
+
+MDwikiに検索機能はありません。どうしてもという場合はGoogleの検索オプション`site:`に頼ることになります。
+
+> **特定のサイトを検索する**
+>
+> サイトまたはドメインの前に「`site:`」を付けます。例: `site:youtube.com` または `site:.gov`
+> ( https://support.google.com/websearch/answer/2466433 より引用)
+
