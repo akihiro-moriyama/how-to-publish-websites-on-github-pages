@@ -271,22 +271,6 @@ body{font-size:16px;}
 #md-content li>ul,
 #md-content li>dl{border-bottom:1px solid #ddd;}
 
-/* ----h6直後の順序有リストをソースコード表示風にする---- */
-#md-content h6+ol li,
-#md-content h6+ol li a{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
-#md-content h6+ol{background-color:#ddd;}
-#md-content h6+ol li:nth-child(2n){background-color:#fff;}
-#md-content h6+ol li:nth-child(2n+1){background-color:#f8f8f8;}
-#md-content h6+ol{border:1px solid #ddd;}
-#md-content h6+ol code{background-color:transparent;line-height:1.0;}
-
-/* ----h6直後の順序なしリストをalear-info風にする---- */
-#md-content h6+ul{color:#000;background-color: #fff;border:1px solid #ddd;padding-top:10px;padding-bottom:10px;}
-#md-content h6+ul li{list-style: none;}
-#md-content h6+ul>li:before {font-family:"Font Awesome 5 Free"; font-weight:900; content: "\f0da"; position: relative; margin-right:.5em; color:#ddd;}
-}
-
-
 /* ----ページトップに戻るボタンの修飾---- */
 #md-content a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:24px; padding-left:16px;}
 #md-content a.visible-xs.visible-sm.jumplink{color:#fff;margin-top:-20px;margin-bottom:-20px;}
@@ -309,7 +293,7 @@ div#md-all{overflow:hidden;}
 
 
 /* ----ページ内目次の修飾---- */
-div#md-page-menu::before{content:"目次"; color:#ddd; font-weight:bold;}
+div#md-page-menu::before{content:"table of contents"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
 #md-page-menu .panel li,
 #md-page-menu .panel li a{font-size:14px;	line-height:1.2;}
@@ -325,6 +309,29 @@ hr{border-top: 1px solid #ddd;}
 /* ----外部リンクアイコンの修飾---- */
 #md-content p i.fas.fa-external-link-alt{font-size:0.5em;padding-left:0.1em;}
 
+/* ----h6直後の順序有リストをソースコード表示風にする---- */
+#md-content h6+ol li,
+#md-content h6+ol li a{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
+#md-content h6+ol{background-color:#ddd;}
+#md-content h6+ol li:nth-child(2n){background-color:#fff;}
+#md-content h6+ol li:nth-child(2n+1){background-color:#f8f8f8;}
+#md-content h6+ol{border:1px solid #ddd;}
+#md-content h6+ol code{background-color:transparent;line-height:1.0;}
+
+/* ----h6直後の順序なしリストをalear-info風にする---- */
+#md-content h6+ul{color:#000;background-color: #fff;border:1px solid #ddd;padding-top:10px;padding-bottom:10px;padding-left:3em;text-indent:-0.9em;}
+#md-content h6+ul li{list-style: none;}
+#md-content h6+ul>li:before {font-family:"Font Awesome 5 Free"; font-weight:900; content: "\f0da"; position: relative; margin-right:.5em; color:#ddd;}
+
+/* ----h6直後の画像と順序なしリストを自己紹介とみなす---- */
+	#md-content h2+a+h6{display:none!important;}
+	#md-content h2+a+h6+p.md-image-group{width:160px;margin-top:20px;}
+	#md-content h2+a+h6+p.md-image-group+ul{list-style-type:none;padding-left:0px;}
+	#md-content h2+a+h6+p.md-image-group+ul ul{list-style-type:none;padding-left:3em;text-indent:-1.3em;}
+
+
+
+
 
 /* 401px--767px ---------------------------------------------- */
 @media only screen and (min-width: 401px)
@@ -338,8 +345,21 @@ hr{border-top: 1px solid #ddd;}
 
 /* ----ナビゲーションバーのサイトタイトル表示の表示枠の幅を広げる---- */
 	#md-all a.navbar-brand{max-width:100%;}
-}
 
+/* ----h6直後の画像と順序なしリストを自己紹介とみなす---- */
+	#md-content h2+a+h6{display:none;}
+	#md-content h2+a+h6+p.md-image-group{width:30%;float:left;display:block;}
+	#md-content h2+a+h6+p.md-image-group+ul{width:70%;float:right;list-style-type:none;display:block;margin-top:20px;}
+	#md-content h2+a+h6+p.md-image-group+ul:after{content:"";display:block;clear:both;}
+	#md-content h1,#md-content h2,#md-content h3,#md-content h4,#md-content h5{clear:both;}
+
+
+
+
+
+
+
+}
 /* 768px--991px ---------------------------------------------- */
 @media only screen and (min-width: 768px)
 {
@@ -351,8 +371,17 @@ hr{border-top: 1px solid #ddd;}
 
 /* ----ページタイトル表示の修飾---- */
 	#md-title-container .page-header{padding-bottom:32px;}
-}
 
+/* ----h6直後の画像と順序なしリストを自己紹介とみなす---- */
+	#md-content h2+a+h6{display:none;}
+	#md-content h2+a+h6+p.md-image-group{width:25%;}
+	#md-content h2+a+h6+p.md-image-group+ul{width:75%;}
+
+
+
+
+
+}
 /* 992px--max ---------------------------------------------- */
 @media only screen and (min-width: 992px)
 {
@@ -361,4 +390,12 @@ hr{border-top: 1px solid #ddd;}
 
 /* ----ページトップに戻るボタンの修飾---- */
 	#md-content a.visible-xs.visible-sm.jumplink::before{content:none;}
+
+	#md-content h2+a+h6+p.md-image-group{margin-top:10px;}
+	#md-content h2+a+h6+p.md-image-group+ul{margin-top:10px;}
+
+
+
+
+
 }
