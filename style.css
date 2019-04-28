@@ -309,6 +309,9 @@ hr{border-top: 1px solid #ddd;}
 /* ----外部リンクアイコンの修飾---- */
 #md-content p i.fas.fa-external-link-alt{font-size:0.5em;padding-left:0.1em;}
 
+/* ----h2直後のh6を消す---- */
+	#md-content h2+a+h6{display:none!important;}
+
 /* ----h6直後の順序有リストをソースコード表示風にする---- */
 #md-content h6+ol li,
 #md-content h6+ol li a{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
@@ -320,15 +323,20 @@ hr{border-top: 1px solid #ddd;}
 
 /* ----h6直後の順序なしリストをalear-info風にする---- */
 #md-content h6+ul{color:#000;background-color: #fff;border:1px solid #ddd;padding-top:10px;padding-bottom:10px;padding-left:3em;text-indent:-0.9em;}
-#md-content h6+ul li{list-style: none;}
+#md-content h6+ul>li{list-style: none;}
 #md-content h6+ul>li:before {font-family:"Font Awesome 5 Free"; font-weight:900; content: "\f0da"; position: relative; margin-right:.5em; color:#ddd;}
 
-/* ----h6直後の画像と順序なしリストを自己紹介とみなす---- */
-	#md-content h2+a+h6{display:none!important;}
-	#md-content h2+a+h6+p.md-image-group{width:160px;margin-top:20px;}
-	#md-content h2+a+h6+p.md-image-group+ul{list-style-type:none;padding-left:0px;}
-	#md-content h2+a+h6+p.md-image-group+ul ul{list-style-type:none;padding-left:3em;text-indent:-1.3em;}
+/* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
+#md-content h2+a+h6+p.md-image-group{width:160px;margin-top:20px;}
+#md-content h2+a+h6+p.md-image-group+ul{list-style-type:none;padding-left:0px;}
+#md-content h2+a+h6+p.md-image-group+ul ul{list-style-type:none;padding-left:3em;text-indent:-1.3em;}
+#md-content h2+a+h6+p.md-image-group+ul li>ol,
+#md-content h2+a+h6+p.md-image-group+ul li>ul,
+#md-content h2+a+h6+p.md-image-group+ul li>dl{border-bottom:none;}
+#md-content h2+a+h6+p.md-image-group+ul+hr{display:none;}
 
+/* ----h6直後の表組tableの1行目theadを消す---- */
+#md-content h6+ .table-bordered > thead{display:none;}
 
 
 
@@ -346,14 +354,12 @@ hr{border-top: 1px solid #ddd;}
 /* ----ナビゲーションバーのサイトタイトル表示の表示枠の幅を広げる---- */
 	#md-all a.navbar-brand{max-width:100%;}
 
-/* ----h6直後の画像と順序なしリストを自己紹介とみなす---- */
+/* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6{display:none;}
-	#md-content h2+a+h6+p.md-image-group{width:30%;float:left;display:block;}
-	#md-content h2+a+h6+p.md-image-group+ul{width:70%;float:right;list-style-type:none;display:block;margin-top:20px;}
+	#md-content h2+a+h6+p.md-image-group{width:30%;float:right;display:block;}
+	#md-content h2+a+h6+p.md-image-group+ul{width:70%;float:left;list-style-type:none;display:block;margin-top:20px;}
 	#md-content h2+a+h6+p.md-image-group+ul:after{content:"";display:block;clear:both;}
-	#md-content h1,#md-content h2,#md-content h3,#md-content h4,#md-content h5{clear:both;}
-
-
+	#md-content h1,#md-content h2,#md-content h3,#md-content h4,#md-content h5,#md-content hr{clear:both;}
 
 
 
@@ -372,7 +378,7 @@ hr{border-top: 1px solid #ddd;}
 /* ----ページタイトル表示の修飾---- */
 	#md-title-container .page-header{padding-bottom:32px;}
 
-/* ----h6直後の画像と順序なしリストを自己紹介とみなす---- */
+/* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6{display:none;}
 	#md-content h2+a+h6+p.md-image-group{width:25%;}
 	#md-content h2+a+h6+p.md-image-group+ul{width:75%;}
