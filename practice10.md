@@ -17,6 +17,8 @@ MDwikiは、MDwikiの本体であるindex.html (mdwiki.htmlをリネームした
 
 1. `</head>`と書かれた箇所のすぐ上に１行追加し、以下のように記述する
 
+   ###### コード
+
    ```
    <link rel="stylesheet" href="style.css">
    ```
@@ -73,7 +75,7 @@ FontAwesomeのアイコンはWindowsやMacのかな漢字変換では変換で�
   <i class="fas fa-cat"></i>
   ```
 
-  <i class="fas fa-cat fa-5x"></i><i class="fas fa-cat fa-4x"></i><i class="fas fa-cat fa-3x"></i><i class="fas fa-cat fa-2x"></i><i class="fas fa-cat fa-1x"></i>
+  > <i class="fas fa-cat fa-5x"></i><i class="fas fa-cat fa-4x"></i><i class="fas fa-cat fa-3x"></i><i class="fas fa-cat fa-2x"></i><i class="fas fa-cat fa-1x"></i>
 
 ### index.htmlを書き換える
 
@@ -88,6 +90,8 @@ MDwikiは、初期状態ではFontAwesomeに対応していませんが、index.
 1. テキストエディタの文字列検索機能で`</head>`と書かれた箇所を探す
 
 1. `</head>`と書かれた箇所のすぐ上に１行追加し、以下のように記述する
+
+   ###### コード
 
    ```
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">

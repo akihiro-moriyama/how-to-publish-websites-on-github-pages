@@ -71,11 +71,21 @@ ATOMとGitHubとを連携させるためには、まずトークン(40桁の乱�
 #### 手順
 
 1. GitHubにログインする
-   * URL https://github.com/
+   
+   ###### URL
+   
+   * https://github.com/
+   
 1. トークン入手用のWebページを開く
-   * URL https://github.atom.io/login 
+   
+   ###### URL
+   
+   * https://github.atom.io/login 
+   
 1. [Authorize atom]ボタンをクリックする
+
 1. [Confirm Password]欄に、GitHubのログインパスワードを入力
+
 1. 表示されたトークンをコピーする
 
 ### 3. ATOMとGitHubとを連携させる

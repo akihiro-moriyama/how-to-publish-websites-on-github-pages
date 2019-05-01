@@ -6,7 +6,7 @@ MDwikiにナビゲーションメニューを表示させるには、「navigati
 
 Attention: MDwikiにはウェブページの追加に合わせて自動的にナビゲーションメニューに項目を追加する機能がありません。ウェブページを追加した際はメニュー項目も手作業で追加してください。
 
-##### 例
+###### 例
 
 ```
 (作業ディレクトリ)
@@ -28,13 +28,17 @@ navigation.mdもマークダウン記法で記述しますが、記述には決�
 * 2行目は空白行 (マークダウン記法のルール)
 * 3行目以降の1行ごとに1メニュー項目をリンク付き文字列として記述
 
-###### 例
+##### 例
 
-1. \# サイトタイトル
-1. 
-1. \[ホーム](index.md)
-1. \[記事](example01.md)
-1. \[このサイトについて](example99.md)
+```
+# サイトタイトル
+
+[ホーム](index.md)
+[記事](example01.md)
+[このサイトについて](example99.md)
+```
+
+
 
 #### B. ドロップダウン式のナビゲーションメニューの場合
 
@@ -42,22 +46,26 @@ navigation.mdもマークダウン記法で記述しますが、記述には決�
 * 親項目に続けて順序無リスト形式でサブメニュー項目を記述する
 * 区切り線を入れたい時は半角ハイフン記号3つ(`<hr>`を意味する)を記述する
 
-###### 例
+##### 例
 
-1. \# サイトタイトル
-1. 
-1. \[ホーム](index.md)
-1. \[記事]()
-1. 
-1. \* \[記事1](example01.md)
-1. \* \[記事2](example02.md)
-1. \* \[記事3](example03.md)
-1. \---
-1. \* \[記事4](example04.md)
-1. \* \[記事5](example05.md)
-1. \* \[記事6](example05.md)
-1. 
-1. \[このサイトについて](example99.md)
+```
+# サイトタイトル
+
+[ホーム](index.md)
+[記事]()
+
+* [記事1](example01.md)
+* [記事2](example02.md)
+* [記事3](example03.md)
+---
+* [記事4](example04.md)
+* [記事5](example05.md)
+* [記事6](example05.md)
+
+[このサイトについて](example99.md)
+```
+
+
 
 ## テーマを変更する
 
@@ -69,14 +77,16 @@ MDwikiには配色やフォントを変更する「テーマtheme」と呼ばれ
 
 前述のnavigation.mdの最後の行に`[gimmick:themechooser](Choose theme)`を追加してください。
 
-###### 例
+##### 例
 
-1. \# サイトタイトル
-1. 
-1. \[ホーム](index.md)
-1. \[記事](example01.md)
-1. \[このサイトについて](example99.md)
-1. \[gimmick:themechooser](Choose theme)
+```
+# サイトタイトル
+
+[ホーム](index.md)
+[記事](example01.md)
+[このサイトについて](example99.md)
+[gimmick:themechooser](Choose theme)
+```
 
 ### 常に特定のテーマでウェブサイトを表示する場合
 
@@ -84,14 +94,18 @@ MDwikiには配色やフォントを変更する「テーマtheme」と呼ばれ
 
 前述のnavigation.mdの最後の行に、themechooserではなく今度は `[gimmick:theme](****)`を追加してください。`(****)`の部分にはあなたの好きなテーマ名称を記述してください。
 
-###### 例
+##### 例
 
-1. \# サイトタイトル
-1. 
-1. \[ホーム](index.md)
-1. \[記事](example01.md)
-1. \[このサイトについて](example99.md)
-1. \[gimmick:theme](cosmo)
+```
+# サイトタイトル
+
+[ホーム](index.md)
+[記事](example01.md)
+[このサイトについて](example99.md)
+[gimmick:theme](cosmo)
+```
+
+
 
 ## ブラウザウインドウ(タブ)にサイトタイトルを表示する
 
@@ -120,7 +134,7 @@ iconfinder.com https://www.iconfinder.com/search/?q=favicon
 
 favicon.pngファイルをindex.html(mdwiki.htmlをリネームしたもの)と同じフォルダに配置してください。
 
-##### 例
+###### 例
 
 ```
 (作業ディレクトリ)

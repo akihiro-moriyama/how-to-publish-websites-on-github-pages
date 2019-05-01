@@ -47,6 +47,8 @@ CSSファイルをテキストエディタで作成する際は文字コード�
 
 1. style.cssファイルをindex.html(mdwiki.htmlをリネームしたもの)と同じフォルダに配置する
 
+   ###### 配置例
+   
    ```
    (作業ディレクトリ)
    　├ index.html
@@ -70,6 +72,8 @@ MDwikiでは、MDwikiの本体であるindex.html (mdwiki.htmlをリネームし
 1. テキストエディタの文字列検索機能で`</head>`と書かれた箇所を探す
 
 1. `</head>`と書かれた箇所のすぐ上に１行追加し、以下のように記述する
+
+   ###### コード
 
    ```
    <link rel="stylesheet" href="style.css">
@@ -98,6 +102,37 @@ CSSカスタマイズは、古い設定を新しい設定で上書きする形�
 ウェブページの見栄えを変更したい部分を文字列選択し、右クリックメニューより[要素を調査]を選択する
 
 hint: CSSカスタマイズ作業におけるおすすめはFireFoxです。FireFoxだけは、PC上にある(ウェブサーバー上にない) MDwikiでも正常に読み込んで動作させます。
+
+## コードブロックの行頭に行番号をつける
+
+コードブロック`<pre><code>…</code></pre>`の行頭に擬似的に行番号をつけるCSS手法については、SaKuRaiさん https://www.studiomic.net/pre-line-numbers/ の解説を参考にしました。
+
+###### 考え方
+
+* `<code>`のbefore擬似要素として`content`を挿入する
+* `content`の表示位置は`<pre>`に対する絶対座標で指定する。これにより`content`は`<code>`と重なるように表示される。
+* `content`は極端に縦に細長いブロック要素であるとする。結果として`content`は`<pre>`からはみ出す
+* `<pre>`に overflow-y属性=hidden と設定し、`<pre>`からはみ出した`content`を隠す。
+* `<pre>`に overflow-x属性=scroll と設定し、ソースコード文字列の1行が長すぎる場合はスクロールで表示するものとする
+* `content`に、1(改行)2(改行)3(改行)…と行番号を書く(とりあえず50まで書けば実用上の問題はないように思う)
+* `<pre>`,`<content>`,`<code>`の各寸法値を微調整することで、コードブロックに行番号が表示されているかのように表示される。
+
+##### サンプル
+
+```
+pre *{font-size:14px;line-height:1.8;}
+pre{padding:0;}
+pre>code{padding-left:32px; margin:10px 10px 5px 10px;}
+pre{position:relative}
+pre>code:before{position:absolute; top:0px; left:0px;}
+pre>code:before{width:32px; display:block; text-align:right; padding-top:10px; border-right:1px solid #ddd; color:#aaa; content:"1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A";}
+pre{overflow-y:hidden;overflow-x:scroll;}
+pre>code{white-space:pre;}
+
+
+```
+
+
 
 ## 具体的なCSSのカスタマイズの具体例
 
