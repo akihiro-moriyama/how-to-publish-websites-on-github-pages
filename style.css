@@ -1,28 +1,13 @@
 @charset “UTF-8”;
-/* ----400px以下 ---------------------------------------------- */
-/* ----フォント---- */
+/* MDwikiに外部CSSファイルを読み込ませるため、
+<link rel="stylesheet" href="style.css">
+という行をあらかじめ追加しておく */
+/* ----基本設定（400px以下） ---------------------------------------------- */
+/* フォント */
 html,
 body,
 #md-title h1,
-#md-content h1,
-#md-content h2,
-#md-content h3,
-#md-content h4,
-#md-content h5,
-#md-content h6,
-#md-content p,
-#md-content a,
-#md-content ol,
-#md-content ul,
-#md-content li,
-#md-content dl,
-#md-content dt,
-#md-content dd,
-#md-content table,
-#md-content th,
-#md-content tr,
-#md-content td,
-#md-content blockquote{font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro',verdana,'ＭＳ Ｐゴシック', sans-serif;}
+#md-content :not(i){font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro',verdana,'ＭＳ Ｐゴシック', sans-serif;}
 #md-content pre code,
 #md-content pre,
 #md-content code,
@@ -30,215 +15,68 @@ body,
 #md-content samp,
 #md-content kbd{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
 
-/* ----フォントサイズ---- */
-html,
-body{font-size:16px;}
-#md-title h1,
+/* #md-menu */
+#md-menu a.navbar-brand{font-size:15px!important;}  /* フォントサイズ固定 */
+#md-menu ul.nav.navbar-nav>*:not(li){display:none;} /* ----navigation.mdにメニュー項目以外の情報を記述をしてもナビゲーションバーには表示されないようにする -- */
+#md-menu a.navbar-brand{max-width:80%;}
+
+/* #md-title-container   */
+body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅100%以上にするための準備 */
+#md-title-container.container{margin-top:-9px; margin-bottom:40px; background-color:#fff;}
+#md-title-container.container .page-header{margin:0 -500px; padding:55px 500px 50px; background:#fff url() no-repeat center bottom; background-size:cover;}
+#md-title-container.container .page-header h1{margin:0;padding:0;}
+#md-title-container.container .page-header h1{font-size:24px;font-weight:bold;color:#000;}
+
+/* #md-menu-container */
+
+/* #md-left-column */
+#md-left-column #md-page-menu{margin-top:10px;margin-bottom:70px;}
+
+/* #md-content */
+#md-content *:not(i){font-size:17px; line-height:1.8;}
+#md-content h1{font-size:24px; font-weight:bold; line-height:1.2;}
+#md-content h2{font-size:24px; font-weight:bold; line-height:1.2;}
+#md-content h3{font-size:20px; font-weight:bold; line-height:1.2;}
+#md-content h4{font-size:20px; font-weight:bold; line-height:1.2;}
+#md-content h5{font-size:17px; font-weight:normal; line-height:1.2;}
+#md-content h6{font-size:17px; font-weight:normal; line-height:1.2;}
+#md-content li,
+#md-content li *,
+#md-content dd,
+#md-content dd *,
+#md-content pre code{line-height:1.2;}
+#md-content pre code{font-size:14px;}
+
+/* 上下のマージン */
 #md-content h1,
 #md-content h2,
 #md-content h3,
-#md-content h4{font-size:18px; line-height:1.2;}
+#md-content h4,
 #md-content h5,
 #md-content h6,
 #md-content p,
-#md-content a,
 #md-content ol,
 #md-content ul,
-#md-content li,
 #md-content dl,
-#md-content dt,
-#md-content dd,
 #md-content table,
-#md-content th,
-#md-content tr,
-#md-content td,
+#md-content pre,
 #md-content blockquote,
-#md-content pre code,
-#md-content pre,
-#md-content code,
-#md-content var,
-#md-content samp,
-#md-content kbd{font-size:16px; line-height:1.8;}
-
-/* ----上下マージン---- */
-#md-content p,
-#md-content ol,
-#md-content ul,
-#md-content dl,
-#md-content table,
-#md-content pre,
-#md-content blockquote{margin-top:32px;margin-bottom:24px;}
-
-#md-title h1{margin-top:0px;margin-bottom:0px;}
-#md-content h1,
-#md-content h2{margin-top:88px;margin-bottom:24px;}
-#md-content h3{margin-top:64px;margin-bottom:24px;}
-#md-content h4,
-#md-content h5,
-#md-content h6{margin-top:48px;margin-bottom:24px;}
-
-#md-content li>ol,
-#md-content li>ul,
-#md-content li>dl,
-#md-content li>p,
-#md-content li>p+pre,
-#md-content li+ol,
-#md-content li+ul,
-#md-content li+dl,
-#md-content dt+ol,
-#md-content dt+ul,
-#md-content dt+dl{margin-top:0px;margin-bottom:0px;}
-
-#md-content blockquote>h1:first-child,
-#md-content blockquote>h2:first-child,
-#md-content blockquote>h3:first-child,
-#md-content blockquote>h4:first-child,
-#md-content blockquote>h5:first-child,
-#md-content blockquote>h6:first-child,
-#md-content blockquote>p:first-child,
-#md-content blockquote>ol:first-child,
-#md-content blockquote>ul:first-child,
-#md-content blockquote>dl:first-child,
-#md-content blockquote>blockquote{margin-top:0px;}
-#md-content blockquote>h1:last-child,
-#md-content blockquote>h2:last-child,
-#md-content blockquote>h3:last-child,
-#md-content blockquote>h4:last-child,
-#md-content blockquote>h5:last-child,
-#md-content blockquote>h6:last-child,
-#md-content blockquote>p:last-child,
-#md-content blockquote>ol:last-child,
-#md-content blockquote>ul:last-child,
-#md-content blockquote>dl:last-child,
-#md-content blockquote>blockquote{margin-bottom:0px;}
-
-#md-content h1+h2,
-#md-content h1+h3,
-#md-content h1+h4,
-#md-content h1+h5,
-#md-content h1+h6,
-#md-content h2+h2,
-#md-content h2+h3,
-#md-content h2+h4,
-#md-content h2+h5,
-#md-content h2+h6,
-#md-content h3+h3,
-#md-content h3+h4,
-#md-content h3+h5,
-#md-content h3+h6,
-#md-content h4+h4,
-#md-content h4+h5,
-#md-content h4+h5,
-#md-content h5+h5,
-#md-content h5+h6,
-#md-content h6+h6,
-#md-content a.visible-xs.visible-sm.jumplink+h1,
-#md-content a.visible-xs.visible-sm.jumplink+h2,
-#md-content a.visible-xs.visible-sm.jumplink+h3,
-#md-content a.visible-xs.visible-sm.jumplink+h4,
-#md-content a.visible-xs.visible-sm.jumplink+h5,
-#md-content a.visible-xs.visible-sm.jumplink+h6{margin-top:32px;}
-
-#md-content h1+p,
-#md-content h2+p,
-#md-content h3+p,
-#md-content h4+p,
-#md-content h5+p,
-#md-content h6+p,
-
-#md-content h1+ul,
-#md-content h2+ul,
-#md-content h3+ul,
-#md-content h4+ul,
-#md-content h5+ul,
-#md-content h6+ul,
-
-#md-content h1+ol,
-#md-content h2+ol,
-#md-content h3+ol,
-#md-content h4+ol,
-#md-content h5+ol,
-#md-content h6+ol,
-
-#md-content h1+dl,
-#md-content h2+dl,
-#md-content h3+dl,
-#md-content h4+dl,
-#md-content h5+dl,
-#md-content h6+dl,
-
-#md-content h1+table,
-#md-content h2+table,
-#md-content h3+table,
-#md-content h4+table,
-#md-content h5+table,
-#md-content h6+table,
-
-#md-content h1+blockquote,
-#md-content h2+blockquote,
-#md-content h3+blockquote,
-#md-content h4+blockquote,
-#md-content h5+blockquote,
-#md-content h6+blockquote,
-
-#md-content h1+pre,
-#md-content h2+pre,
-#md-content h3+pre,
-#md-content h4+pre,
-#md-content h5+pre,
-#md-content h6+pre,
-
-#md-content p+p,
-#md-content p+ul,
-#md-content p+ol,
-#md-content p+dl,
-#md-content p+table,
-#md-content p+blockquote,
-#md-content p+pre,
-#md-content p+h5,
-#md-content p+h6,
-
-#md-content ol+p,
-#md-content ol+ul,
-#md-content ol+ol,
-#md-content ol+dl,
-#md-content ol+table,
-#md-content ol+blockquote,
-#md-content ol+pre,
-#md-content ol+h5,
-#md-content ol+h6,
-
-#md-content ul+p,
-#md-content ul+ul,
-#md-content ul+ol,
-#md-content ul+dl,
-#md-content ul+table,
-#md-content ul+blockquote,
-#md-content ul+pre,
-
-#md-content h5+h6,
-#md-content h6+h6,
-#md-content ul+h5,
-#md-content ul+h6,
-#md-content pre+h6,
-#md-content pre+h6{margin-top:-12px;}
+#md-content hr{margin:10px 0;}
+#md-content *+h1,
+#md-content *+h2{margin-top:80px;}
+#md-content *+h3,
+#md-content *+h4{margin-top:40px;}
+#md-content *+h5,
+#md-content *+h6{margin-top:10px;}
+#md-content li p,
+#md-content li a{margin:0;}
 
 /* ----brockquoteの大きすぎるパディングを削る---- */
-#md-content blockquote{padding-top:10px;padding-bottom:10px; background-color:#f8f8f8;}
+#md-content blockquote{padding-top:10px;padding-bottom:10px; background-color:#fcfcfc;}
 
-
-/* ----リスト内の行間を詰め、リスト同士の間隔を広げる---- */
+/* ----リストli同士の間隔を広げる---- */
 #md-content li,
-#md-content dd{line-height:1.4;padding-top:4px;padding-bottom:4px;}
-
-/* ----見出しを太字に---- */
-#md-title h1,
-#md-content h1,
-#md-content h2,
-#md-content h3,
-#md-content h4{font-weight:bold;}
-#md-content h5,
-#md-content h6{font-weight:normal;}
+#md-content dd{padding-top:8px;padding-bottom:8px;}
 
 /* ----見出し修飾---- */
 #md-content h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding-left:10px;}
@@ -247,24 +85,20 @@ body{font-size:16px;}
 #md-content h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
 #md-content h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
 
-/* ----コードブロックの修飾---- */
-#md-content pre{background-color:#f8f8f8;color :#c7254e;}
-#md-content code,
-#md-content pre code{background-color:#f8f8f8;color :#000;}
-
 /* ----見出しアンカーの修飾---- */
+#md-content span.anchor-highlight,
 #md-content span.anchor-highlight a{font-size:12px;line-height:1.0;}
 
 /* ----表組みの修飾---- */
 #md-content .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
-#md-content .table-bordered>thead>tr>th{background-color:#f8f8f8;}
+#md-content .table-bordered>thead>tr>th{background-color:#fcfcfc;}
 #md-content .table-bordered>thead>tr>th,
 #md-content .table-bordered>tbody>tr>th,
 #md-content .table-bordered>tfoot>tr>th,
 #md-content .table-bordered>thead>tr>td,
 #md-content .table-bordered>tbody>tr>td,
 #md-content .table-bordered>tfoot>tr>td{border:0px solid #ddd; border-top:1px solid #ddd;}
-#md-content .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#f8f8f8;}
+#md-content .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#fcfcfc;}
 
 /* ----入れ子リストの修飾---- */
 #md-content li>ol,
@@ -284,14 +118,6 @@ body{font-size:16px;}
 #md-content p.alert.alert-success div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f05a"; font-size:22px;padding-right:18px; margin-top:-4px; float:left;}
 #md-content p.alert div.md-text{clear:both;}
 
-/* ----ナビゲーションバーのサイトタイトル表示の文字サイズを小さくする---- */
-#md-all a.navbar-brand{max-width:80%;font-size:14px;line-height:1.2;}
-
-/* ----ページタイトル表示の修飾---- */
-div#md-all{overflow:hidden;}
-#md-title-container .page-header{margin-left:-1000px;margin-right:-1000px;padding-left:1000px;padding-right:1000px;margin-bottom:32px; padding-bottom:38px; border-bottom:1px solid #000;}
-
-
 /* ----ページ内目次の修飾---- */
 div#md-page-menu::before{content:"table of contents"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
@@ -304,29 +130,43 @@ div#md-page-menu::before{content:"table of contents"; color:#ddd; font-weight:bo
 hr{border-top: 1px solid #ddd;}
 
 /* ----コードブロックpreの修飾---- */
-#md-content pre{border: 1px solid #ddd;}
+#md-content pre{border: 1px solid #ddd; padding:0;}
+#md-content pre>code{color:#000; margin:10px; background-color:#f8f8f8;}
+#md-content code{color:#000; background-color:#f0f0f0; border-radius:6px;}
+
+/* ----画像imgの修飾---- */
+#md-content .md-image-group.row .col-sm-12{padding:0;}
 
 /* ----外部リンクアイコンの修飾---- */
 #md-content p i.fas.fa-external-link-alt{font-size:0.5em;padding-left:0.1em;}
 
+/* ----コードブロックの行頭に擬似行番号を表示する、ただしh6直後のコードブロックには表示しない---- */
+/* 擬似行番号の表現手法についてはSaKuRaiさん https://www.studiomic.net/pre-line-numbers/ の解説を参考にしました。 */
+#md-content :not(h6)+pre{padding:0;}
+#md-content :not(h6)+pre{position:relative}
+#md-content :not(h6)+pre>code:before{position:absolute; top:0px; left:0px;}
+#md-content :not(h6)+pre>code:before{width:32px; display:block; text-align:right; line-height:1.8;padding-top:10px; border-right:1px solid #ddd; color:#aaa; background-color:#fff; content: "1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A";}
+#md-content :not(h6)+pre>code{display:block; padding-left:32px; line-height:1.8;margin-bottom:5px;}
+#md-content :not(h6)+pre{overflow-y:hidden;overflow-x:scroll;}
+#md-content :not(h6)+pre>code{white-space:pre;}
+
+/* ----このCSSではh6を特殊な表現を呼び出すキーとして使用しています。---- */
 /* ----h2直後のh6を消す---- */
-	#md-content h2+a+h6{display:none!important;}
+#md-content h2+a+h6{display:none!important;}
 
-/* ----h6直後の順序有リストをソースコード表示風にする---- */
-#md-content h6+ol li,
-#md-content h6+ol li a{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
-#md-content h6+ol{background-color:#ddd;}
-#md-content h6+ol li:nth-child(2n){background-color:#fff;}
-#md-content h6+ol li:nth-child(2n+1){background-color:#f8f8f8;}
-#md-content h6+ol{border:1px solid #ddd;}
-#md-content h6+ol code{background-color:transparent;line-height:1.0;}
+/* ----リスト内のh6を消す（リスト内に擬似行番号無のコードブロックを使いたい時にh6+pre+codeを使う）---- */
+#md-content li>p+h6{display:none;}
+#md-content li>p+h6+pre{margin-top:10px;}
 
-/* ----h6直後の順序なしリストをalear-info風にする---- */
-#md-content h6+ul{color:#000;background-color: #fff;border:1px solid #ddd;padding-top:10px;padding-bottom:10px;padding-left:3em;text-indent:-0.9em;}
-#md-content h6+ul>li{list-style: none;}
-#md-content h6+ul>li:before {font-family:"Font Awesome 5 Free"; font-weight:900; content: "\f0da"; position: relative; margin-right:.5em; color:#ddd;}
+/* ----h6直後の順序なしリストの修飾---- */
+#md-content h6+ul{border:1px solid #ddd; text-indent:-13px; padding:10px 10px 10px 32px;}
+#md-content h6+ul>li{list-style: none; padding:10px 0;}
+#md-content h6+ul>li:before {font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0da"; margin-right:5px;color:#ddd;}
 
-/* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
+/* ----h6直後の表組tableの1行目theadを消す---- */
+#md-content h6+ .table-bordered > thead{display:none;}
+
+/* ----h2直後のh6の直後に画像と順序なしリストの組み合わせがある場合、自己紹介ページとみなす---- */
 #md-content h2+a+h6+p.md-image-group{width:160px;margin-top:20px;}
 #md-content h2+a+h6+p.md-image-group+ul{list-style-type:none;padding-left:0px;}
 #md-content h2+a+h6+p.md-image-group+ul ul{list-style-type:none;padding-left:3em;text-indent:-1.3em;}
@@ -334,9 +174,6 @@ hr{border-top: 1px solid #ddd;}
 #md-content h2+a+h6+p.md-image-group+ul li>ul,
 #md-content h2+a+h6+p.md-image-group+ul li>dl{border-bottom:none;}
 #md-content h2+a+h6+p.md-image-group+ul+hr{display:none;}
-
-/* ----h6直後の表組tableの1行目theadを消す---- */
-#md-content h6+ .table-bordered > thead{display:none;}
 
 
 
@@ -351,9 +188,6 @@ hr{border-top: 1px solid #ddd;}
 	#md-content h3{font-size:20px;}
 	#md-content h4{font-size:18px;}
 
-/* ----ナビゲーションバーのサイトタイトル表示の表示枠の幅を広げる---- */
-	#md-all a.navbar-brand{max-width:100%;}
-
 /* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6{display:none;}
 	#md-content h2+a+h6+p.md-image-group{width:30%;float:right;display:block;}
@@ -361,7 +195,7 @@ hr{border-top: 1px solid #ddd;}
 	#md-content h2+a+h6+p.md-image-group+ul:after{content:"";display:block;clear:both;}
 	#md-content h1,#md-content h2,#md-content h3,#md-content h4,#md-content h5,#md-content hr{clear:both;}
 
-
+	#md-menu a.navbar-brand{max-width:100%;}
 
 
 
@@ -373,10 +207,6 @@ hr{border-top: 1px solid #ddd;}
 	#md-title h1,
 	#md-content h1,
 	#md-content h2{font-size:24px;}
-	#md-all a.navbar-brand{font-size:16px;}
-
-/* ----ページタイトル表示の修飾---- */
-	#md-title-container .page-header{padding-bottom:32px;}
 
 /* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6{display:none;}
@@ -385,23 +215,16 @@ hr{border-top: 1px solid #ddd;}
 
 
 
-
-
 }
 /* 992px--max ---------------------------------------------- */
-@media only screen and (min-width: 992px)
-{
-/* ----目次がサイドバーに移動することへの対応---- */
-	#md-content h2:nth-child(1){margin-top:0px;}
-
+@media only screen and (min-width: 992px){
 /* ----ページトップに戻るボタンの修飾---- */
 	#md-content a.visible-xs.visible-sm.jumplink::before{content:none;}
 
 	#md-content h2+a+h6+p.md-image-group{margin-top:10px;}
 	#md-content h2+a+h6+p.md-image-group+ul{margin-top:10px;}
 
-
-
+	#md-left-column #md-page-menu{margin-bottom:0px;}
 
 
 }
