@@ -24,6 +24,7 @@ body,
 /* #md-title-container   */
 body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅100%以上にするための準備 */
 #md-title-container.container{margin-top:-10px; margin-bottom:40px; background-color:#fff;}
+/* タイトル背景 */
 #md-title-container.container .page-header{margin:0 -50px; padding:55px 50px 50px; background:#666 url(./img/background.jpg) no-repeat center center; background-size:cover;}
 #md-title h1{margin:0;padding:0;}
 #md-title h1{font-size:20px;font-weight:bold;color:#fff;}
@@ -210,13 +211,11 @@ hr{border-top: 1px solid #ddd;}
 	#md-content h1,#md-content h2,#md-content h3,#md-content h4,#md-content h5,#md-content hr{clear:both;}
 
 	#md-menu a.navbar-brand{max-width:100%;}
-
-
-
 }
 /* 768px--991px ---------------------------------------------- */
 @media only screen and (min-width: 768px)
 {
+/* ----ここでナビゲーションバーがPC用になる---- */
 /* ----フォントサイズ---- */
 
 	#md-content *:not(i){font-size:17px;}
@@ -233,12 +232,17 @@ hr{border-top: 1px solid #ddd;}
 	#md-content h2+a+h6+p.md-image-group{width:25%;}
 	#md-content h2+a+h6+p.md-image-group+ul{width:75%;}
 
-	#md-title-container.container .page-header{margin:0 -100px; padding:55px 100px 50px;}
+	body{overflow-x:hidden;}
+	#md-all{overflow-x:visible;}
+
+/* タイトル背景 */
+	#md-title-container.container .page-header{margin:0 -150px; padding:55px 150px 50px;}
 
 
 }
-/* 992px--max ---------------------------------------------- */
+/* 992px--1440px ---------------------------------------------- */
 @media only screen and (min-width: 992px){
+/* ----ここから目次がサイドバーに移る---- */
 /* ----ページトップに戻るボタンの修飾---- */
 	#md-content a.visible-xs.visible-sm.jumplink::before{content:none;}
 
@@ -249,6 +253,25 @@ hr{border-top: 1px solid #ddd;}
 /* ----目次の罫線がウインドウ全体に広がることを防ぐ---- */
 	#md-left-column #md-page-menu{margin-bottom:0px; max-width:263px;}
 
-	#md-title-container.container .page-header{margin:0 -500px; padding:55px 500px 50px;}
 
+}
+/* 1441px--1840px ---------------------------------------------- */
+@media only screen and (min-width: 1441px){
+/* タイトル背景 */
+	#md-title-container.container .page-header{margin:0 -350px; padding:55px 350px 50px;}
+}
+/* 1841px--2240px ---------------------------------------------- */
+@media only screen and (min-width: 1841px){
+/* タイトル背景 */
+	#md-title-container.container .page-header{margin:0 -550px; padding:55px 550px 50px;}
+}
+/* 2241px--2640px ---------------------------------------------- */
+@media only screen and (min-width: 2241px){
+/* タイトル背景 */
+	#md-title-container.container .page-header{margin:0 -750px; padding:55px 750px 50px;}
+}
+/* 2641px--max ---------------------------------------------- */
+@media only screen and (min-width: 2641px){
+/* タイトル背景 */
+	#md-title-container.container .page-header{margin:0 -1150px; padding:55px 1150px 50px;}
 }
