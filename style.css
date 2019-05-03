@@ -16,6 +16,7 @@ body,
 #md-content kbd{font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
 
 /* #md-menu */
+#md-all{overflow-x:hidden;}
 #md-menu a.navbar-brand{font-size:15px!important;}  /* フォントサイズ固定 */
 #md-menu ul.nav.navbar-nav>*:not(li){display:none;} /* ----navigation.mdにメニュー項目以外の情報を記述をしてもナビゲーションバーには表示されないようにする -- */
 #md-menu a.navbar-brand{max-width:80%;}
