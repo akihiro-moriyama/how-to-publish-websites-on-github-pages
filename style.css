@@ -22,10 +22,10 @@ body,
 
 /* #md-title-container   */
 body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅100%以上にするための準備 */
-#md-title-container.container{margin-top:-9px; margin-bottom:40px; background-color:#fff;}
-#md-title-container.container .page-header{margin:0 -500px; padding:55px 500px 50px; background:#fff url() no-repeat center bottom; background-size:cover;}
-#md-title-container.container .page-header h1{margin:0;padding:0;}
-#md-title-container.container .page-header h1{font-size:24px;font-weight:bold;color:#000;}
+#md-title-container.container{margin-top:-10px; margin-bottom:40px; background-color:#fff;}
+#md-title-container.container .page-header{margin:0 -500px; padding:55px 500px 50px; background:#666 url(./img/background.jpg) no-repeat center center; background-size:cover;}
+#md-title h1{margin:0;padding:0;}
+#md-title h1{font-size:20px;font-weight:bold;color:#fff;}
 
 /* #md-menu-container */
 
@@ -33,13 +33,13 @@ body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅
 #md-left-column #md-page-menu{margin-top:10px;margin-bottom:70px;}
 
 /* #md-content */
-#md-content *:not(i){font-size:17px; line-height:1.8;}
-#md-content h1{font-size:24px; font-weight:bold; line-height:1.2;}
-#md-content h2{font-size:24px; font-weight:bold; line-height:1.2;}
-#md-content h3{font-size:20px; font-weight:bold; line-height:1.2;}
-#md-content h4{font-size:20px; font-weight:bold; line-height:1.2;}
-#md-content h5{font-size:17px; font-weight:normal; line-height:1.2;}
-#md-content h6{font-size:17px; font-weight:normal; line-height:1.2;}
+#md-content *:not(i){font-size:16px; line-height:1.7;}
+#md-content h1{font-size:20px; font-weight:bold; line-height:1.2;}
+#md-content h2{font-size:20px; font-weight:bold; line-height:1.2;}
+#md-content h3{font-size:16px; font-weight:normal; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
+#md-content h4{font-size:16px; font-weight:normal; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
+#md-content h5{font-size:16px; font-weight:normal; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
+#md-content h6{font-size:16px; font-weight:normal; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
 #md-content li,
 #md-content li *,
 #md-content dd,
@@ -61,27 +61,34 @@ body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅
 #md-content table,
 #md-content pre,
 #md-content blockquote,
-#md-content hr{margin:10px 0;}
+#md-content hr,
+#md-content h1,
+#md-content h2{margin:10px 0;}
 #md-content *+h1,
 #md-content *+h2{margin-top:80px;}
-#md-content *+h3,
-#md-content *+h4{margin-top:40px;}
-#md-content *+h5,
+#md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:10px;}
+#md-content *+h3{margin-top:30px;}
+#md-content *+h4{margin-top:10px;}
+#md-content *+h5{margin-top:10px;}
 #md-content *+h6{margin-top:10px;}
 #md-content li p,
 #md-content li a{margin:0;}
 
-/* ----brockquoteの大きすぎるパディングを削る---- */
-#md-content blockquote{padding-top:10px;padding-bottom:10px; background-color:#fcfcfc;}
+/* ----brockquoteの修飾---- */
+#md-content blockquote{padding:10px 10px 10px 40px; background-color:aliceblue; border-left:1px solid lavender;}
+#md-content blockquote{position:relative;}
+#md-content blockquote:after{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f10d"; font-size:30px; line-height:1; display:block; position:absolute;top:2px; left:3px; font-weight:bold; color:lavender;}
+#md-content blockquote code{background-color:#fff; }
 
 /* ----リストli同士の間隔を広げる---- */
 #md-content li,
 #md-content dd{padding-top:8px;padding-bottom:8px;}
 
 /* ----見出し修飾---- */
-#md-content h2{border-left:18px solid #aaa; border-bottom:1px solid #ddd; padding-left:10px;}
-#md-content h3::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f04d"; color:#aaa; padding-right:5px;}
-#md-content h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"〓"; color:#bbb; padding-right:5px;}
+#md-content h1{}
+#md-content h2{}
+#md-content h3{}
+#md-content h4::before{font-weight:900; content:"〓"; color:#ccc; padding-right:5px;}
 #md-content h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f0c9"; color:#ccc; padding-right:5px;}
 #md-content h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f039"; color:#ddd; padding-right:5px;}
 
@@ -106,33 +113,41 @@ body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅
 #md-content li>dl{border-bottom:1px solid #ddd;}
 
 /* ----ページトップに戻るボタンの修飾---- */
-#md-content a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:24px; padding-left:16px;}
-#md-content a.visible-xs.visible-sm.jumplink{color:#fff;margin-top:-20px;margin-bottom:-20px;}
+#md-content a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:20px; padding-left:16px;}
+#md-content a.visible-xs.visible-sm.jumplink{color:#fff;margin-top:-10px;margin-bottom:-10px;}
 
 /* ----アラートブロックの修飾---- */
-/* ----Attention: 橙---- */
-/* ----Note: 白---- */
-/* ----Hint: 緑---- */
-#md-content p.alert.alert-warning div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; font-size:22px;padding-right:16px; margin-top:-4px; float:left;}
-#md-content p.alert.alert-info{color:#000;background-color: #fff;border:1px solid #ddd; border-left:18px solid #ddd;}
-#md-content p.alert.alert-success div.md-text:before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f05a"; font-size:22px;padding-right:18px; margin-top:-4px; float:left;}
-#md-content p.alert div.md-text{clear:both;}
+/* ----Attention: 橙orangered---- */
+/* ----Note: 白#fff---- */
+/* ----Hint: 緑lightseagreen---- */
+#md-content p.alert.alert-warning{position:relative;}
+#md-content p.alert.alert-warning{color:#fff; background-color:orangered; border-left:36px solid firebrick;}
+#md-content p.alert.alert-warning div.md-text:before{position:absolute; top:10px; left:-30px; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; font-size:22px;}
+#md-content p.alert.alert-info{position:relative;}
+#md-content p.alert.alert-info{color:#000; background-color:#fff; border:1px solid #ddd; border-left:36px solid #eee;}
+#md-content p.alert.alert-info div.md-text:before{position:absolute; top:10px; left:-26px; font-family:"Font Awesome 5 Free"; font-weight:400; content:"\f02e"; font-size:22px; color:#fff;}
+#md-content p.alert.alert-success{position:relative;}
+#md-content p.alert.alert-success{color:#fff; background-color:lightseagreen; border-left:36px solid darkcyan;}
+#md-content p.alert.alert-success div.md-text:before{position:absolute; top:10px; left:-21px; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f129"; font-size:22px;}
 
 /* ----ページ内目次の修飾---- */
 div#md-page-menu::before{content:"table of contents"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
-#md-page-menu .panel li,
-#md-page-menu .panel li a{font-size:14px;	line-height:1.2;}
+#md-page-menu .panel li{font-size:14px;	line-height:1.2;padding-top:0; padding-bottom:0;}
+#md-page-menu .panel li a{font-size:14px;line-height:1.2;padding-top:10px; padding-bottom:10px; padding-left:8px; display:block;}
 #md-page-menu .panel li:last-child{border-bottom:1px solid #ddd;}
 #md-page-menu .panel .list-group-item{padding-left:0px; padding-right:0px;}
+
+#md-page-menu .panel li a.active {padding-left:8px; color:#000;text-indent:-8px;font-weight:normal;}
+#md-page-menu .panel li a.active:before {font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105"; margin-right:1px;color:#000;line-height:1;}
 
 /* ----HR線の修飾---- */
 hr{border-top: 1px solid #ddd;}
 
 /* ----コードブロックpreの修飾---- */
-#md-content pre{border: 1px solid #ddd; padding:0;}
-#md-content pre>code{color:#000; margin:10px; background-color:#f8f8f8;}
-#md-content code{color:#000; background-color:#f0f0f0; border-radius:6px;}
+#md-content pre{border: 1px solid #ddd; padding:0; background-color:floralwhite; }
+#md-content pre>code{color:#000; margin:10px; background-color:floralwhite;}
+#md-content code{color:#000; background-color:floralwhite; border-radius:4px;}
 
 /* ----画像imgの修飾---- */
 #md-content .md-image-group.row .col-sm-12{padding:0;}
@@ -145,8 +160,8 @@ hr{border-top: 1px solid #ddd;}
 #md-content :not(h6)+pre{padding:0;}
 #md-content :not(h6)+pre{position:relative}
 #md-content :not(h6)+pre>code:before{position:absolute; top:0px; left:0px;}
-#md-content :not(h6)+pre>code:before{width:32px; display:block; text-align:right; line-height:1.8;padding-top:10px; border-right:1px solid #ddd; color:#aaa; background-color:#fff; content: "1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A";}
-#md-content :not(h6)+pre>code{display:block; padding-left:32px; line-height:1.8;margin-bottom:5px;}
+#md-content :not(h6)+pre>code:before{width:36px; display:block; text-align:right; line-height:1.8;padding-top:10px; border-right:1px solid #ddd; color:#aaa; background-color:#fff; content: "1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A";}
+#md-content :not(h6)+pre>code{display:block; padding-left:36px; line-height:1.8;margin-bottom:5px;}
 #md-content :not(h6)+pre{overflow-y:hidden;overflow-x:scroll;}
 #md-content :not(h6)+pre>code{white-space:pre;}
 
@@ -185,14 +200,12 @@ hr{border-top: 1px solid #ddd;}
 	#md-title h1,
 	#md-content h1,
 	#md-content h2{font-size:22px;}
-	#md-content h3{font-size:20px;}
-	#md-content h4{font-size:18px;}
 
 /* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6{display:none;}
 	#md-content h2+a+h6+p.md-image-group{width:30%;float:right;display:block;}
-	#md-content h2+a+h6+p.md-image-group+ul{width:70%;float:left;list-style-type:none;display:block;margin-top:20px;}
-	#md-content h2+a+h6+p.md-image-group+ul:after{content:"";display:block;clear:both;}
+	#md-content h2+a+h6+p.md-image-group+ul{width:70%;float:left;list-style-type:none;display:block;margin-top:20px;margin-bottom:80px;}
+	#md-content h2+a+h6+p.md-image-group+ul:after{content:"";display:block;clear:both;overflow:hidden;}
 	#md-content h1,#md-content h2,#md-content h3,#md-content h4,#md-content h5,#md-content hr{clear:both;}
 
 	#md-menu a.navbar-brand{max-width:100%;}
@@ -204,9 +217,15 @@ hr{border-top: 1px solid #ddd;}
 @media only screen and (min-width: 768px)
 {
 /* ----フォントサイズ---- */
+
+	#md-content *:not(i){font-size:17px;}
 	#md-title h1,
 	#md-content h1,
 	#md-content h2{font-size:24px;}
+	#md-content h3{font-size:17px; font-weight:normal;}
+	#md-content h4{font-size:17px; font-weight:normal;}
+	#md-content h5{font-size:17px; font-weight:normal;}
+	#md-content h6{font-size:17px; font-weight:normal;}
 
 /* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6{display:none;}
@@ -221,6 +240,7 @@ hr{border-top: 1px solid #ddd;}
 /* ----ページトップに戻るボタンの修飾---- */
 	#md-content a.visible-xs.visible-sm.jumplink::before{content:none;}
 
+/* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6+p.md-image-group{margin-top:10px;}
 	#md-content h2+a+h6+p.md-image-group+ul{margin-top:10px;}
 
