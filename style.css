@@ -68,16 +68,16 @@ body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅
 #md-content h2{margin:10px 0;}
 #md-content *+h1,
 #md-content *+h2{margin-top:80px;}
-#md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:10px;}
-#md-content *+h3{margin-top:30px;}
-#md-content *+h4{margin-top:10px;}
-#md-content *+h5{margin-top:10px;}
-#md-content *+h6{margin-top:10px;}
+#md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:20px;}
+#md-content *+h3{margin-top:20px;}
+#md-content *+h4{margin-top:20px;}
+#md-content *+h5{margin-top:20px;}
+#md-content *+h6{margin-top:20px;}
 #md-content li p,
 #md-content li a{margin:0;}
 
 /* ----brockquoteの修飾---- */
-#md-content blockquote{padding:10px 10px 10px 40px; background-color:aliceblue; border-left:1px solid lavender;}
+#md-content blockquote{padding:10px 10px 10px 40px; background-color:aliceblue; border:1px solid lavender;}
 #md-content blockquote{position:relative;}
 #md-content blockquote:after{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f10d"; font-size:30px; line-height:1; display:block; position:absolute;top:2px; left:3px; font-weight:bold; color:lavender;}
 #md-content blockquote code{background-color:#fff; }
@@ -148,8 +148,8 @@ hr{border-top: 1px solid #ddd;}
 
 /* ----コードブロックpreの修飾---- */
 #md-content pre{border: 1px solid #ddd; padding:0; background-color:floralwhite; }
-#md-content pre>code{color:#000; margin:10px; background-color:floralwhite;}
-#md-content code{color:#000; background-color:floralwhite; border-radius:4px;}
+#md-content code{color:#000; background-color:floralwhite; border:1px solid #ddd;}
+#md-content pre>code{color:#000; margin:10px; background-color:floralwhite;border:none;}
 
 /* ----画像imgの修飾---- */
 #md-content .md-image-group.row .col-sm-12{padding:0;}

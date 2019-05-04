@@ -18,13 +18,13 @@ GitHubは、Gitの機能をインターネット上で提供するWebサービ�
 
 ### ようするに
 
-Gitはアプリケーション、GitHubはWebサービスです。両者は目的も機能はほぼ同一です。
+Gitはアプリケーション、GitHubはWebサービスです。サーバー上にGitをインストールする代わりにGitHubを使用します。
 
 ## GitとGitHubを用いた共同編集作業の一般的な流れ
 
 概ね以下の手順で作業が進行します。
 
-##### 手順
+### 手順
 
 1. 管理者がGitHubサーバー上にリモートリポジトリを置く
 1. 開発者が自分のPCにローカルリポジトリを複製する(**クローン**)
@@ -41,17 +41,17 @@ Gitクライアントと呼ばれるアプリケーションは多数ありま�
 
 それぞれの使い方は以下のページを参照してください。
 
-note: URL [実践02. コマンドラインはもう不要・GitHub Desktop](practice02.md)
+note: [実践02. コマンドラインはもう不要・GitHub Desktop](practice02.md)
 
-note: URL [実践08. Git対応高機能テキストエディタ・ATOM](practice08.md)
+note: [実践08. Git対応高機能テキストエディタ・ATOM](practice08.md)
 
 ## GitHubの使い方
 
 GitHubのすべての機能を説明し尽くすことはここではできませんが、GitHub PagesとMDwikiでウェブサイトを構築する上で必要なGitHubの操作については以下のページを参照してください。
 
-note: URL [04. これだけ知ればGitHub Pageを使える！Git用語](practice04.md)
+note: [04. これだけ知ればGitHub Pageを使える！Git用語](practice04.md)
 
-note: URL [05. たった2つのファイルでサイト構築・MDwiki](practice05.md)
+note: [05. たった2つのファイルでサイト構築・MDwiki](practice05.md)
 
 ## 関連ページ
 
