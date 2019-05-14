@@ -38,7 +38,7 @@ body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅
 #md-content *:not(i){font-size:16px; line-height:1.7;}
 #md-content h1{font-size:20px; font-weight:bold; line-height:1.2;}
 #md-content h2{font-size:20px; font-weight:bold; line-height:1.2;}
-#md-content h3{font-size:16px; font-weight:normal; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
+#md-content h3{font-size:16px; font-weight:bold; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
 #md-content h4{font-size:16px; font-weight:normal; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
 #md-content h5{font-size:16px; font-weight:normal; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
 #md-content h6{font-size:16px; font-weight:normal; line-height:1.2; font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace, 'Courier New', Courier, Monaco;}
@@ -69,10 +69,10 @@ body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅
 #md-content *+h1,
 #md-content *+h2{margin-top:80px;}
 #md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:20px;}
-#md-content *+h3{margin-top:20px;}
-#md-content *+h4{margin-top:20px;}
-#md-content *+h5{margin-top:20px;}
-#md-content *+h6{margin-top:20px;}
+#md-content *+h3{margin-top:30px;}
+#md-content *+h4{margin-top:30px;}
+#md-content *+h5{margin-top:30px;}
+#md-content *+h6{margin-top:30px;}
 #md-content li p,
 #md-content li a{margin:0;}
 
@@ -222,10 +222,10 @@ hr{border-top: 1px solid #ddd;}
 	#md-title h1,
 	#md-content h1,
 	#md-content h2{font-size:24px;}
-	#md-content h3{font-size:17px; font-weight:normal;}
-	#md-content h4{font-size:17px; font-weight:normal;}
-	#md-content h5{font-size:17px; font-weight:normal;}
-	#md-content h6{font-size:17px; font-weight:normal;}
+	#md-content h3{font-size:17px;}
+	#md-content h4{font-size:17px;}
+	#md-content h5{font-size:17px;}
+	#md-content h6{font-size:17px;}
 
 /* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6{display:none;}
