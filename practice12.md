@@ -13,21 +13,28 @@ Googleやbingなどの検索サービスは、ロボットと呼ばれる自動�
 Googleやbingにウェブサイト内のすべてのページを登録するには「sitemap.xml」が必要です。sitemap.xmlとは、Googleやbingなどの検索サービスにウェブサイトのページ構成を知らせるためのページURL一覧表です。しかしながら、MDwikiはsitemap.xmlを自動生成しないため、ウェブサイトのURLだけしか(ページとしてはindex.htmlだけしか)登録できません。
 
 ### 理由3：Googleにおける「#!」を含むURLの扱い
-ウェブページのURLが文字列`#!`を含む場合、GoogleはURLの当該箇所を`?_escaped_fragment_=`に置き換えてからそのウェブページが実在するかどうかを確認しに行きます。ようするに`#!`以降の文字列はなかったものとして扱います。よって、たとえsitemap.xmlがあったとしても、MDwikiで構築されたウェブサイトでGoogle検索の対象となるのはウェブサイトのURLだけ(ページとしてはindex.htmlだけ)になります。
+ウェブページのURLが文字列`#!`を含む場合、GoogleはURLの当該箇所を`?_escaped_fragment_=`に置き換えてからそのウェブページが実在するかどうかを確認しに行きます。MDwiki側ではそのようなURLを求められた場合、`?_escaped_fragment_=`以降の文字列はなかったものとしてページを表示します。よって、たとえsitemap.xmlがあったとしても、MDwikiで構築されたウェブサイトでGoogle検索の対象となるのはウェブサイトのURLだけ(ページとしてはindex.htmlだけ)になります。
 
-## sitemap.txtを自作する
+## 対策
 
-sitemap.xmlはXML構文で書かれるため、拡張子.xmlのファイルとして存在しますが、実はXML構文を一切用いないURLの羅列であってもGoogleは正しく認識します。その場合はsitemap.txtというファイル名になります。
+いまのところ対策としてできるのは２つです。
 
-## 表紙(index.md)に各ページの概要descriptionに相当する文書を書く
+1. Googleサーチコンソールで手作業でURLを登録する
+1. 表紙(index.md)に各ページの概要に相当する文書を書く
+
+### GoogleサーチコンソールでURLを登録する
+
+** 手順 **
+1. Googleサーチコンソールを開く <https://search.google.com/search-console/about?hl=ja>
+1. (初回利用時であればここでURL入力欄が開く)
+1. サイトのURLを入力
+1. [プロパティを追加]ボタンクリック
+1. 所有権の確認画面よりHTMLファイルをダウンロードする
+1. ダウンロードしたHTMLファイルをウェブサーバー上のindex.html(mdwiki.htmlをリネームしたもの)と同じ階層に配置する
+
+### 表紙(index.md)に各ページの概要に相当する文書を書く
 
 非常にローテクな手段ですが、index.mdに各ページの概要(description)に相当する文書を書くことで、サイト全体の概要をGoogleに伝えることができます。最低でも全ページのタイトルを書きましょう。
-
-## Google Search Consoleにウェブサイトを登録する
-
-
-
-##
 
 ## OGPを設定する
 
