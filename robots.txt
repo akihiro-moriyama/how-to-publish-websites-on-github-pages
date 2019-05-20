@@ -1,0 +1,4 @@
+User-agent: *
+allow:
+
+Sitemap: https://akihiro-moriyama.github.io/how-to-publish-websites-on-github-pages/sitemap.xml
