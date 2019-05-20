@@ -15,52 +15,19 @@ Googleやbingなどの検索サービスは、ロボットと呼ばれる自動�
 ### 理由3：Googleにおける「#!」を含むURLの扱い
 ウェブページのURLが文字列`#!`を含む場合、GoogleはURLの当該箇所を`?_escaped_fragment_=`に置き換えてからそのウェブページが実在するかどうかを確認しに行きます。ようするに`#!`以降の文字列はなかったものとして扱います。よって、たとえsitemap.xmlがあったとしても、MDwikiで構築されたウェブサイトでGoogle検索の対象となるのは index.html (mdwiki.htmlをリネームしたもの) だけになります。
 
-
-
-
 ## sitemap.txtを自作する
 
 sitemap.xmlはXML構文で書かれるため、拡張子.xmlのファイルとして存在しますが、実はXML構文を一切用いないURLの羅列であってもGoogleは正しく認識します。その場合はsitemap.txtというファイル名になります。
 
-以下に例を示します。この例でのポイントは、MDwikiのコンテンツデータである.mdファイルのURLをそのままsitemap.txtに書いている点です。.mdファイルをウェブブラウザで (MDwikiを介さずに) 表示すると文字化けするので本来はお勧めできませんが、検索されないよりはマシです。
+## 表紙(index.md)に各ページの概要descriptionに相当する文書を書く
 
-### sitemap.txtの例
-
-```
-http://www.example.com/
-http://www.example.com/index.html
-http://www.example.com/content01.md
-http://www.example.com/content02.md
-　：
-http://www.example.com/content99.md
-```
-
-### NG
-
-```
-http://www.example.com/index.html#!content01.md
-```
-
-### Okey
-
-```
-http://www.example.com/content01.md
-```
-
-
-
-
-## 表紙(index.md)に各ページの概要descriptionを書く
-
-
-
-非常にローテクな手段ですが、
+非常にローテクな手段ですが、index.mdに各ページの概要(description)に相当する文書を書くことで、サイト全体の概要をGoogleに伝えることができます。最低でも全ページのタイトルを書きましょう。
 
 ## Google Search Consoleにウェブサイトを登録する
 
 
 
-## 
+##
 
 ## OGPを設定する
 
