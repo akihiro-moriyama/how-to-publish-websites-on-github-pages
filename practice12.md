@@ -25,6 +25,7 @@ Googleやbingにウェブサイト内のすべてのページを登録するに�
 ### GoogleサーチコンソールでURLを登録する
 
 ** 手順 **
+
 1. Googleサーチコンソールを開く <https://search.google.com/search-console/about?hl=ja>
 1. (初回利用時であればここでURL入力欄が開く)
 1. サイトのURLを入力
