@@ -7,7 +7,7 @@
 html,
 body,
 #md-title h1,
-#md-content :not(i){font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','Hiragino Kaku Gothic',"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"游ゴシック","Yu Gothic",Yu-gothic,verdana,'ＭＳ Ｐゴシック',sans-serif,system-ui;}
+#md-content :not(i){font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','Hiragino Sans',"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"游ゴシック","Yu Gothic",Yu-gothic,verdana,'ＭＳ Ｐゴシック',sans-serif,system-ui;}
 #md-content pre code,
 #md-content pre,
 #md-content code,
