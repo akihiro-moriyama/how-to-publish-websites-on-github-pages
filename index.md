@@ -42,3 +42,13 @@
 ### 解説編
 
 * [Git用語集](gitglossary.md)
+
+## お問い合わせ
+
+###### 最終更新
+
+2021.4.23
+
+###### 本件問い合わせ先
+
+Akihiro MORIYAMA (https://akihiro-moriyama.github.io/)
