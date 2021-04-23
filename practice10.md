@@ -81,7 +81,7 @@ FontAwesomeのアイコンはWindowsやMacのかな漢字変換では変換で�
 
 MDwikiは、初期状態ではFontAwesomeに対応していませんが、index.html (mdwiki.htmlをリネームしたもの)の一部を書き換えることでFontAwesomeを使用できるようになります。
 
-### 手s順
+### 手順
 
 1. プログラム開発用のunicode (UTF-8)対応テキストエディタを用意する。Windows付属の「メモ帳」アプリはUTF-8非対応なので使えない(2018年秋のアップグレードで対応の予定)
 
@@ -98,6 +98,67 @@ MDwikiは、初期状態ではFontAwesomeに対応していませんが、index.
    ```
 
 1. 文字コードの設定が＜UTF-8＞のままであることを確認し、上書き保存する
+
+## OGPを設定する
+
+### OGP (Open Graph Protocol)とは
+
+ウェブページがFacebookやTwitterでシェアされた際、そのページのタイトルやサムネイル画像を表示させる仕組みのことです。
+
+ウェブページをシェアしたいユーザーは、ただURLリンクを投稿するだけでよく、タイトルやサムネイル画像はFacebookやTwitterのシステムが自動的にウェブページより入手します。
+
+### OGPを設定するには
+
+MDwikiで作成したウェブサイトにOGPを設定するには、index.html (mdwiki.htmlをリネームしたもの) にOGPに関する記述を追記します。
+
+### 手順
+
+1. プログラム開発用のunicode (UTF-8)対応テキストエディタを用意する。Windows付属の「メモ帳」アプリはUTF-8非対応なので使えない(2018年秋のアップグレードで対応の予定)
+
+1. index.htmlをテキストエディタで開く
+
+1. テキストエディタの文字列検索機能で`</head>`と書かれた箇所を探す
+
+1. `</head>`と書かれた箇所のすぐ上に、以下を追加記述する
+
+   ###### コード
+
+   ```html
+   <!-- OGP -->
+   <!-- author 作者名 -->
+   <meta name="author" content="●●●●">
+   <!-- keywords キーワード -->
+   <meta name="keywords" content="●●●●">
+   <!-- description ウェブサイトの概要説明 -->
+   <meta name="description" content="●●●● ●●●● ●●●● ●●●●" />
+   <!-- og:locale ウェブサイトの地域(言語) -->
+   <meta property="og:locale" content="ja_JP" />
+   <!-- og:type ウェブサイトの種類(サイトorブログ) -->
+   <meta property="og:type" content="website" />
+   <!-- og:title ウェブページのタイトル(MDwikiの場合はウェブサイトのタイトル) -->
+   <meta property="og:title" content="●●●●" />
+   <!-- og:description ウェブサイトの概要説明(もう一度書く) -->
+   <meta property="og:description" content="●●●● ●●●● ●●●●" />
+   <!-- og:url ウェブサイトのURL -->
+   <meta property="og:url" content="https:●●●● ●●●● ●●●● ●●●●" />
+   <!-- og:site_name ウェブサイトのタイトル -->
+   <meta property="og:site_name" content="●●●●" />
+   <!-- og:image アイキャッチ画像 -->
+   <meta property="og:image" content="https:●●●● ●●●● ●●●●/eyecatch.jpg" />
+   <!-- og:image:width アイキャッチ画像の幅pixel -->
+   <meta property="og:image:width"  content="●●●●" />
+   <!-- og:image:height アイキャッチ画像の高さpixel -->
+   <meta property="og:image:height" content="●●●" />
+   <!-- twitter:card Twitterでカード表示される際の種類 -->
+   <meta name="twitter:card" content="summary" />
+   <!-- END OGP -->
+   ```
+
+1. 文字コードの設定が＜UTF-8＞のままであることを確認し、上書き保存する
+
+##### 備考：
+
+上記のOGP設定はMDwikiで作られたウェブサイト内の全ページ共通の設定として使用されます。MDwikiでは、個々のページにOGPを設定することはできません。
 
 ## 関連ページ
 
