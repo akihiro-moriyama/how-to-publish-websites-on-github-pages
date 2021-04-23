@@ -4,9 +4,9 @@
 
 ![MDwiki公式サイト](img/mdwiki-website-1440x480.png)
 
-note: http://dynalon.github.io/MDwiki/
+note: https://dynalon.github.io/mdwiki/#!download.md
 
-[MDwiki<i class="fas fa-external-link-alt"></i>](http://dynalon.github.io/MDwiki/)は、「CMS(コンテンツ・マネジメント・システム)」と呼ばれるウェブアプリケーションです。
+[MDwiki<i class="fas fa-external-link-alt"></i>](https://dynalon.github.io/mdwiki/#!download.md)は、「CMS(コンテンツ・マネジメント・システム)」と呼ばれるウェブアプリケーションです。
 
 MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイルひとつしかないということです。非常にシンプルでコンパクトなCMSではありますが、その代わり多機能ではありません。マークダウン記法で書かれたウェブコンテンツをHTMLに変換する以外は他に目立った機能がほとんどないという変わり種のCMSです。
 
@@ -40,7 +40,7 @@ http://www.example.com/#!index.md
 
 ## ウェブサイト構築の最短手順
 
-以下に[GitHub Pages<i class="fas fa-external-link-alt"></i>](https://pages.github.com/)と[MDwiki<i class="fas fa-external-link-alt"></i>](http://dynalon.github.io/MDwiki/)を用いてのウェブサイト構築の最短手順を示します。この作業の前提として**GitおよびGitHubの使い方を既に理解している**必要があります。
+以下に[GitHub Pages<i class="fas fa-external-link-alt"></i>](https://pages.github.com/)と[MDwiki<i class="fas fa-external-link-alt"></i>](https://dynalon.github.io/mdwiki/#!download.md)を用いてのウェブサイト構築の最短手順を示します。この作業の前提として**GitおよびGitHubの使い方を既に理解している**必要があります。
 
 ### 手順
 
