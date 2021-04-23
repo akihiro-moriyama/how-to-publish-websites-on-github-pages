@@ -67,12 +67,12 @@ body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅
 #md-content h1,
 #md-content h2{margin:10px 0;}
 #md-content *+h1,
-#md-content *+h2{margin-top:80px;}
+#md-content *+h2{margin-top:110px;padding-top:10px; border-top:1px solid #ddd;}
 #md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:20px;}
-#md-content *+h3{margin-top:30px;}
-#md-content *+h4{margin-top:30px;}
-#md-content *+h5{margin-top:30px;}
-#md-content *+h6{margin-top:30px;}
+#md-content *+h3{margin-top:60px;}
+#md-content *+h4{margin-top:40px;}
+#md-content *+h5{margin-top:40px;}
+#md-content *+h6{margin-top:40px;}
 #md-content li p,
 #md-content li a{margin:0;}
 

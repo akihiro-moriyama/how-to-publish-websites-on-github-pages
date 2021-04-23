@@ -2,7 +2,7 @@
 
 ## はじめに
 
-当サイトは、GitHub PagesとMDwikiMDwikiでウェブサイトを構築する作業を通しGitHubの使い方およびマークダウン記法を学ぶ初心者向け学習コンテンツです。[このウェブサイト自体もGitHub PagesとMDwikiで構築されています](https://github.com/akihiro-moriyama/how-to-publish-websites-on-github-pages)。
+このウェブサイトは、GitHub PagesとMDwikiでウェブサイトを構築する作業を通してGitHubの使い方およびマークダウン記法を学ぶ、初心者向け学習コンテンツです。[このウェブサイト自体もGitHub PagesとMDwikiで構築されています](https://github.com/akihiro-moriyama/how-to-publish-websites-on-github-pages)。
 
 ## なぜGitHub PagesとMDwikiなのか
 
@@ -43,7 +43,9 @@
 
 * [Git用語集](gitglossary.md)
 
-## お問い合わせ
+## このサイトについて
+
+このウェブサイトは、GitHub PagesとMDwikiでウェブサイトを構築する作業を通してGitHubの使い方およびマークダウン記法を学ぶ、初心者向け学習コンテンツです。
 
 ###### 最終更新
 
