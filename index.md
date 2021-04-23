@@ -47,10 +47,10 @@
 
 このウェブサイトは、GitHub PagesとMDwikiでウェブサイトを構築する作業を通してGitHubの使い方およびマークダウン記法を学ぶ、初心者向け学習コンテンツです。
 
-###### 最終更新
+##### 最終更新
 
 2021.4.23
 
-###### 本件問い合わせ先
+##### 本件問い合わせ先
 
 Akihiro MORIYAMA (https://akihiro-moriyama.github.io/)
