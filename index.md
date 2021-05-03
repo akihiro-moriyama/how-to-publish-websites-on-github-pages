@@ -24,7 +24,9 @@
 
 ## 総目次
 
-### 実践編
+----
+
+###### 実践編
 
 1. [なにが違うの？GitとGitHub](practice01.md)
 1. [コマンドラインはもう不要・GitHub Desktop](practice02.md)
@@ -39,7 +41,7 @@
 1. [MDwikiをカスタマイズする・CSS編](practice11.md)
 1. [弱点克服！MDwikiをGoogle検索の対象にする](practice12.md)
 
-### 解説編
+###### 解説編
 
 * [Git用語集](gitglossary.md)
 

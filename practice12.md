@@ -20,13 +20,15 @@ Googleやbingなどの検索サービスは、クローラーと呼ばれる自�
 
 いまのところ対策としてできるのは３つです。
 
+###### 対策
+
 1. Googleサーチコンソールで手作業でサイトURLを登録する
 1. 表紙(index.md)に各ページの概要に相当する文書を書く
 1. 表紙以外のページについては偶然Googleクローラーに発見されるのを待つ
 
 ### GoogleサーチコンソールでURLを登録する
 
-** 手順 **
+#### 手順
 
 1. Googleサーチコンソールを開く <https://search.google.com/search-console/about?hl=ja>
 1. (初回利用時であればここでURL入力欄が開く)
@@ -45,6 +47,8 @@ Googleやbingなどの検索サービスは、クローラーと呼ばれる自�
 
 ## 関連ページ
 
+----
+
 ###### 関連ページ
 
 * [01. なにが違うの？GitとGitHub](practice01.md)
@@ -58,4 +62,4 @@ Googleやbingなどの検索サービスは、クローラーと呼ばれる自�
 * [09. MDwikiをカスタマイズする・基本編](practice09.md)
 * [10. MDwikiをカスタマイズする・HTML編](practice10.md)
 * [11. MDwikiをカスタマイズする・CSS編](practice11.md)
-* <i class="far fa-hand-point-right fa-fw"></i>12. 弱点克服！MDwikiをGoogle検索の対象にする
+* <i class="far fa-hand-point-right"></i>12. 弱点克服！MDwikiをGoogle検索の対象にする

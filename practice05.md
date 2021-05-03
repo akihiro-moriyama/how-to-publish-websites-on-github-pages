@@ -16,7 +16,7 @@ MDwikiの最大の特徴は、CMSを構成するファイルがHTMLファイル�
 
 最低限2つのファイルをウェブサーバー上に置けばMDwikiは動作します。サーバーアプリケーションにありがちなコマンドラインを用いたインストールは必要ありません。
 
-### 例
+#### 例
 
 ###### 1. ウェブサーバー内のファイルの配置
 
@@ -42,7 +42,7 @@ http://www.example.com/#!index.md
 
 以下に[GitHub Pages<i class="fas fa-external-link-alt"></i>](https://pages.github.com/)と[MDwiki<i class="fas fa-external-link-alt"></i>](https://dynalon.github.io/mdwiki/#!index.md)を用いてのウェブサイト構築の最短手順を示します。この作業の前提として**GitおよびGitHubの使い方を既に理解している**必要があります。
 
-### 手順
+#### 手順
 
 1. MDwiki（mdwiki.html）と最初の原稿(index.md)を用意する
 1. mdwiki.htmlをindex.htmlにファイル名変更する
@@ -61,12 +61,12 @@ http://www.example.com/#!index.md
 
 [WordPress<i class="fas fa-external-link-alt"></i>](https://wordpress.org/)は、「CMS(コンテンツ・マネジメント・システム)」と呼ばれるウェブアプリケーションです。ユーザーが編集者アカウントでWordPressにログインしてコンテンツを投稿すると、WordPressがそれをHTMLに変換してウェブサイトとして公開する仕組みです。
 
-この方法の難点
+#### この方法の難点
 
 * WordPressはGitHub Pages上で動作しない
 * WordPressは多機能であるため覚えなければならないことが多い
 
-MDwikiとの比較
+#### MDwikiとの比較
 
 * MDwikiはGitHub Pages上で動作する
 * MDwikiはシンプル単機能であるため少数の約束事だけ覚えれば良い
@@ -75,13 +75,13 @@ MDwikiとの比較
 
 [GitHub Pages<i class="fas fa-external-link-alt"></i>](https://pages.github.com/)自体にもマークダウン記法で書かれたウェブコンテンツをHTMLに変換して表示する機能があります。つまり「index.md」だけがあればウェブサイトとして成立します。
 
-この方法の難点
+#### この方法の難点
 
 * GitHub Pagesのマークダウン対応機能ではナビゲーションメニューバーが表示されない
 * ウェブサイトとしてページ数を増やしていきたいのであればナビゲーションメニューバーは必須
 * ナビゲーションメニューバーのためにHTMLとCSSを記述するのは時間と手間と技術知識が必要
 
-MDwikiとの比較
+#### MDwikiとの比較
 
 * MDwikiは、マークダウン記法で書かれたナビゲーションメニューバーをHTML化する機能がある(自動生成はしない)
 
@@ -89,12 +89,12 @@ MDwikiとの比較
 
 [Jekyll<i class="fas fa-external-link-alt"></i>](http://jekyllrb-ja.github.io/)は、「静的サイトジェネレーター」と呼ばれるアプリケーションです。マークダウン記法でウェブコンテンツを作成すると、ウェブコンテンツをHTML化し、目次やナビゲーションメニューバーやその他のパーツを自動的に生成・更新してくれます。[GitHub社ではGitHub Pages上でブログを運営するためのツールとして「Jekyll」を推奨しています](https://help.github.com/en/articles/using-jekyll-as-a-static-site-generator-with-github-pages)。
 
-この方法の難点
+#### この方法の難点
 
 * Jekyllはコマンドライン式アプリケーションであり素人には扱えない
 * JekyllはWindows上で動作しない
 
-MDwikiとの比較
+#### MDwikiとの比較
 
 * MDwikiは、本体である「mdwiki.html」ファイルをウェブサーバー上に置くだけでインストールが完了する
 * MDwikiは、マークダウン記法で書かれたナビゲーションメニューバーをHTML化する機能がある(自動生成はしない)
@@ -126,7 +126,11 @@ MDwikiに検索機能はありません。どうしてもという場合はGoogl
 > サイトまたはドメインの前に「`site:`」を付けます。例: `site:youtube.com` または `site:.gov`
 > ( https://support.google.com/websearch/answer/2466433 より引用)
 
+
+
 ## 関連ページ
+
+----
 
 ###### 関連ページ
 
@@ -134,7 +138,7 @@ MDwikiに検索機能はありません。どうしてもという場合はGoogl
 * [02. コマンドラインはもう不要・GitHub Desktop](practice02.md)
 * [03. 完全無料のウェブサーバー・GitHub Pages](practice03.md)
 * [04. これだけ知ればGitHub Pageを使える！Git用語](practice04.md)
-* <i class="far fa-hand-point-right fa-fw"></i>05. たった2つのファイルでサイト構築・MDwiki
+* <i class="far fa-hand-point-right"></i>05. たった2つのファイルでサイト構築・MDwiki
 * [06. 圧倒的な作業の効率化！マークダウン記法](practice06.md)
 * [07. 真にミニマルなマークダウンエディタ・Typora](practice07.md)
 * [08. Git対応高機能テキストエディタ・ATOM](practice08.md)

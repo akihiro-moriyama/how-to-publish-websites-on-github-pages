@@ -12,7 +12,7 @@ CSSはプログラム言語に似た専用の言語で記述するという決�
 
 MDwikiは、MDwikiの本体であるindex.html (mdwiki.htmlをリネームしたもの)の中に直接CSS設定を書き込んでいますが、index.htmlの一部を書き換えることで、外部のCSSファイルをCSS設定として読み込むようになります。
 
-### 手順
+#### 手順
 
 1. プログラム開発用のunicode (UTF-8)対応テキストエディタを用意する。Windows付属の「メモ帳」アプリはUTF-8非対応なので使えない(2018年秋のアップグレードで対応の予定)
 
@@ -86,7 +86,7 @@ FontAwesomeのアイコンはWindowsやMacのかな漢字変換では変換で�
 
 MDwikiは、初期状態ではFontAwesomeに対応していませんが、index.html (mdwiki.htmlをリネームしたもの)の一部を書き換えることでFontAwesomeを使用できるようになります。
 
-### 手順
+#### 手順
 
 1. プログラム開発用のunicode (UTF-8)対応テキストエディタを用意する。Windows付属の「メモ帳」アプリはUTF-8非対応なので使えない(2018年秋のアップグレードで対応の予定)
 
@@ -118,7 +118,7 @@ MDwikiは、OGPに対応していませんが、index.html (mdwiki.htmlをリネ
 
 ただし、その場合のOGP設定はMDwikiで作られたウェブサイト内の全ページ共通の設定として使用されます。MDwikiでは、個々のページにOGPを設定することはできません。
 
-### 手順
+#### 手順
 
 1. プログラム開発用のunicode (UTF-8)対応テキストエディタを用意する。Windows付属の「メモ帳」アプリはUTF-8非対応なので使えない(2018年秋のアップグレードで対応の予定)
 
@@ -165,6 +165,8 @@ MDwikiは、OGPに対応していませんが、index.html (mdwiki.htmlをリネ
 
 ## 関連ページ
 
+----
+
 ###### 関連ページ
 
 * [01. なにが違うの？GitとGitHub](practice01.md)
@@ -176,6 +178,6 @@ MDwikiは、OGPに対応していませんが、index.html (mdwiki.htmlをリネ
 * [07. 真にミニマルなマークダウンエディタ・Typora](practice07.md)
 * [08. Git対応高機能テキストエディタ・ATOM](practice08.md)
 * [09. MDwikiをカスタマイズする・基本編](practice09.md)
-* <i class="far fa-hand-point-right fa-fw"></i>10. MDwikiをカスタマイズする・HTML編
+* <i class="far fa-hand-point-right"></i>10. MDwikiをカスタマイズする・HTML編
 * [11. MDwikiをカスタマイズする・CSS編](practice11.md)
 * [12. 弱点克服！MDwikiをGoogle検索の対象にする](practice12.md)

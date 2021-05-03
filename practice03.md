@@ -40,14 +40,14 @@ hint: MDwikiはJavaScriptで開発されたCMSであるためGitHub Pages上で�
 
 GitHub Pagesでは、ウェブコンテンツのアップロードにFTPクライアントではなくGitクライアントを使います。ここではGitクライアントとして「GitHub Desktop」を使用するものとします。
 
-### 手順
+#### 手順
 
 1. GitHub Desktopを起動
 1. 変更内容を反映させたいリモートリポジトリおよびブランチを指定
 1. [Commit to master]ボタンをクリック
 1. [Push origin]ボタンをクリック
 
-### 備考
+#### 備考
 
 * リモートリポジトリおよびブランチを選択すると、それと対応付けされた作業ディレクトリも自動的に選択されます。
 * コミットCommitにより、PC上にあるローカルリポジトリ内にファイルのバックアップが保存され、且つ、変更履歴が記録されます。
@@ -85,11 +85,13 @@ note: [05. たった2つのファイルでサイト構築・MDwiki](practice05.m
 
 ## 関連ページ
 
+----
+
 ###### 関連ページ
 
 * [01. なにが違うの？GitとGitHub](practice01.md)
 * [02. コマンドラインはもう不要・GitHub Desktop](practice02.md)
-* <i class="far fa-hand-point-right fa-fw"></i>03. 完全無料のウェブサーバー・GitHub Pages
+* <i class="far fa-hand-point-right"></i>03. 完全無料のウェブサーバー・GitHub Pages
 * [04. これだけ知ればGitHub Pageを使える！Git用語](practice04.md)
 * [05. たった2つのファイルでサイト構築・MDwiki](practice05.md)
 * [06. 圧倒的な作業の効率化！マークダウン記法](practice06.md)

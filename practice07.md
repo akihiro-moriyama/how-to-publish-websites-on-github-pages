@@ -18,17 +18,17 @@ note: URL https://typora.io/
 
 ## インストール
 
-### Macの場合
+#### Macの場合
 
 .dmgファイルを開き、中にあるアプリケーションアイコンをMacOSの「アプリケーション」フォルダにコピーしてください。
 
-### Windowsの場合
+#### Windowsの場合
 
 .exeファイルを実行してください。
 
 ## 使い方
 
-### 初期設定の変更
+#### 初期設定の変更
 
 マークダウン記法にはいくつかの「方言」があります。GitHub PagesとMDwikiでウェブサイトを構築する場合は「GFM (GitHub Flavored Markdown)」と呼ばれる記法で記述する必要があります。
 
@@ -36,7 +36,7 @@ Typoraの「厳密モード」と呼ばれる機能を使うと、TyporaはGFM�
 
 Attention: 自動的に他のマークダウン方言をGFM記法に変換してくれるわけではありません。
 
-### 手順
+#### 手順
 
 1. Typoraを起動する
 1. メニューより[Typora>設定…]を開く(Mac版の場合)
@@ -50,6 +50,8 @@ Attention: 自動的に他のマークダウン方言をGFM記法に変換して
 
 ## 関連ページ
 
+----
+
 ###### 関連ページ
 
 * [01. なにが違うの？GitとGitHub](practice01.md)
@@ -58,7 +60,7 @@ Attention: 自動的に他のマークダウン方言をGFM記法に変換して
 * [04. これだけ知ればGitHub Pageを使える！Git用語](practice04.md)
 * [05. たった2つのファイルでサイト構築・MDwiki](practice05.md)
 * [06. 圧倒的な作業の効率化！マークダウン記法](practice06.md)
-* <i class="far fa-hand-point-right fa-fw"></i>07. 真にミニマルなマークダウンエディタ・Typora
+* <i class="far fa-hand-point-right"></i>07. 真にミニマルなマークダウンエディタ・Typora
 * [08. Git対応高機能テキストエディタ・ATOM](practice08.md)
 * [09. MDwikiをカスタマイズする・基本編](practice09.md)
 * [10. MDwikiをカスタマイズする・HTML編](practice10.md)

@@ -8,6 +8,8 @@ Gitには独自の概念と用語が多く非常に難解ですが、Gitは大�
 
 GitHub PagesとMDwikiでウェブサイトを構築する上で、最低限知っておくべきGit用語は以下6つです。
 
+###### 知っておくべきGit用語
+
 1. リモートリポジトリ
 1. ローカルリポジトリ
 1. 作業ディレクトリ
@@ -78,12 +80,14 @@ note: [Git用語集](gitglossary.md)
 
 ## 関連ページ
 
+----
+
 ###### 関連ページ
 
 * [01. なにが違うの？GitとGitHub](practice01.md)
 * [02. コマンドラインはもう不要・GitHub Desktop](practice02.md)
 * [03. 完全無料のウェブサーバー・GitHub Pages](practice03.md)
-* <i class="far fa-hand-point-right fa-fw"></i>04. これだけ知ればGitHub Pageを使える！Git用語
+* <i class="far fa-hand-point-right"></i>04. これだけ知ればGitHub Pageを使える！Git用語
 * [05. たった2つのファイルでサイト構築・MDwiki](practice05.md)
 * [06. 圧倒的な作業の効率化！マークダウン記法](practice06.md)
 * [07. 真にミニマルなマークダウンエディタ・Typora](practice07.md)

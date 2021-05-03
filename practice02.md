@@ -12,10 +12,13 @@ Gitクライアントと呼ばれるアプリケーションは多数ありま�
 
 ## 関連ページ
 
+----
+
+
 ###### 関連ページ
 
 * [01. なにが違うの？GitとGitHub](practice01.md)
-* <i class="far fa-hand-point-right fa-fw"></i>02. コマンドラインはもう不要・GitHub Desktop
+* <i class="far fa-hand-point-right"></i>02. コマンドラインはもう不要・GitHub Desktop
 * [03. 完全無料のウェブサーバー・GitHub Pages](practice03.md)
 * [04. これだけ知ればGitHub Pageを使える！Git用語](practice04.md)
 * [05. たった2つのファイルでサイト構築・MDwiki](practice05.md)

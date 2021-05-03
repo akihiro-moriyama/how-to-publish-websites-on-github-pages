@@ -1,19 +1,73 @@
 @charset “UTF-8”;
-/* MDwikiに外部CSSファイルを読み込ませるため、
-<link rel="stylesheet" href="style.css">
-という行をあらかじめ追加しておく */
+/* ------------------------------------------------------------------------ */
+/* MDwikiに外部CSSファイルを読み込ませるため、index.htmlに<link rel="stylesheet" href="style.css">という行をあらかじめ追加しておく */
+
+
 /* ----基本設定（400px以下） ---------------------------------------------- */
-/* フォント */
+/* フォント(プロポーショナル) */
 html,
 body,
-#md-title h1,
-#md-content :not(i){font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','Hiragino Sans',"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"游ゴシック","Yu Gothic",Yu-gothic,verdana,'ＭＳ Ｐゴシック',sans-serif,system-ui;}
-#md-content pre code,
+#md-title,
+#md-menu,
+#md-all,
+#md-content,
+#md-content :not(i):not(pre):not(code):not(var):not(samp):not(tt):not(kbd){
+    font-family: 
+    'メイリオ',Meiryo,
+    'ヒラギノ角ゴ ProN W3',
+    'ヒラギノ角ゴ Pro W3',
+    'ヒラギノ角ゴシック',
+    'Hiragino Kaku Gothic ProN',
+    'Hiragino Kaku Gothic Pro',
+    'Hiragino Sans',
+    "游ゴシック Medium",
+    "Yu Gothic Medium",
+    "游ゴシック体",
+    YuGothic,
+    "游ゴシック",
+    "Yu Gothic",
+    Yu-gothic,verdana,
+    'ＭＳ Ｐゴシック'
+    ,sans-serif,
+    system-ui;
+}
+/* フォント(等幅) */
 #md-content pre,
 #md-content code,
 #md-content var,
 #md-content samp,
-#md-content kbd{font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','Hiragino Sans',"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"游ゴシック","Yu Gothic",Yu-gothic,verdana,'ＭＳ Ｐゴシック',sans-serif,system-ui;}
+#md-content tt,
+#md-content kbd{
+    font-family:
+    'Noto Sans Mono CJK JP',            /* Noto */
+    'Source Han Code JP',               /* 源ノ角 */
+    'Ricty',                            /* Inconsolata, Migu 1M */
+    'Ricty Diminished',                 /* Inconsolata, Circle M+ 1m */
+    'Ricty Diminished Discord',         /* Inconsolata, Circle M+ 1m */
+    'Myrica M',                         /* Inconsolata, 源真ゴシック or Mgen+ */
+    'MyricaM M',                        /* Inconsolata, Mgen+ */
+    'Rounded M+ 1m regular',            /* M+ OUTLINE FONTS, 源ノ角ゴシック */
+    'Rounded M+ 2m regular',            /* M+ OUTLINE FONTS, 源ノ角ゴシック */
+    'Rounded Mgen+ 1m regular',         /* M+ OUTLINE FONTS, 源ノ角ゴシック */
+    'Rounded Mgen+ 2m regular',         /* M+ OUTLINE FONTS, 源ノ角ゴシック */
+    'Migu 1M',                          /* M+, IPAゴシック */
+    'Migu 2M',                          /* M+, IPAゴシック */
+    'VL ゴシック',                      /* M+ OUTLINE FONTS */
+    'M+ 1m',                            /* M+ */
+    'M+ 2m',                            /* M+ */
+    'Yutapon coding Regular',           /* Yutapon */
+    SFMono-Regular,                     /* SF Mono, Migu 1M (macOS10.12+) */
+    Consolas,                           /* 英字 (WindowsVista+) */
+    'Roboto Mono',                      /* 英字 (Android4+) */
+    'Courier New',                      /* Courier (macOS10.3+?, iOS4+?, WindowsXP+?) */
+    monospace,
+    Meiryo;                             /* 日本語 (WindowsVista+) */
+}
+
+
+/* 強調strong　蛍光マーカーで引いたような下線を引く */
+strong{background:linear-gradient(transparent 65%, #fde 65%);}
+
 
 /* #md-menu */
 #md-all{overflow-x:hidden;}
@@ -21,82 +75,177 @@ body,
 #md-menu ul.nav.navbar-nav>*:not(li){display:none;} /* ----navigation.mdにメニュー項目以外の情報を記述をしてもナビゲーションバーには表示されないようにする -- */
 #md-menu a.navbar-brand{max-width:80%;}
 
+
+/* #md-page-menu */
+#md-page-menu p,
+#md-page-menu a,
+#md-page-menu a:link,
+#md-page-menu a:active,
+#md-page-menu a:visited{color:#000;}
+
+
 /* #md-title-container   */
 body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅100%以上にするための準備 */
 #md-title-container.container{margin-top:-10px; margin-bottom:40px; background-color:#fff;}
+
+
 /* タイトル背景 */
 #md-title-container.container .page-header{margin:0 -50px; padding:55px 50px 50px; background:#666 url(./img/background.jpg) no-repeat center center; background-size:cover;}
 #md-title h1{margin:0;padding:0;}
 #md-title h1{font-size:20px;font-weight:bold;color:#fff;}
 
+
 /* #md-menu-container */
+
 
 /* #md-left-column */
 #md-left-column #md-page-menu{margin-top:10px;margin-bottom:70px;}
 
-/* #md-content */
-#md-content *:not(i){font-size:16px; line-height:1.7;}
-#md-content h1{font-size:20px; font-weight:bold; line-height:1.2;}
-#md-content h2{font-size:20px; font-weight:bold; line-height:1.2;}
-#md-content h3{font-size:16px; font-weight:bold; line-height:1.2; font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','Hiragino Sans',"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"游ゴシック","Yu Gothic",Yu-gothic,verdana,'ＭＳ Ｐゴシック',sans-serif,system-ui;}
-#md-content h4{font-size:16px; font-weight:bold; line-height:1.2; font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','Hiragino Sans',"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"游ゴシック","Yu Gothic",Yu-gothic,verdana,'ＭＳ Ｐゴシック',sans-serif,system-ui;}
-#md-content h5{font-size:16px; font-weight:bold; line-height:1.2; font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','Hiragino Sans',"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"游ゴシック","Yu Gothic",Yu-gothic,verdana,'ＭＳ Ｐゴシック',sans-serif,system-ui;}
-#md-content h6{font-size:16px; font-weight:bold; line-height:1.2; font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','ヒラギノ角ゴ Pro W3','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','Hiragino Sans',"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"游ゴシック","Yu Gothic",Yu-gothic,verdana,'ＭＳ Ｐゴシック',sans-serif,system-ui;}
-#md-content li,
-#md-content li *,
-#md-content dd,
-#md-content dd *,
-#md-content pre code{line-height:1.2;}
-#md-content pre code{font-size:14px;}
 
-/* 上下のマージン */
+/* #md-all */
+#md-all hr{border-top:1px solid #ddd;}
+
+
+/* #md-content */
+#md-content p,
+#md-content *:not(i){font-size:16px; line-height:1.8;}
+
 #md-content h1,
-#md-content h2,
+#md-content h2{font-size:20px; font-weight:bold; line-height:1.2;}
 #md-content h3,
 #md-content h4,
 #md-content h5,
-#md-content h6,
-#md-content p,
-#md-content ol,
-#md-content ul,
-#md-content dl,
-#md-content table,
-#md-content pre,
-#md-content blockquote,
+#md-content h6{font-size:16px; font-weight:bold; line-height:1.2;}
+
+#md-content li,
+#md-content li *,
+#md-content dd,
+#md-content dd *{line-height:1.4;}
+
+/* ----コードブロックpreの修飾---- */
+#md-content pre{border: 1px solid #ddd; padding:0; background-color:floralwhite; }
+#md-content code{color:#000; background-color:floralwhite; border:1px solid #ddd;}
+#md-content pre>code{color:#000; margin:10px 10px 5px 10px; background-color:floralwhite;border:none;}
+#md-content pre>code{font-size:14px; line-height:1.6;}
+
+#md-content li pre{padding:0; margin:0.5em 0;}
+#md-content li pre>code{text-indent:0; }
+
+/* 擬似行番号の表現手法についてはSaKuRaiさん https://www.studiomic.net/pre-line-numbers/ の解説を参考にしました。 */
+/* ----h6直後だけcodeブロックから行番号を消す---- */
+#md-content li>h6{display:none;}
+#md-content h6+pre{padding:0; position:inherit overflow-y:inherit;overflow-x:inherit;}
+#md-content h6+pre>code{display:inherit; padding-left:0;}
+#md-content h6+pre>code{white-space:pre-wrap;}
+#md-content h6+pre>code::before{position:inherit; content:none; }
+/* ----codeブロックに行数字を表示する---- */
+#md-content pre{padding:0; position:relative; overflow-y:hidden; overflow-x:scroll;}
+#md-content pre>code{display:block; padding-left:36px; font-size:14px; line-height:1.6;margin-bottom:5px;}
+#md-content pre>code{white-space:pre;}
+#md-content pre>code::before{position:absolute; top:0px; left:0px; width:36px; display:block; text-align:right; line-height:1.6;padding-top:10px; padding-right:2px; border-right:1px solid #ddd; color:#aaa; background-color:#fff; content: "1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A";}
+
+
+/* 上下のマージン */
+#md-content *:not(i){margin:2rem 0;}
+#md-content li,
+#md-content dd{margin:2rem 0;}
+#md-content a,
+#md-content br,
 #md-content hr,
-#md-content h1,
-#md-content h2{margin:20px 0;}
+#md-content span,
+#md-content div,
+#md-content div.md-text{margin:0; padding:0;}
+#md-content pre{margin:0.5rem 0; padding:0;}
+
+/* 子要素の長兄でない場合 */
 #md-content *+h1,
 #md-content *+h2{margin-top:110px;padding-top:10px; border-top:1px solid #ddd;}
-#md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:20px;}
 #md-content *+h3{margin-top:80px;}
-#md-content *+h4{margin-top:60px;}
-#md-content *+h5{margin-top:60px;}
+#md-content *+h4{margin-top:40px;}
+#md-content *+h5{margin-top:40px;}
 #md-content *+h6{margin-top:40px;}
-#md-content li p,
-#md-content li a{margin:0;}
 
-/* ----brockquoteの修飾---- */
-#md-content blockquote{padding:10px 10px 10px 40px; background-color:aliceblue; border:1px solid lavender;}
+
+/* ----brockquoteの修飾、左に3.5rem(35px)の大きな余白を入れる---- */
+#md-content blockquote{padding:1rem 1rem 1rem 3.5rem; background-color:aliceblue; border:1px solid lavender;}
 #md-content blockquote{position:relative;}
-#md-content blockquote:after{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f10d"; font-size:30px; line-height:1; display:block; position:absolute;top:2px; left:3px; font-weight:bold; color:lavender;}
+#md-content blockquote::after{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f10d"; font-size:2.5rem; line-height:1; display:block; position:absolute;top:2px; left:3px; font-weight:bold; color:lavender;}
 #md-content blockquote code{background-color:#fff; }
 
-/* ----リストli同士の間隔を広げる---- */
-#md-content li,
-#md-content dd{padding-top:8px;padding-bottom:8px;}
+#md-content li blockquote::after{ left:30px}
+
+
+/* ----数式ブロックの修飾---- */
+#md-content div.MathJax_Display{padding:1rem 1rem 1rem 1rem; background-color:#fcfcfc; border:1px solid #ddd;}
+
+
+/* ----DT/DDの修飾---- */
+#md-content dt{border-top:1px solid #ddd;background-color:#fcfcfc;}
+#md-content dl{border-bottom:1px solid #ddd;}
+
+
+/* ----リストの修飾---- */
+#md-content ol{list-style:none; padding-left: 3.5rem; text-indent:-3.3rem; }
+#md-content ol{counter-reset:li;}
+#md-content ol>li::before{
+    display:inline-block; 
+    width:3.3rem; text-align:right; 
+    padding-right:0.2rem; 
+    color:#bbb; 
+    font-weight:bold; 
+    counter-increment:li; 
+    content:counter(li) ". "; }
+
+#md-content ul{list-style:none; padding-left: 3.5rem; text-indent:-2.5rem; }
+#md-content ul{}
+#md-content ul>li::before{
+    display:inline-block; 
+    width:2.5rem; text-align:right; 
+    padding-right:1rem; 
+    font-weight:900; 
+    font-family:"Font Awesome 5 Free"; 
+    content:"\f111"; 
+    font-size:8px; 
+    color:#333;}
+#md-content ul li>p{padding:0,margin:0;}
+
+
+/* ----入れ子リストの修飾---- */
+#md-content li p,
+#md-content li p>div.md-text{display:inline; padding:0; text-indent:0; }
+
+#md-content li>blockquote>p{padding-left:1.5em;}
+
+#md-content li>ol,
+#md-content li>ul,
+#md-content li>dl{padding-left:2.5rem; border-left:1px dashed #ddd;}
+
+#md-content li li>ol,
+#md-content li li>ul,
+#md-content li li>dl{padding-left:2.5rem; border-left:0px dashed #ddd;}
+
+#md-content li ol>li::before{font-weight:normal;content:counter(li) ") "; }
+#md-content li ul>li::before{font-weight:700;content:"- ";font-size:100%; color:#bbb;}
+
+#md-content li li ol>li::before{font-weight:normal;content:counter(li) ": "; color:#bbb;}
+#md-content li li ul>li::before{font-weight:500;content:"- ";font-size:100%; color:#bbb;}
 
 /* ----見出し修飾---- */
 #md-content h1{}
 #md-content h2{}
 #md-content h3{}
-#md-content h4::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105"; color:#ccc; padding-right:5px;}
-#md-content h5::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105\f105"; color:#ccc; padding-right:5px;}
-#md-content h6::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105\f105\f105"; color:#ccc; padding-right:5px;}
+#md-content h4::before{display:inline-block; width:2rem; margin-right:0.2rem; font-size:0.8em; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f009"; text-align:left; color:#999;}
+#md-content h5::before{display:inline-block; width:2rem; margin-right:0.2rem; font-size:0.8em; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f02b"; text-align:left; color:#ccc;}
+#md-content h6::before{display:inline-block; width:2rem; margin-right:0.2rem; font-size:0.8em; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f02c"; text-align:right; color:#d8d8d8;}
+#md-content h5{color:#777;}
+#md-content h6{color:#777;}
 
 /* ----見出しアンカーの修飾---- */
 #md-content span.anchor-highlight,
 #md-content span.anchor-highlight a{font-size:12px;line-height:1.0;}
+
+#md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:45px;}
+
 
 /* ----表組みの修飾---- */
 #md-content .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
@@ -109,30 +258,63 @@ body{overflow-x:hidden;}  /* マイナスマージンで.page-header要素を幅
 #md-content .table-bordered>tfoot>tr>td{border:0px solid #ddd; border-top:1px solid #ddd;}
 #md-content .table thead>tr>th{border-bottom:0px solid #ddd; background-color:#fcfcfc;}
 
-/* ----入れ子リストの修飾---- */
-#md-content li>ol,
-#md-content li>ul,
-#md-content li>dl{border-bottom:1px solid #ddd;}
-
 /* ----ページトップに戻るボタンの修飾---- */
-#md-content a.visible-xs.visible-sm.jumplink::before{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:20px; padding-left:16px;}
-#md-content a.visible-xs.visible-sm.jumplink{color:#fff;margin-top:-10px;margin-bottom:-10px;}
+#md-content a.visible-xs.visible-sm.jumplink::after{font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f139"; color:#ddd; font-size:20px;}
+#md-content a.visible-xs.visible-sm.jumplink{font-size:6px; text-align:right; color:#fff;margin-top:-53px;margin-bottom:0px;}
+#md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:83px;}
 
-/* ----アラートブロックの修飾---- */
-/* ----Attention: 橙orangered---- */
-/* ----Note: 白#fff---- */
-/* ----Hint: 緑lightseagreen---- */
-#md-content p.alert.alert-warning{position:relative;}
-#md-content p.alert.alert-warning{color:#fff; background-color:orangered; border-left:36px solid firebrick;}
-#md-content p.alert.alert-warning div.md-text:before{position:absolute; top:10px; left:-30px; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; font-size:22px;}
+/* ----アラートブロックの修飾-------- */
+/* ----primary  : 白#fcfcfc---------- */
+/* ----secondary: 白#fcfcfc---------- */
+/* ----Attention: 橙orangered-------- */
+/* ----Note     : 白#fff------------- */
+/* ----Hint     : 緑lightseagreen---- */
+#md-content p.alert.alert-doubled{position:relative;}
+#md-content p.alert.alert-doubled{color:#000; background-color:#fff; border:2px solid #ddd; border-radius: 10px; margin-right:72px; margin-left:72px; min-height:54px;}
+#md-content p.alert.alert-doubled::before{position:absolute; top:-3px; left:-72px; content:""; width:60px; height:60px; border-radius: 50%; background:#ccc url(./img/primary.png) no-repeat center center; background-size:cover;}
+#md-content p.alert.alert-doubled::after{position:absolute; top:-3px; right:-72px; content:""; width:60px; height:60px; border-radius: 50%; background:#ccc url(./img/secondary.png) no-repeat center center; background-size:cover;}
+#md-cccontent p.alert.alert-doubled .md-text::before{position:absolute; top:17px; right:-11px; content:""; width:10px; height:20px; border-left:10px solid #ddd; border-top:10px solid transparent; border-bottom:10px solid transparent;}
+#md-cccontent p.alert.alert-doubled .md-text::after{position:absolute; top:17px; left:-11px; content:""; width:10px; height:20px; border-right:10px solid #ddd; border-top:10px solid transparent; border-bottom:10px solid transparent;}
+
+#md-content p.alert.alert-primary{position:relative;}
+#md-content p.alert.alert-primary{color:#000; background-color:#fff; border:2px solid #ddd; border-radius: 10px; margin-left:72px; min-height:54px;}
+#md-content p.alert.alert-primary::before{position:absolute; top:-3px; left:-72px; content:""; width:60px; height:60px; border-radius: 50%; background:#ccc url(./img/primary.png) no-repeat center center; background-size:cover;}
+#md-content p.alert.alert-primary .md-text::before{position:absolute; top:17px; left:-11px; content:""; width:10px; height:20px; border-right:10px solid #ddd; border-top:10px solid transparent; border-bottom:10px solid transparent;}
+#md-content p.alert.alert-primary .md-text::after{position:absolute; top:17px; left:-8px; content:""; width:10px; height:20px; border-right:10px solid #fff; border-top:10px solid transparent; border-bottom:10px solid transparent;}
+
+#md-content p.alert.alert-secondary{position:relative;}
+#md-content p.alert.alert-secondary{color:#000; background-color:#fff; border:2px solid #ddd; border-radius: 10px; margin-right:72px; min-height:54px;}
+#md-content p.alert.alert-secondary::after{position:absolute; top:-3px; right:-72px; content:""; width:60px; height:60px; border-radius: 50%; background:#ccc url(./img/secondary.png) no-repeat center center; background-size:cover;}
+#md-content p.alert.alert-secondary .md-text::before{position:absolute; top:17px; right:-11px; content:""; width:10px; height:20px; border-left:10px solid #ddd; border-top:10px solid transparent; border-bottom:10px solid transparent;}
+#md-content p.alert.alert-secondary .md-text::after{position:absolute; top:17px; right:-8px; content:""; width:10px; height:20px; border-left:10px solid #fff; border-top:10px solid transparent; border-bottom:10px solid transparent;}
+
+
 #md-content p.alert.alert-info{position:relative;}
-#md-content p.alert.alert-info{color:#000; background-color:#fff; border:1px solid #ddd; border-left:36px solid #eee;}
-#md-content p.alert.alert-info div.md-text:before{position:absolute; top:10px; left:-26px; font-family:"Font Awesome 5 Free"; font-weight:400; content:"\f02e"; font-size:22px; color:#fff;}
-#md-content p.alert.alert-success{position:relative;}
-#md-content p.alert.alert-success{color:#fff; background-color:lightseagreen; border-left:36px solid darkcyan;}
-#md-content p.alert.alert-success div.md-text:before{position:absolute; top:10px; left:-21px; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f129"; font-size:22px;}
+#md-content p.alert.alert-info{color:#555; background-color:#fff; border:1px solid #ddd; border-left:36px solid #ddd;}
+#md-content p.alert.alert-info::before{position:absolute; top:10px; left:-26px; font-family:"Font Awesome 5 Free"; font-weight:400; content:"\f02e"; font-size:22px; color:#fff;}
 
-/* ----ページ内目次の修飾---- */
+#md-content p.alert.alert-warning{position:relative;}
+#md-content p.alert.alert-warning{color:#fff; background-color:orangered; border:0px solid #ddd; border-left:36px solid firebrick;}
+#md-content p.alert.alert-warning::before{position:absolute; top:10px; left:-30px; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f071"; font-size:22px;}
+
+#md-content p.alert.alert-success{position:relative;}
+#md-content p.alert.alert-success{color:#fff; background-color:lightseagreen; border:0px solid #ddd; border-left:36px solid darkcyan;}
+#md-content p.alert.alert-success::before{position:absolute; top:10px; left:-21px; font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f129"; font-size:22px;}
+
+
+/* ----HR線の修飾---- */
+hr{border-top: 1px solid #ddd;}
+
+
+/* ----画像imgの修飾---- */
+#md-content .md-image-group.row .col-sm-12{padding:0;}
+
+
+/* ----外部リンクアイコンの修飾---- */
+#md-content p i.fas.fa-external-link-alt{font-size:0.5em;padding-left:0.1em;}
+
+
+/* ----#md-page-menu ページ内目次の修飾---- */
 div#md-page-menu::before{content:"table of contents"; color:#ddd; font-weight:bold;}
 #md-page-menu .panel {border:0px solid transparent;-webkit-box-shadow:0 0px 0px rgba(0,0,0,0);box-shadow:0 0px 0px rgba(0,0,0,0);}
 #md-page-menu .panel li{font-size:14px;	line-height:1.2;padding-top:0; padding-bottom:0;}
@@ -141,56 +323,50 @@ div#md-page-menu::before{content:"table of contents"; color:#ddd; font-weight:bo
 #md-page-menu .panel .list-group-item{padding-left:0px; padding-right:0px;}
 
 #md-page-menu .panel li a.active {padding-left:8px; color:#000;text-indent:-8px;font-weight:normal;}
-#md-page-menu .panel li a.active:before {font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105"; margin-right:1px;color:#000;line-height:1;}
+#md-page-menu .panel li a.active::before {font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105"; margin-right:1px;color:#000;line-height:1;}
 
-/* ----HR線の修飾---- */
-hr{border-top: 1px solid #ddd;}
 
-/* ----コードブロックpreの修飾---- */
-#md-content pre{border: 1px solid #ddd; padding:0; background-color:floralwhite; }
-#md-content code{color:#000; background-color:floralwhite; border:1px solid #ddd;}
-#md-content pre>code{color:#000; margin:10px; background-color:floralwhite;border:none;}
 
-/* ----画像imgの修飾---- */
-#md-content .md-image-group.row .col-sm-12{padding:0;}
 
-/* ----外部リンクアイコンの修飾---- */
-#md-content p i.fas.fa-external-link-alt{font-size:0.5em;padding-left:0.1em;}
-
-/* ----コードブロックの行頭に擬似行番号を表示する、ただしh6直後のコードブロックには表示しない---- */
-/* 擬似行番号の表現手法についてはSaKuRaiさん https://www.studiomic.net/pre-line-numbers/ の解説を参考にしました。 */
-#md-content :not(h6)+pre{padding:0;}
-#md-content :not(h6)+pre{position:relative}
-#md-content :not(h6)+pre>code:before{position:absolute; top:0px; left:0px;}
-#md-content :not(h6)+pre>code:before{width:36px; display:block; text-align:right; line-height:1.8;padding-top:10px; border-right:1px solid #ddd; color:#aaa; background-color:#fff; content: "1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A";}
-#md-content :not(h6)+pre>code{display:block; padding-left:36px; line-height:1.8;margin-bottom:5px;}
-#md-content :not(h6)+pre{overflow-y:hidden;overflow-x:scroll;}
-#md-content :not(h6)+pre>code{white-space:pre;}
-
+/* --------------------------------------------------------------------- */
 /* ----このCSSではh6を特殊な表現を呼び出すキーとして使用しています。---- */
+/* ----h6を消したい時は、h2の直後に消したいh6を置きます。--------------- */
+/* --------------------------------------------------------------------- */
 
 /* ----h2直後のh6を消す---- */
 #md-content h2+a+h6{display:none!important;}
+/* ----h2直後のhrを消す---- */
+#md-content h2+a+hr{display:none!important;}
 
-/* ----リスト内のh6を消す（リスト内に擬似行番号無のコードブロックを使いたい時にh6+pre+codeを使う）---- */
+/* ----リスト内のh6を消す（リスト内に擬似行番号無のコードブロックを使いたい時にh6+pre+codeを使う）
 #md-content li>p+h6{display:none;}
 #md-content li>p+h6+pre{margin-top:10px;}
+---- */
+
 
 /* ----h6直後の順序なしリストの修飾---- */
-#md-content h6+ul{border:1px solid #ddd; text-indent:-13px; padding:10px 10px 10px 32px;}
-#md-content h6+ul>li{list-style: none; padding:10px 0;}
-#md-content h6+ul>li:before {font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105"; margin-right:5px;color:#ccc;}
+#md-content h6+ul{border:1px solid #ddd; margin-top:-5rem; padding-top:4rem;}
+#md-content h6+ul{padding-left: 6.5rem; text-indent:-5.5rem; }
+#md-content h6+ul li::before{width:5.5rem;font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105";font-size:100%; color:#bbb;}
+
+
+/* ----h6直後の順序有リストの修飾---- */
+#md-content h6+ol{border:1px solid #ddd; margin-top:-5rem; padding-top:4rem;}
+#md-content h6+ol{padding-left: 6.5rem; text-indent:-5.5rem; }
+#md-content h6+ol li::before{width:5.5rem;}
+
 
 /* ----h6直後の表組tableの1行目theadを消す---- */
 #md-content h6+ .table-bordered > thead{display:none;}
 
+
 /* ----h2直後のh6の直後に画像と順序なしリストの組み合わせがある場合、自己紹介ページとみなす---- */
 #md-content h2+a+h6+p.md-image-group{width:160px;margin-top:20px;}
-#md-content h2+a+h6+p.md-image-group+ul{list-style-type:none;padding-left:0px;}
-#md-content h2+a+h6+p.md-image-group+ul ul{list-style-type:none;padding-left:3em;text-indent:-1.3em;}
-#md-content h2+a+h6+p.md-image-group+ul li>ol,
-#md-content h2+a+h6+p.md-image-group+ul li>ul,
-#md-content h2+a+h6+p.md-image-group+ul li>dl{border-bottom:none;}
+#md-content h2+a+h6+p.md-image-group+ul>li{content:none;}
+#md-content h2+a+h6+p.md-image-group+ul strong{background:transparent;}
+#md-content h2+a+h6+p.md-image-group+ul>li::before{content:none;}
+#md-content h2+a+h6+p.md-image-group+ul ul{border:none;}
+#md-content h2+a+h6+p.md-image-group+ul ul>li::before{content:none;}
 #md-content h2+a+h6+p.md-image-group+ul+hr{display:none;}
 
 
@@ -208,10 +384,11 @@ hr{border-top: 1px solid #ddd;}
 	#md-content h2+a+h6{display:none;}
 	#md-content h2+a+h6+p.md-image-group{width:30%;float:right;display:block;}
 	#md-content h2+a+h6+p.md-image-group+ul{width:70%;float:left;list-style-type:none;display:block;margin-top:20px;margin-bottom:80px;}
-	#md-content h2+a+h6+p.md-image-group+ul:after{content:"";display:block;clear:both;overflow:hidden;}
+	#md-content h2+a+h6+p.md-image-group+ul::after{content:"";display:block;clear:both;overflow:hidden;}
 	#md-content h1,#md-content h2,#md-content h3,#md-content h4,#md-content h5,#md-content hr{clear:both;}
 
 	#md-menu a.navbar-brand{max-width:100%;}
+
 }
 /* 768px--991px ---------------------------------------------- */
 @media only screen and (min-width: 768px)
@@ -228,19 +405,43 @@ hr{border-top: 1px solid #ddd;}
 	#md-content h5{font-size:17px;}
 	#md-content h6{font-size:17px;}
 
+	#md-content a.visible-xs.visible-sm.jumplink+h3{margin-top:60px;}
+
+
 /* ----h6直後の画像と順序なしリストの組み合わせを自己紹介とみなす---- */
 	#md-content h2+a+h6{display:none;}
 	#md-content h2+a+h6+p.md-image-group{width:25%;}
 	#md-content h2+a+h6+p.md-image-group+ul{width:75%;}
 
+
 	body{overflow-x:hidden;}
 	#md-all{overflow-x:visible;}
+
 
 /* タイトル背景 */
 	#md-title-container.container .page-header{margin:0 -150px; padding:55px 150px 50px;}
 
 
+/* プライマリーキャラとセカンダリーキャラのサイズ */
+#md-content p.alert.alert-doubled{margin-right:95px; margin-left:95px; min-height:95px;}
+#md-content p.alert.alert-doubled::before{left:-95px; width:80px; height:80px;}
+#md-content p.alert.alert-doubled::after{right:-95px; width:80px; height:80px;}
+#md-content p.alert.alert-doubled .md-text::before{top:27px;}
+#md-content p.alert.alert-doubled .md-text::after{top:27px;}
+
+#md-content p.alert.alert-primary{margin-right:95px; margin-left:95px; min-height:95px;}
+#md-content p.alert.alert-primary::before{left:-95px; width:80px; height:80px;}
+#md-content p.alert.alert-primary .md-text::before{top:27px;}
+#md-content p.alert.alert-primary .md-text::after{top:27px;}
+
+#md-content p.alert.alert-secondary{margin-right:95px; margin-left:95px; min-height:95px;}
+#md-content p.alert.alert-secondary::after{right:-95px; width:80px; height:80px;}
+#md-content p.alert.alert-secondary .md-text::before{top:30px;}
+#md-content p.alert.alert-secondary .md-text::after{top:30px;}
+
+
 }
+
 /* 992px--1440px ---------------------------------------------- */
 @media only screen and (min-width: 992px){
 /* ----ここから目次がサイドバーに移る---- */

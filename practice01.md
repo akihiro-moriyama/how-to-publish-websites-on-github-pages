@@ -24,7 +24,7 @@ Gitはアプリケーション、GitHubはGit互換のWebサービスです。
 
 概ね以下の手順で作業が進行します。
 
-### 手順
+#### 手順
 
 1. 管理者がGitHubサーバー上にリモートリポジトリを置く
 1. 開発者が自分のPCにローカルリポジトリを複製する(**クローン**)
@@ -55,9 +55,11 @@ note: [05. たった2つのファイルでサイト構築・MDwiki](practice05.m
 
 ## 関連ページ
 
+----
+
 ###### 関連ページ
 
-* <i class="far fa-hand-point-right fa-fw"></i>01. なにが違うの？GitとGitHub
+* <i class="far fa-hand-point-right"></i>01. なにが違うの？GitとGitHub
 * [02. コマンドラインはもう不要・GitHub Desktop](practice02.md)
 * [03. 完全無料のウェブサーバー・GitHub Pages](practice03.md)
 * [04. これだけ知ればGitHub Pageを使える！Git用語](practice04.md)
