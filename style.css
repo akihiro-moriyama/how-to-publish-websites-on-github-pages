@@ -346,13 +346,13 @@ div#md-page-menu::before{content:"table of contents"; color:#ddd; font-weight:bo
 
 
 /* ----h6直後の順序なしリストの修飾---- */
-#md-content h6+ul{border:1px solid #ddd; margin-top:-5rem; padding-top:4rem;}
+#md-content h6+ul{border:1px solid #ddd; margin-top:-5rem; padding-top:2.5rem;}
 #md-content h6+ul{padding-left: 6.5rem; text-indent:-5.5rem; }
 #md-content h6+ul li::before{width:5.5rem;font-family:"Font Awesome 5 Free"; font-weight:900; content:"\f105";font-size:100%; color:#bbb;}
 
 
 /* ----h6直後の順序有リストの修飾---- */
-#md-content h6+ol{border:1px solid #ddd; margin-top:-5rem; padding-top:4rem;}
+#md-content h6+ol{border:1px solid #ddd; margin-top:-5rem; padding-top:2.5rem;}
 #md-content h6+ol{padding-left: 6.5rem; text-indent:-5.5rem; }
 #md-content h6+ol li::before{width:5.5rem;}
 
